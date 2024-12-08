@@ -1,0 +1,4824 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Oct 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    exp-1-08 (AVX2, FMA3, 251 GB RAM)
+Command: iqtree2 -bb 1000 --opt-gamma-inv -bnni -st DNA -s infile.txt -m GTR --prefix output -q partition_file.txt
+Seed:    878048 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Mar 17 07:12:57 2021
+Kernel:  AVX+FMA - 1 threads (6 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 6 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file partition_file.txt ...
+Reading alignment file infile.txt ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 60903 sites contain only gaps or ambiguous characters.
+Alignment has 72 sequences with 1495138 columns, 320755 distinct patterns
+8626 parsimony-informative, 45693 singleton sites, 1440819 constant sites
+                 Gap/Ambiguity  Composition  p-value
+   1  AMNH135435GaeVE   72.18%    failed      0.00%
+   2  ANRA10GbrBR       39.98%    failed      4.59%
+   3  CMARF1569GbrBR    31.09%    failed      1.30%
+   4  CN029GaeBR        34.54%    passed     15.84%
+   5  CN048GaeBR        33.09%    failed      0.00%
+   6  CN160GaeBR        27.46%    passed      5.87%
+   7  CN230SpuBR        44.27%    passed     37.17%
+   8  CN241GaeBR        41.34%    failed      0.46%
+   9  CN269GaeBR        36.61%    passed     45.43%
+  10  CN270GaeBR        41.91%    failed      0.00%
+  11  CN294GaeBR        47.84%    passed     63.44%
+  12  DTM41GbrBR        42.46%    passed     12.30%
+  13  FMNH141601GbrBR   31.56%    passed     77.04%
+  14  FZB3514GbrBR      87.89%    failed      0.00%
+  15  GTG54GbrBR        25.84%    passed     83.15%
+  16  GTG55GbrBR        27.58%    passed     82.69%
+  17  IEPA4384GaeBR     41.59%    failed      0.54%
+  18  ISEMT6101GaeFG    55.49%    failed      0.00%
+  19  JMIJ35GaeBR       31.99%    passed     71.27%
+  20  MCN866GbrBR       55.39%    failed      0.00%
+  21  MCNU3683GbrBR     37.18%    passed     72.25%
+  22  MNMN56819GaeBR    33.58%    passed     21.08%
+  23  MSB148785SvuRU    25.06%    passed     41.55%
+  24  MTR0192GbrBR      22.47%    passed     74.06%
+  25  MTR1128GbrBR      27.34%    passed     67.15%
+  26  MTR1821GbrBR      24.69%    passed     43.49%
+  27  MVZ182070GbrBR    22.87%    passed     99.08%
+  28  MVZ182071GbrBR    18.55%    passed     58.42%
+  29  MVZ192702GbrBR    24.84%    passed     43.08%
+  30  PECC03GbrBR       61.33%    failed      0.00%
+  31  UFES1063GbrBR     27.79%    passed     66.07%
+  32  UFES119GbrBR      33.81%    passed     75.63%
+  33  UFES14GbrBR       41.91%    failed      0.79%
+  34  UFES223GbrBR      27.87%    passed     61.27%
+  35  UFES3817GbrBR     28.80%    passed     40.28%
+  36  UFSC4047GbrBR     71.29%    failed      0.00%
+  37  USNM549526GaeBR   29.86%    passed     61.64%
+  38  BM10678GaeBR      40.74%    failed      0.30%
+  39  CMARF1568GbrBR    55.73%    failed      0.49%
+  40  CN201GaeBR        48.63%    passed     15.40%
+  41  DICO001NpuBR      59.65%    failed      0.00%
+  42  DTM277GbrBR       49.25%    failed      1.81%
+  43  EFA41GbrBR        39.07%    passed     27.96%
+  44  ISEMT5176GaeFG    45.42%    passed     25.99%
+  45  LMUSP301GbrBR     42.64%    passed     95.30%
+  46  MSB248241SvaPA    33.50%    failed      0.00%
+  47  MSB273400TmeME    38.14%    passed     22.30%
+  48  MTR0444GbrBR      19.66%    passed     23.06%
+  49  MTR1785GbrBR      30.97%    failed      2.70%
+  50  MVZ191205MflBR    27.14%    passed     99.69%
+  51  MVZ192704HspPE    24.03%    passed     73.10%
+  52  MVZ200389GbrBR    34.91%    failed      0.03%
+  53  PECC26GbrBR       32.72%    passed     84.29%
+  54  UFES3776GbrBR     28.30%    passed     24.45%
+  55  UFES614GbrBR      42.00%    failed      0.56%
+  56  UFES85GbrBR       40.84%    failed      2.10%
+  57  ANRA12GbrBR       45.97%    failed      0.00%
+  58  CN158GaeBR        43.32%    passed     73.54%
+  59  CN175GaeBR        42.97%    passed     21.25%
+  60  ENM13GaeBR        56.45%    passed     71.67%
+  61  IEPA3704GaeBR     37.99%    failed      0.00%
+  62  RETA15IndetBR     33.03%    passed     66.12%
+  63  BM17058GaeBR      51.32%    failed      0.00%
+  64  BML1493IndetBR    59.97%    failed      0.00%
+  65  ISEMT1758GaeFG    48.42%    failed      0.68%
+  66  UFES4256GaeBR     62.27%    failed      0.00%
+  67  UFSC2930GbrBR     72.04%    failed      0.00%
+  68  MCNM2944GbrBr     87.90%    failed      0.00%
+  69  USNM560645GaeVE   70.36%    passed     73.77%
+  70  MPEG45441GaeBR    69.23%    failed      0.08%
+  71  USNM599925GaeGU   52.58%    passed     82.21%
+  72  MCNM1388GbrBR     84.29%    failed      0.00%
+WARNING: 18 sequences contain more than 50% gaps/ambiguity
+****  TOTAL             42.51%  32 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Partition file is not in NEXUS format, assuming RAxML-style partition file...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	48	292	4	273	GTR	uce-5296
+2	DNA	54	427	3	416	GTR	uce-453
+3	DNA	46	485	0	474	GTR	uce-1526
+WARNING: No parsimony-informative sites in partition uce-1526
+4	DNA	49	399	5	384	GTR	uce-6188
+5	DNA	47	402	9	388	GTR	uce-4175
+6	DNA	48	476	7	429	GTR	uce-3213
+7	DNA	47	346	2	329	GTR	uce-3662
+8	DNA	48	421	2	410	GTR	uce-5684
+9	DNA	45	337	0	330	GTR	uce-3449
+WARNING: No parsimony-informative sites in partition uce-3449
+10	DNA	43	392	6	360	GTR	uce-7000
+11	DNA	41	382	2	372	GTR	uce-4540
+12	DNA	48	355	1	346	GTR	uce-6337
+13	DNA	47	386	2	374	GTR	uce-4789
+14	DNA	57	553	2	539	GTR	uce-906
+15	DNA	44	315	4	304	GTR	uce-7520
+16	DNA	54	361	3	347	GTR	uce-5347
+17	DNA	47	477	3	452	GTR	uce-3771
+18	DNA	48	365	4	352	GTR	uce-6344
+19	DNA	51	354	1	344	GTR	uce-4465
+20	DNA	53	632	2	617	GTR	uce-3541
+21	DNA	48	384	1	374	GTR	uce-1634
+22	DNA	50	434	0	418	GTR	uce-4666
+WARNING: No parsimony-informative sites in partition uce-4666
+23	DNA	51	737	0	730	GTR	uce-3862
+WARNING: No parsimony-informative sites in partition uce-3862
+24	DNA	48	416	5	364	GTR	uce-1662
+25	DNA	39	559	0	546	GTR	uce-1322
+WARNING: No parsimony-informative sites in partition uce-1322
+26	DNA	42	470	6	404	GTR	uce-5028
+27	DNA	44	392	1	386	GTR	uce-177
+28	DNA	49	407	1	395	GTR	uce-2441
+29	DNA	53	471	0	436	GTR	uce-5385
+WARNING: No parsimony-informative sites in partition uce-5385
+30	DNA	36	420	2	378	GTR	uce-3231
+31	DNA	51	389	1	377	GTR	uce-6674
+32	DNA	46	398	1	385	GTR	uce-7078
+33	DNA	42	360	6	342	GTR	uce-3557
+34	DNA	38	258	0	248	GTR	uce-3380
+WARNING: No parsimony-informative sites in partition uce-3380
+35	DNA	42	548	5	525	GTR	uce-172
+36	DNA	41	345	0	333	GTR	uce-4356
+WARNING: No parsimony-informative sites in partition uce-4356
+37	DNA	44	458	0	456	GTR	uce-3934
+WARNING: No parsimony-informative sites in partition uce-3934
+38	DNA	46	406	1	399	GTR	uce-4884
+39	DNA	47	350	0	347	GTR	uce-4500
+WARNING: No parsimony-informative sites in partition uce-4500
+40	DNA	49	497	1	476	GTR	uce-188
+41	DNA	43	315	2	298	GTR	uce-4870
+42	DNA	50	343	4	332	GTR	uce-3193
+43	DNA	53	477	1	465	GTR	uce-355
+44	DNA	51	442	3	427	GTR	uce-7729
+45	DNA	52	436	1	424	GTR	uce-735
+46	DNA	45	390	8	367	GTR	uce-6482
+47	DNA	55	398	0	381	GTR	uce-6727
+WARNING: No parsimony-informative sites in partition uce-6727
+48	DNA	44	400	4	379	GTR	uce-77
+49	DNA	53	406	2	393	GTR	uce-2120
+50	DNA	41	318	3	308	GTR	uce-2589
+51	DNA	43	320	1	308	GTR	uce-4594
+52	DNA	51	411	1	403	GTR	uce-7145
+53	DNA	50	452	1	440	GTR	uce-3648
+54	DNA	48	334	0	331	GTR	uce-5108
+WARNING: No parsimony-informative sites in partition uce-5108
+55	DNA	48	375	0	368	GTR	uce-2677
+WARNING: No parsimony-informative sites in partition uce-2677
+56	DNA	39	392	0	383	GTR	uce-546
+WARNING: No parsimony-informative sites in partition uce-546
+57	DNA	51	403	1	393	GTR	uce-534
+58	DNA	49	507	2	493	GTR	uce-6282
+59	DNA	52	390	5	375	GTR	uce-2765
+60	DNA	48	401	2	367	GTR	uce-5182
+61	DNA	43	519	3	511	GTR	uce-2080
+62	DNA	45	448	3	437	GTR	uce-780
+63	DNA	44	381	0	376	GTR	uce-4434
+WARNING: No parsimony-informative sites in partition uce-4434
+64	DNA	43	467	2	449	GTR	uce-7584
+65	DNA	48	451	1	445	GTR	uce-6724
+66	DNA	44	347	4	329	GTR	uce-6637
+67	DNA	51	360	1	352	GTR	uce-352
+68	DNA	44	392	5	379	GTR	uce-3724
+69	DNA	41	310	4	295	GTR	uce-6894
+70	DNA	39	306	3	281	GTR	uce-5137
+71	DNA	50	365	0	361	GTR	uce-2206
+WARNING: No parsimony-informative sites in partition uce-2206
+72	DNA	45	456	4	422	GTR	uce-3931
+73	DNA	50	378	0	372	GTR	uce-3300
+WARNING: No parsimony-informative sites in partition uce-3300
+74	DNA	51	396	4	376	GTR	uce-4560
+75	DNA	47	458	0	450	GTR	uce-5019
+WARNING: No parsimony-informative sites in partition uce-5019
+76	DNA	54	312	3	290	GTR	uce-3825
+77	DNA	53	351	3	341	GTR	uce-4763
+78	DNA	54	445	6	405	GTR	uce-3589
+79	DNA	41	441	2	430	GTR	uce-4871
+80	DNA	50	442	3	424	GTR	uce-2771
+81	DNA	43	457	3	444	GTR	uce-5757
+82	DNA	48	438	1	412	GTR	uce-6892
+83	DNA	44	323	1	317	GTR	uce-5419
+84	DNA	46	346	0	344	GTR	uce-5074
+WARNING: No parsimony-informative sites in partition uce-5074
+85	DNA	50	405	0	399	GTR	uce-5796
+WARNING: No parsimony-informative sites in partition uce-5796
+86	DNA	54	405	2	391	GTR	uce-921
+87	DNA	53	434	1	422	GTR	uce-1177
+88	DNA	40	286	5	266	GTR	uce-2697
+89	DNA	45	440	4	428	GTR	uce-6121
+90	DNA	47	424	8	386	GTR	uce-3430
+91	DNA	49	456	1	448	GTR	uce-7370
+92	DNA	47	387	0	381	GTR	uce-1318
+WARNING: No parsimony-informative sites in partition uce-1318
+93	DNA	48	394	1	374	GTR	uce-4484
+94	DNA	47	398	7	379	GTR	uce-5116
+95	DNA	47	524	0	486	GTR	uce-157
+WARNING: No parsimony-informative sites in partition uce-157
+96	DNA	53	493	4	477	GTR	uce-3243
+97	DNA	42	379	6	360	GTR	uce-3836
+98	DNA	52	360	1	355	GTR	uce-810
+99	DNA	44	473	3	462	GTR	uce-462
+100	DNA	44	426	0	419	GTR	uce-4993
+WARNING: No parsimony-informative sites in partition uce-4993
+101	DNA	48	350	4	323	GTR	uce-5243
+102	DNA	41	438	11	400	GTR	uce-6602
+103	DNA	53	445	0	443	GTR	uce-5443
+WARNING: No parsimony-informative sites in partition uce-5443
+104	DNA	48	395	0	386	GTR	uce-1234
+WARNING: No parsimony-informative sites in partition uce-1234
+105	DNA	45	382	3	371	GTR	uce-4284
+106	DNA	49	394	2	390	GTR	uce-5710
+107	DNA	41	276	2	266	GTR	uce-5366
+108	DNA	49	370	0	360	GTR	uce-2502
+WARNING: No parsimony-informative sites in partition uce-2502
+109	DNA	40	264	0	257	GTR	uce-3587
+WARNING: No parsimony-informative sites in partition uce-3587
+110	DNA	46	436	3	422	GTR	uce-6582
+111	DNA	45	884	0	881	GTR	uce-1508
+WARNING: No parsimony-informative sites in partition uce-1508
+112	DNA	53	418	2	409	GTR	uce-2714
+113	DNA	39	413	5	390	GTR	uce-7269
+114	DNA	49	351	1	337	GTR	uce-6875
+115	DNA	39	474	2	467	GTR	uce-8005
+116	DNA	47	396	1	388	GTR	uce-7609
+117	DNA	40	271	2	262	GTR	uce-447
+118	DNA	45	398	2	380	GTR	uce-5334
+119	DNA	53	419	4	399	GTR	uce-7449
+120	DNA	43	384	1	371	GTR	uce-6809
+121	DNA	45	330	2	327	GTR	uce-4989
+122	DNA	49	393	1	384	GTR	uce-4845
+123	DNA	53	518	5	474	GTR	uce-3995
+124	DNA	51	448	1	438	GTR	uce-557
+125	DNA	44	405	0	396	GTR	uce-4549
+WARNING: No parsimony-informative sites in partition uce-4549
+126	DNA	44	445	7	415	GTR	uce-3693
+127	DNA	48	372	7	338	GTR	uce-1569
+128	DNA	52	457	4	443	GTR	uce-169
+129	DNA	50	433	3	415	GTR	uce-5721
+130	DNA	48	387	2	379	GTR	uce-7270
+131	DNA	41	420	5	407	GTR	uce-5196
+132	DNA	53	421	5	390	GTR	uce-5557
+133	DNA	49	395	10	357	GTR	uce-4992
+134	DNA	45	301	0	294	GTR	uce-5840
+WARNING: No parsimony-informative sites in partition uce-5840
+135	DNA	51	407	1	399	GTR	uce-6451
+136	DNA	41	476	3	461	GTR	uce-4843
+137	DNA	38	332	0	320	GTR	uce-4775
+WARNING: No parsimony-informative sites in partition uce-4775
+138	DNA	51	388	0	382	GTR	uce-7107
+WARNING: No parsimony-informative sites in partition uce-7107
+139	DNA	46	310	1	304	GTR	uce-5975
+140	DNA	39	400	4	364	GTR	uce-2930
+141	DNA	44	329	1	324	GTR	uce-1050
+142	DNA	49	347	1	338	GTR	uce-1765
+143	DNA	44	429	2	416	GTR	uce-3366
+144	DNA	51	424	3	411	GTR	uce-2266
+145	DNA	52	446	0	434	GTR	uce-7510
+WARNING: No parsimony-informative sites in partition uce-7510
+146	DNA	46	395	0	381	GTR	uce-5692
+WARNING: No parsimony-informative sites in partition uce-5692
+147	DNA	50	346	0	337	GTR	uce-2076
+WARNING: No parsimony-informative sites in partition uce-2076
+148	DNA	50	457	2	431	GTR	uce-1932
+149	DNA	49	464	4	454	GTR	uce-4097
+150	DNA	51	365	2	356	GTR	uce-5035
+151	DNA	41	381	1	373	GTR	uce-672
+152	DNA	49	486	0	475	GTR	uce-2553
+WARNING: No parsimony-informative sites in partition uce-2553
+153	DNA	45	405	4	395	GTR	uce-285
+154	DNA	37	280	0	276	GTR	uce-706
+WARNING: No parsimony-informative sites in partition uce-706
+155	DNA	42	552	4	535	GTR	uce-1090
+156	DNA	49	359	2	344	GTR	uce-2773
+157	DNA	47	396	3	387	GTR	uce-1478
+158	DNA	50	409	4	375	GTR	uce-6613
+159	DNA	42	404	2	389	GTR	uce-8034
+160	DNA	46	449	1	436	GTR	uce-5256
+161	DNA	43	468	3	461	GTR	uce-3688
+162	DNA	49	519	0	502	GTR	uce-513
+WARNING: No parsimony-informative sites in partition uce-513
+163	DNA	50	399	0	391	GTR	uce-6608
+WARNING: No parsimony-informative sites in partition uce-6608
+164	DNA	48	365	1	355	GTR	uce-3191
+165	DNA	37	560	0	532	GTR	uce-242
+WARNING: No parsimony-informative sites in partition uce-242
+166	DNA	51	386	3	373	GTR	uce-5263
+167	DNA	50	411	3	395	GTR	uce-2870
+168	DNA	51	406	3	395	GTR	uce-5849
+169	DNA	40	461	5	446	GTR	uce-234
+170	DNA	46	313	3	300	GTR	uce-3194
+171	DNA	42	454	0	447	GTR	uce-1514
+WARNING: No parsimony-informative sites in partition uce-1514
+172	DNA	43	508	1	493	GTR	uce-7819
+173	DNA	46	473	0	465	GTR	uce-3486
+WARNING: No parsimony-informative sites in partition uce-3486
+174	DNA	42	401	3	394	GTR	uce-2439
+175	DNA	45	389	2	375	GTR	uce-568
+176	DNA	43	318	5	304	GTR	uce-3466
+177	DNA	50	415	0	405	GTR	uce-4088
+WARNING: No parsimony-informative sites in partition uce-4088
+178	DNA	40	376	8	351	GTR	uce-2729
+179	DNA	54	403	1	387	GTR	uce-7546
+180	DNA	52	361	0	345	GTR	uce-2063
+WARNING: No parsimony-informative sites in partition uce-2063
+181	DNA	44	457	1	433	GTR	uce-5446
+182	DNA	46	432	2	421	GTR	uce-2204
+183	DNA	37	302	1	294	GTR	uce-7147
+184	DNA	41	491	9	468	GTR	uce-1783
+185	DNA	43	398	1	392	GTR	uce-3442
+186	DNA	50	439	4	423	GTR	uce-47
+187	DNA	44	420	3	413	GTR	uce-4238
+188	DNA	47	458	1	422	GTR	uce-1878
+189	DNA	47	470	4	458	GTR	uce-7642
+190	DNA	43	317	4	303	GTR	uce-3750
+191	DNA	46	407	10	365	GTR	uce-5636
+192	DNA	47	497	5	483	GTR	uce-4931
+193	DNA	46	293	2	283	GTR	uce-5072
+194	DNA	44	313	4	299	GTR	uce-6212
+195	DNA	47	420	0	413	GTR	uce-4609
+WARNING: No parsimony-informative sites in partition uce-4609
+196	DNA	42	374	9	309	GTR	uce-2477
+197	DNA	47	428	1	418	GTR	uce-2548
+198	DNA	51	345	1	331	GTR	uce-5038
+199	DNA	48	520	3	510	GTR	uce-1660
+200	DNA	41	443	3	421	GTR	uce-7216
+201	DNA	48	400	2	391	GTR	uce-3702
+202	DNA	43	416	0	407	GTR	uce-154
+WARNING: No parsimony-informative sites in partition uce-154
+203	DNA	47	331	6	314	GTR	uce-4641
+204	DNA	49	425	2	400	GTR	uce-950
+205	DNA	50	423	2	407	GTR	uce-6485
+206	DNA	38	362	1	355	GTR	uce-4983
+207	DNA	54	398	3	382	GTR	uce-1842
+208	DNA	54	414	4	399	GTR	uce-7171
+209	DNA	48	421	1	409	GTR	uce-5422
+210	DNA	52	403	0	390	GTR	uce-3350
+WARNING: No parsimony-informative sites in partition uce-3350
+211	DNA	49	419	2	410	GTR	uce-1121
+212	DNA	55	508	2	492	GTR	uce-6448
+213	DNA	51	505	4	481	GTR	uce-3279
+214	DNA	44	287	3	272	GTR	uce-6235
+215	DNA	52	447	3	428	GTR	uce-2733
+216	DNA	52	364	2	331	GTR	uce-6275
+217	DNA	50	482	1	469	GTR	uce-1309
+218	DNA	49	411	2	397	GTR	uce-460
+219	DNA	51	408	2	398	GTR	uce-300
+220	DNA	52	435	1	419	GTR	uce-1504
+221	DNA	46	376	3	360	GTR	uce-4699
+222	DNA	44	361	0	327	GTR	uce-5084
+WARNING: No parsimony-informative sites in partition uce-5084
+223	DNA	47	462	3	454	GTR	uce-1092
+224	DNA	46	480	4	458	GTR	uce-3310
+225	DNA	37	375	3	329	GTR	uce-299
+226	DNA	50	404	4	396	GTR	uce-5416
+227	DNA	52	435	8	415	GTR	uce-2256
+228	DNA	38	264	1	212	GTR	uce-7890
+229	DNA	49	385	4	363	GTR	uce-2062
+230	DNA	53	465	5	450	GTR	uce-7928
+231	DNA	47	387	1	375	GTR	uce-2048
+232	DNA	44	386	3	368	GTR	uce-596
+233	DNA	41	320	1	313	GTR	uce-4178
+234	DNA	49	416	4	381	GTR	uce-3515
+235	DNA	46	391	0	386	GTR	uce-814
+WARNING: No parsimony-informative sites in partition uce-814
+236	DNA	48	269	6	247	GTR	uce-7483
+237	DNA	47	403	0	394	GTR	uce-5906
+WARNING: No parsimony-informative sites in partition uce-5906
+238	DNA	49	374	10	340	GTR	uce-7428
+239	DNA	49	414	3	402	GTR	uce-891
+240	DNA	48	379	0	375	GTR	uce-2052
+WARNING: No parsimony-informative sites in partition uce-2052
+241	DNA	49	446	2	438	GTR	uce-985
+242	DNA	53	366	5	344	GTR	uce-5837
+243	DNA	45	414	0	411	GTR	uce-1390
+WARNING: No parsimony-informative sites in partition uce-1390
+244	DNA	45	344	1	316	GTR	uce-3
+245	DNA	47	360	3	350	GTR	uce-4855
+246	DNA	47	501	0	495	GTR	uce-419
+WARNING: No parsimony-informative sites in partition uce-419
+247	DNA	38	532	2	515	GTR	uce-1101
+248	DNA	46	471	0	457	GTR	uce-3857
+WARNING: No parsimony-informative sites in partition uce-3857
+249	DNA	49	341	0	337	GTR	uce-5153
+WARNING: No parsimony-informative sites in partition uce-5153
+250	DNA	42	359	1	354	GTR	uce-4386
+251	DNA	41	331	1	325	GTR	uce-1610
+252	DNA	39	428	2	414	GTR	uce-2308
+253	DNA	52	396	1	386	GTR	uce-6657
+254	DNA	48	377	4	365	GTR	uce-6222
+255	DNA	49	374	3	362	GTR	uce-724
+256	DNA	40	532	0	525	GTR	uce-338
+WARNING: No parsimony-informative sites in partition uce-338
+257	DNA	52	405	6	384	GTR	uce-573
+258	DNA	47	360	1	351	GTR	uce-1211
+259	DNA	53	333	4	313	GTR	uce-4600
+260	DNA	44	337	2	327	GTR	uce-7466
+261	DNA	54	473	2	455	GTR	uce-3647
+262	DNA	50	454	8	428	GTR	uce-3059
+263	DNA	40	268	6	253	GTR	uce-6399
+264	DNA	45	345	0	338	GTR	uce-4625
+WARNING: No parsimony-informative sites in partition uce-4625
+265	DNA	43	453	6	420	GTR	uce-4541
+266	DNA	53	351	0	345	GTR	uce-2927
+WARNING: No parsimony-informative sites in partition uce-2927
+267	DNA	49	347	0	344	GTR	uce-1233
+WARNING: No parsimony-informative sites in partition uce-1233
+268	DNA	41	325	0	317	GTR	uce-5761
+WARNING: No parsimony-informative sites in partition uce-5761
+269	DNA	45	395	5	384	GTR	uce-2591
+270	DNA	43	394	2	383	GTR	uce-4310
+271	DNA	49	394	1	381	GTR	uce-8045
+272	DNA	45	400	5	379	GTR	uce-4736
+273	DNA	51	520	4	500	GTR	uce-3808
+274	DNA	52	379	0	371	GTR	uce-240
+WARNING: No parsimony-informative sites in partition uce-240
+275	DNA	49	424	1	419	GTR	uce-7120
+276	DNA	51	432	7	409	GTR	uce-7831
+277	DNA	45	406	0	396	GTR	uce-3402
+WARNING: No parsimony-informative sites in partition uce-3402
+278	DNA	52	433	3	377	GTR	uce-6316
+279	DNA	49	472	0	469	GTR	uce-6782
+WARNING: No parsimony-informative sites in partition uce-6782
+280	DNA	46	331	0	328	GTR	uce-2172
+WARNING: No parsimony-informative sites in partition uce-2172
+281	DNA	44	457	3	443	GTR	uce-3356
+282	DNA	46	319	0	305	GTR	uce-264
+WARNING: No parsimony-informative sites in partition uce-264
+283	DNA	53	394	1	382	GTR	uce-2991
+284	DNA	41	509	1	489	GTR	uce-5773
+285	DNA	50	382	1	374	GTR	uce-278
+286	DNA	40	354	4	334	GTR	uce-4388
+287	DNA	48	279	0	277	GTR	uce-2366
+WARNING: No parsimony-informative sites in partition uce-2366
+288	DNA	42	446	2	435	GTR	uce-560
+289	DNA	53	319	3	306	GTR	uce-3564
+290	DNA	50	523	4	505	GTR	uce-6138
+291	DNA	49	507	0	500	GTR	uce-1925
+WARNING: No parsimony-informative sites in partition uce-1925
+292	DNA	39	513	2	482	GTR	uce-1135
+293	DNA	47	317	1	310	GTR	uce-4360
+294	DNA	41	398	2	381	GTR	uce-4975
+295	DNA	47	306	4	289	GTR	uce-1100
+296	DNA	45	404	3	397	GTR	uce-3082
+297	DNA	45	457	1	446	GTR	uce-2840
+298	DNA	50	436	0	426	GTR	uce-204
+WARNING: No parsimony-informative sites in partition uce-204
+299	DNA	52	466	6	399	GTR	uce-3373
+300	DNA	50	472	0	461	GTR	uce-2437
+WARNING: No parsimony-informative sites in partition uce-2437
+301	DNA	53	470	2	457	GTR	uce-4292
+302	DNA	44	358	3	345	GTR	uce-1122
+303	DNA	51	453	2	444	GTR	uce-1277
+304	DNA	55	433	3	392	GTR	uce-7788
+305	DNA	61	1160	1	1147	GTR	uce-4698
+306	DNA	45	371	2	362	GTR	uce-4274
+307	DNA	40	349	3	333	GTR	uce-2594
+308	DNA	47	352	0	344	GTR	uce-853
+WARNING: No parsimony-informative sites in partition uce-853
+309	DNA	40	385	2	370	GTR	uce-7291
+310	DNA	50	520	2	504	GTR	uce-6288
+311	DNA	45	463	2	448	GTR	uce-2971
+312	DNA	40	470	1	455	GTR	uce-335
+313	DNA	49	469	2	454	GTR	uce-494
+314	DNA	41	451	0	442	GTR	uce-812
+WARNING: No parsimony-informative sites in partition uce-812
+315	DNA	47	383	2	374	GTR	uce-7122
+316	DNA	48	387	2	374	GTR	uce-2294
+317	DNA	45	416	1	410	GTR	uce-715
+318	DNA	40	299	1	291	GTR	uce-7947
+319	DNA	45	503	2	490	GTR	uce-2012
+320	DNA	40	356	0	352	GTR	uce-4217
+WARNING: No parsimony-informative sites in partition uce-4217
+321	DNA	45	374	1	361	GTR	uce-7265
+322	DNA	45	366	7	332	GTR	uce-3998
+323	DNA	49	385	3	377	GTR	uce-3570
+324	DNA	44	346	3	332	GTR	uce-1859
+325	DNA	57	411	3	399	GTR	uce-7917
+326	DNA	49	333	0	321	GTR	uce-1884
+WARNING: No parsimony-informative sites in partition uce-1884
+327	DNA	47	366	0	361	GTR	uce-3504
+WARNING: No parsimony-informative sites in partition uce-3504
+328	DNA	44	423	4	406	GTR	uce-5915
+329	DNA	44	390	2	379	GTR	uce-4075
+330	DNA	52	432	0	420	GTR	uce-1750
+WARNING: No parsimony-informative sites in partition uce-1750
+331	DNA	49	462	1	448	GTR	uce-14
+332	DNA	48	472	1	459	GTR	uce-1956
+333	DNA	42	481	0	475	GTR	uce-6642
+WARNING: No parsimony-informative sites in partition uce-6642
+334	DNA	46	410	2	400	GTR	uce-305
+335	DNA	45	460	1	456	GTR	uce-4205
+336	DNA	52	442	2	435	GTR	uce-6048
+337	DNA	47	319	0	316	GTR	uce-63
+WARNING: No parsimony-informative sites in partition uce-63
+338	DNA	48	420	4	402	GTR	uce-7907
+339	DNA	44	490	0	482	GTR	uce-6440
+WARNING: No parsimony-informative sites in partition uce-6440
+340	DNA	45	470	2	461	GTR	uce-4076
+341	DNA	54	392	3	372	GTR	uce-2257
+342	DNA	57	492	3	476	GTR	uce-1194
+343	DNA	51	381	0	358	GTR	uce-6033
+WARNING: No parsimony-informative sites in partition uce-6033
+344	DNA	49	585	3	570	GTR	uce-7310
+345	DNA	49	369	2	359	GTR	uce-2674
+346	DNA	46	404	3	395	GTR	uce-2421
+347	DNA	43	364	2	356	GTR	uce-3940
+348	DNA	44	464	0	456	GTR	uce-1824
+WARNING: No parsimony-informative sites in partition uce-1824
+349	DNA	47	499	5	475	GTR	uce-7586
+350	DNA	38	308	5	291	GTR	uce-6339
+351	DNA	40	426	3	410	GTR	uce-2857
+352	DNA	50	436	2	425	GTR	uce-213
+353	DNA	36	296	1	292	GTR	uce-2810
+354	DNA	49	492	0	490	GTR	uce-1010
+WARNING: No parsimony-informative sites in partition uce-1010
+355	DNA	56	480	4	468	GTR	uce-5244
+356	DNA	47	457	16	411	GTR	uce-4119
+357	DNA	46	402	3	394	GTR	uce-3526
+358	DNA	49	466	1	427	GTR	uce-5200
+359	DNA	53	397	1	387	GTR	uce-8046
+360	DNA	39	462	6	428	GTR	uce-7133
+361	DNA	45	332	2	315	GTR	uce-5708
+362	DNA	43	285	1	268	GTR	uce-4421
+363	DNA	45	416	2	400	GTR	uce-5994
+364	DNA	56	460	1	444	GTR	uce-3302
+365	DNA	45	469	0	465	GTR	uce-2796
+WARNING: No parsimony-informative sites in partition uce-2796
+366	DNA	46	538	0	531	GTR	uce-6638
+WARNING: No parsimony-informative sites in partition uce-6638
+367	DNA	44	513	0	508	GTR	uce-522
+WARNING: No parsimony-informative sites in partition uce-522
+368	DNA	45	412	2	398	GTR	uce-1544
+369	DNA	50	496	6	464	GTR	uce-2344
+370	DNA	44	416	1	402	GTR	uce-287
+371	DNA	48	408	0	398	GTR	uce-3778
+WARNING: No parsimony-informative sites in partition uce-3778
+372	DNA	47	444	4	420	GTR	uce-1723
+373	DNA	52	371	0	368	GTR	uce-373
+WARNING: No parsimony-informative sites in partition uce-373
+374	DNA	49	516	3	501	GTR	uce-931
+375	DNA	48	429	2	415	GTR	uce-5029
+376	DNA	52	533	0	524	GTR	uce-6210
+WARNING: No parsimony-informative sites in partition uce-6210
+377	DNA	51	385	1	379	GTR	uce-4334
+378	DNA	47	381	3	368	GTR	uce-3316
+379	DNA	60	501	15	442	GTR	uce-4807
+380	DNA	44	425	4	414	GTR	uce-2592
+381	DNA	46	348	1	335	GTR	uce-5611
+382	DNA	48	385	1	379	GTR	uce-6272
+383	DNA	53	425	3	387	GTR	uce-5836
+384	DNA	50	411	1	404	GTR	uce-1899
+385	DNA	44	367	7	343	GTR	uce-5111
+386	DNA	42	357	2	347	GTR	uce-1040
+387	DNA	51	344	2	330	GTR	uce-1068
+388	DNA	48	303	5	288	GTR	uce-4787
+389	DNA	48	462	4	450	GTR	uce-548
+390	DNA	46	415	2	408	GTR	uce-3446
+391	DNA	40	294	0	291	GTR	uce-7842
+WARNING: No parsimony-informative sites in partition uce-7842
+392	DNA	53	433	3	426	GTR	uce-6505
+393	DNA	49	488	14	453	GTR	uce-4786
+394	DNA	48	530	1	503	GTR	uce-4348
+395	DNA	46	435	2	413	GTR	uce-2569
+396	DNA	46	423	3	410	GTR	uce-7617
+397	DNA	47	447	1	429	GTR	uce-529
+398	DNA	40	389	2	381	GTR	uce-3733
+399	DNA	52	425	7	389	GTR	uce-6754
+400	DNA	41	398	1	390	GTR	uce-1709
+401	DNA	46	517	4	496	GTR	uce-4935
+402	DNA	48	724	3	715	GTR	uce-4010
+403	DNA	49	369	1	360	GTR	uce-105
+404	DNA	47	391	1	382	GTR	uce-7212
+405	DNA	47	422	2	415	GTR	uce-1415
+406	DNA	47	387	4	373	GTR	uce-3336
+407	DNA	40	366	0	357	GTR	uce-6610
+WARNING: No parsimony-informative sites in partition uce-6610
+408	DNA	50	473	3	454	GTR	uce-2933
+409	DNA	38	475	1	454	GTR	uce-5779
+410	DNA	39	255	1	248	GTR	uce-2777
+411	DNA	43	414	1	406	GTR	uce-3730
+412	DNA	54	356	4	338	GTR	uce-1374
+413	DNA	48	371	0	363	GTR	uce-469
+WARNING: No parsimony-informative sites in partition uce-469
+414	DNA	47	478	4	454	GTR	uce-7050
+415	DNA	40	414	3	380	GTR	uce-6618
+416	DNA	44	455	2	437	GTR	uce-424
+417	DNA	45	393	3	384	GTR	uce-6621
+418	DNA	48	441	0	438	GTR	uce-532
+WARNING: No parsimony-informative sites in partition uce-532
+419	DNA	46	382	2	373	GTR	uce-2785
+420	DNA	51	480	7	443	GTR	uce-1008
+421	DNA	45	424	9	401	GTR	uce-3228
+422	DNA	46	410	2	396	GTR	uce-2433
+423	DNA	46	403	2	383	GTR	uce-549
+424	DNA	50	421	7	389	GTR	uce-6189
+425	DNA	47	341	0	333	GTR	uce-1489
+WARNING: No parsimony-informative sites in partition uce-1489
+426	DNA	54	421	6	390	GTR	uce-2407
+427	DNA	51	397	5	372	GTR	uce-7607
+428	DNA	48	417	1	394	GTR	uce-3657
+429	DNA	45	461	2	439	GTR	uce-4099
+430	DNA	49	536	9	517	GTR	uce-5675
+431	DNA	52	414	2	402	GTR	uce-5331
+432	DNA	51	406	0	381	GTR	uce-4339
+WARNING: No parsimony-informative sites in partition uce-4339
+433	DNA	49	348	1	339	GTR	uce-1690
+434	DNA	53	420	1	411	GTR	uce-6311
+435	DNA	50	366	0	354	GTR	uce-5272
+WARNING: No parsimony-informative sites in partition uce-5272
+436	DNA	48	536	10	507	GTR	uce-4179
+437	DNA	38	299	5	286	GTR	uce-5032
+438	DNA	53	424	2	413	GTR	uce-1224
+439	DNA	40	485	1	471	GTR	uce-6414
+440	DNA	52	289	0	280	GTR	uce-4440
+WARNING: No parsimony-informative sites in partition uce-4440
+441	DNA	48	353	2	346	GTR	uce-3891
+442	DNA	46	311	1	304	GTR	uce-111
+443	DNA	51	507	1	498	GTR	uce-7069
+444	DNA	40	491	3	480	GTR	uce-4308
+445	DNA	41	377	3	356	GTR	uce-5534
+446	DNA	41	345	1	308	GTR	uce-3614
+447	DNA	41	378	5	360	GTR	uce-251
+448	DNA	50	469	2	459	GTR	uce-4908
+449	DNA	56	434	4	416	GTR	uce-1299
+450	DNA	43	314	0	306	GTR	uce-6215
+WARNING: No parsimony-informative sites in partition uce-6215
+451	DNA	52	361	2	354	GTR	uce-3484
+452	DNA	47	381	1	374	GTR	uce-7751
+453	DNA	45	455	6	442	GTR	uce-5445
+454	DNA	50	563	2	516	GTR	uce-4661
+455	DNA	50	475	1	466	GTR	uce-646
+456	DNA	51	389	1	376	GTR	uce-2384
+457	DNA	45	396	2	385	GTR	uce-1698
+458	DNA	45	421	1	402	GTR	uce-7308
+459	DNA	37	529	0	519	GTR	uce-6807
+WARNING: No parsimony-informative sites in partition uce-6807
+460	DNA	48	345	3	331	GTR	uce-2563
+461	DNA	46	584	6	555	GTR	uce-1754
+462	DNA	45	449	3	430	GTR	uce-5866
+463	DNA	47	447	4	410	GTR	uce-4990
+464	DNA	43	412	1	402	GTR	uce-4155
+465	DNA	49	401	1	394	GTR	uce-4732
+466	DNA	43	424	1	409	GTR	uce-1297
+467	DNA	48	319	4	302	GTR	uce-7940
+468	DNA	48	394	10	365	GTR	uce-7314
+469	DNA	45	477	1	467	GTR	uce-1313
+470	DNA	44	430	1	422	GTR	uce-2662
+471	DNA	50	444	0	419	GTR	uce-3664
+WARNING: No parsimony-informative sites in partition uce-3664
+472	DNA	45	559	1	551	GTR	uce-799
+473	DNA	48	324	1	320	GTR	uce-828
+474	DNA	47	496	7	477	GTR	uce-6011
+475	DNA	46	353	2	339	GTR	uce-5399
+476	DNA	46	430	1	419	GTR	uce-5947
+477	DNA	44	417	1	377	GTR	uce-7975
+478	DNA	44	456	0	452	GTR	uce-3097
+WARNING: No parsimony-informative sites in partition uce-3097
+479	DNA	42	462	2	456	GTR	uce-2010
+480	DNA	48	332	1	321	GTR	uce-7548
+481	DNA	53	347	1	339	GTR	uce-939
+482	DNA	50	404	5	383	GTR	uce-4212
+483	DNA	52	386	6	368	GTR	uce-3013
+484	DNA	47	406	0	403	GTR	uce-6381
+WARNING: No parsimony-informative sites in partition uce-6381
+485	DNA	36	363	3	345	GTR	uce-6291
+486	DNA	50	424	0	417	GTR	uce-1490
+WARNING: No parsimony-informative sites in partition uce-1490
+487	DNA	39	327	4	315	GTR	uce-1457
+488	DNA	39	485	0	482	GTR	uce-7884
+WARNING: No parsimony-informative sites in partition uce-7884
+489	DNA	42	304	1	294	GTR	uce-3481
+490	DNA	39	279	4	264	GTR	uce-3187
+491	DNA	46	361	2	349	GTR	uce-4094
+492	DNA	49	371	1	361	GTR	uce-7596
+493	DNA	49	398	5	384	GTR	uce-7192
+494	DNA	48	386	2	371	GTR	uce-4947
+495	DNA	50	311	2	295	GTR	uce-6706
+496	DNA	48	382	0	376	GTR	uce-720
+WARNING: No parsimony-informative sites in partition uce-720
+497	DNA	50	377	0	374	GTR	uce-7923
+WARNING: No parsimony-informative sites in partition uce-7923
+498	DNA	45	435	2	425	GTR	uce-5425
+499	DNA	49	513	2	504	GTR	uce-2539
+500	DNA	50	443	0	428	GTR	uce-7817
+WARNING: No parsimony-informative sites in partition uce-7817
+501	DNA	46	503	2	435	GTR	uce-4856
+502	DNA	50	314	2	309	GTR	uce-3200
+503	DNA	49	435	3	425	GTR	uce-2851
+504	DNA	41	463	3	453	GTR	uce-7063
+505	DNA	47	347	5	332	GTR	uce-7491
+506	DNA	36	601	1	591	GTR	uce-246
+507	DNA	41	472	0	468	GTR	uce-326
+WARNING: No parsimony-informative sites in partition uce-326
+508	DNA	45	469	0	458	GTR	uce-1336
+WARNING: No parsimony-informative sites in partition uce-1336
+509	DNA	41	487	0	480	GTR	uce-288
+WARNING: No parsimony-informative sites in partition uce-288
+510	DNA	51	462	3	444	GTR	uce-5497
+511	DNA	49	402	3	384	GTR	uce-3071
+512	DNA	52	429	1	418	GTR	uce-4024
+513	DNA	46	418	1	412	GTR	uce-6946
+514	DNA	47	484	1	466	GTR	uce-5494
+515	DNA	51	409	0	398	GTR	uce-848
+WARNING: No parsimony-informative sites in partition uce-848
+516	DNA	50	456	2	438	GTR	uce-6942
+517	DNA	58	337	3	324	GTR	uce-5473
+518	DNA	51	265	0	265	GTR	uce-3427
+WARNING: No variant sites in partition uce-3427
+519	DNA	54	446	0	429	GTR	uce-1633
+WARNING: No parsimony-informative sites in partition uce-1633
+520	DNA	47	397	0	388	GTR	uce-1339
+WARNING: No parsimony-informative sites in partition uce-1339
+521	DNA	47	400	1	385	GTR	uce-3799
+522	DNA	47	281	0	272	GTR	uce-3158
+WARNING: No parsimony-informative sites in partition uce-3158
+523	DNA	52	430	3	413	GTR	uce-4325
+524	DNA	50	458	0	453	GTR	uce-4851
+WARNING: No parsimony-informative sites in partition uce-4851
+525	DNA	44	472	0	435	GTR	uce-149
+WARNING: No parsimony-informative sites in partition uce-149
+526	DNA	37	297	1	291	GTR	uce-7949
+527	DNA	54	414	1	399	GTR	uce-1986
+528	DNA	49	408	2	400	GTR	uce-2282
+529	DNA	49	576	22	461	GTR	uce-4452
+530	DNA	43	368	0	359	GTR	uce-4456
+WARNING: No parsimony-informative sites in partition uce-4456
+531	DNA	49	490	3	478	GTR	uce-683
+532	DNA	55	440	1	430	GTR	uce-1713
+533	DNA	44	304	2	290	GTR	uce-2897
+534	DNA	46	303	4	291	GTR	uce-1967
+535	DNA	41	266	0	263	GTR	uce-5395
+WARNING: No parsimony-informative sites in partition uce-5395
+536	DNA	42	446	3	435	GTR	uce-7816
+537	DNA	53	433	1	421	GTR	uce-6714
+538	DNA	51	493	0	491	GTR	uce-16
+WARNING: No parsimony-informative sites in partition uce-16
+539	DNA	41	344	2	327	GTR	uce-4968
+540	DNA	40	278	3	264	GTR	uce-3183
+541	DNA	45	426	7	415	GTR	uce-6003
+542	DNA	50	469	1	459	GTR	uce-52
+543	DNA	55	397	3	384	GTR	uce-1867
+544	DNA	46	305	0	292	GTR	uce-7792
+WARNING: No parsimony-informative sites in partition uce-7792
+545	DNA	36	285	0	279	GTR	uce-420
+WARNING: No parsimony-informative sites in partition uce-420
+546	DNA	51	415	3	399	GTR	uce-3440
+547	DNA	53	427	3	415	GTR	uce-3348
+548	DNA	40	296	1	281	GTR	uce-5178
+549	DNA	52	376	2	371	GTR	uce-3027
+550	DNA	46	329	0	321	GTR	uce-3596
+WARNING: No parsimony-informative sites in partition uce-3596
+551	DNA	52	424	6	413	GTR	uce-5766
+552	DNA	51	492	1	445	GTR	uce-1268
+553	DNA	37	301	1	294	GTR	uce-6458
+554	DNA	46	422	1	413	GTR	uce-1631
+555	DNA	52	645	15	567	GTR	uce-6088
+556	DNA	48	372	0	363	GTR	uce-1539
+WARNING: No parsimony-informative sites in partition uce-1539
+557	DNA	48	385	4	367	GTR	uce-4591
+558	DNA	49	342	3	326	GTR	uce-3854
+559	DNA	44	314	0	307	GTR	uce-2987
+WARNING: No parsimony-informative sites in partition uce-2987
+560	DNA	47	329	1	321	GTR	uce-5578
+561	DNA	38	413	1	406	GTR	uce-7028
+562	DNA	49	422	1	391	GTR	uce-7412
+563	DNA	47	298	1	290	GTR	uce-4660
+564	DNA	42	373	5	357	GTR	uce-7032
+565	DNA	43	272	1	265	GTR	uce-6487
+566	DNA	49	483	6	462	GTR	uce-7823
+567	DNA	47	447	2	434	GTR	uce-526
+568	DNA	44	325	3	310	GTR	uce-7529
+569	DNA	46	584	3	570	GTR	uce-881
+570	DNA	53	398	4	382	GTR	uce-3371
+571	DNA	37	266	2	256	GTR	uce-6021
+572	DNA	50	540	3	520	GTR	uce-7836
+573	DNA	46	443	5	399	GTR	uce-7136
+574	DNA	38	270	1	262	GTR	uce-4769
+575	DNA	48	413	4	397	GTR	uce-2864
+576	DNA	40	424	1	415	GTR	uce-7886
+577	DNA	41	403	4	387	GTR	uce-1965
+578	DNA	41	284	2	273	GTR	uce-2163
+579	DNA	37	504	0	500	GTR	uce-2066
+WARNING: No parsimony-informative sites in partition uce-2066
+580	DNA	52	478	1	468	GTR	uce-2865
+581	DNA	50	385	2	371	GTR	uce-2917
+582	DNA	49	396	3	376	GTR	uce-6534
+583	DNA	44	467	3	459	GTR	uce-7804
+584	DNA	50	339	3	326	GTR	uce-6009
+585	DNA	45	409	1	402	GTR	uce-5978
+586	DNA	48	449	3	424	GTR	uce-4535
+587	DNA	52	355	0	348	GTR	uce-5407
+WARNING: No parsimony-informative sites in partition uce-5407
+588	DNA	50	482	1	466	GTR	uce-4531
+589	DNA	46	358	3	344	GTR	uce-4402
+590	DNA	50	358	2	348	GTR	uce-3628
+591	DNA	48	485	6	457	GTR	uce-6438
+592	DNA	49	418	5	382	GTR	uce-517
+593	DNA	45	455	6	439	GTR	uce-7892
+594	DNA	38	302	0	296	GTR	uce-6430
+WARNING: No parsimony-informative sites in partition uce-6430
+595	DNA	50	364	1	349	GTR	uce-7004
+596	DNA	49	400	0	393	GTR	uce-1579
+WARNING: No parsimony-informative sites in partition uce-1579
+597	DNA	52	443	2	431	GTR	uce-74
+598	DNA	41	455	10	411	GTR	uce-4519
+599	DNA	43	373	3	357	GTR	uce-2442
+600	DNA	47	333	0	327	GTR	uce-4089
+WARNING: No parsimony-informative sites in partition uce-4089
+601	DNA	46	461	0	457	GTR	uce-3499
+WARNING: No parsimony-informative sites in partition uce-3499
+602	DNA	53	421	2	396	GTR	uce-7920
+603	DNA	53	346	1	339	GTR	uce-1979
+604	DNA	48	518	5	495	GTR	uce-2612
+605	DNA	44	321	1	316	GTR	uce-7161
+606	DNA	54	465	2	419	GTR	uce-7807
+607	DNA	53	413	5	378	GTR	uce-7690
+608	DNA	48	423	2	403	GTR	uce-886
+609	DNA	40	528	6	502	GTR	uce-902
+610	DNA	51	487	4	455	GTR	uce-5090
+611	DNA	49	338	1	331	GTR	uce-7494
+612	DNA	39	535	0	532	GTR	uce-678
+WARNING: No parsimony-informative sites in partition uce-678
+613	DNA	46	412	1	405	GTR	uce-7292
+614	DNA	51	459	1	441	GTR	uce-1933
+615	DNA	46	516	8	488	GTR	uce-4003
+616	DNA	50	404	2	397	GTR	uce-5091
+617	DNA	44	396	11	336	GTR	uce-867
+618	DNA	39	320	0	318	GTR	uce-851
+WARNING: No parsimony-informative sites in partition uce-851
+619	DNA	44	311	2	297	GTR	uce-3871
+620	DNA	43	388	1	371	GTR	uce-1889
+621	DNA	49	449	2	443	GTR	uce-1231
+622	DNA	47	485	0	479	GTR	uce-6669
+WARNING: No parsimony-informative sites in partition uce-6669
+623	DNA	48	427	2	422	GTR	uce-1085
+624	DNA	43	408	2	394	GTR	uce-7372
+625	DNA	50	354	2	345	GTR	uce-1535
+626	DNA	49	423	2	415	GTR	uce-5005
+627	DNA	44	306	3	300	GTR	uce-7201
+628	DNA	40	385	1	375	GTR	uce-7507
+629	DNA	49	369	0	360	GTR	uce-6299
+WARNING: No parsimony-informative sites in partition uce-6299
+630	DNA	49	322	0	315	GTR	uce-5405
+WARNING: No parsimony-informative sites in partition uce-5405
+631	DNA	50	419	1	388	GTR	uce-5377
+632	DNA	41	370	1	360	GTR	uce-490
+633	DNA	53	469	3	464	GTR	uce-3114
+634	DNA	48	432	0	426	GTR	uce-333
+WARNING: No parsimony-informative sites in partition uce-333
+635	DNA	50	396	1	386	GTR	uce-5102
+636	DNA	54	406	1	399	GTR	uce-3248
+637	DNA	44	382	3	353	GTR	uce-6667
+638	DNA	44	379	0	374	GTR	uce-4790
+WARNING: No parsimony-informative sites in partition uce-4790
+639	DNA	38	333	4	319	GTR	uce-6543
+640	DNA	49	355	2	333	GTR	uce-3847
+641	DNA	51	345	1	335	GTR	uce-8029
+642	DNA	43	378	0	374	GTR	uce-4688
+WARNING: No parsimony-informative sites in partition uce-4688
+643	DNA	47	425	4	403	GTR	uce-7847
+644	DNA	42	400	2	378	GTR	uce-6239
+645	DNA	49	416	1	406	GTR	uce-2874
+646	DNA	46	404	0	400	GTR	uce-230
+WARNING: No parsimony-informative sites in partition uce-230
+647	DNA	52	442	5	417	GTR	uce-3772
+648	DNA	47	399	2	387	GTR	uce-238
+649	DNA	53	343	1	327	GTR	uce-750
+650	DNA	43	414	2	403	GTR	uce-1389
+651	DNA	44	392	4	365	GTR	uce-2526
+652	DNA	50	354	0	347	GTR	uce-7799
+WARNING: No parsimony-informative sites in partition uce-7799
+653	DNA	47	409	2	384	GTR	uce-2540
+654	DNA	48	410	5	395	GTR	uce-5246
+655	DNA	48	411	0	401	GTR	uce-458
+WARNING: No parsimony-informative sites in partition uce-458
+656	DNA	46	484	1	472	GTR	uce-5916
+657	DNA	48	396	5	356	GTR	uce-5068
+658	DNA	44	349	0	345	GTR	uce-1149
+WARNING: No parsimony-informative sites in partition uce-1149
+659	DNA	46	420	12	359	GTR	uce-7064
+660	DNA	47	459	2	452	GTR	uce-4261
+661	DNA	37	422	4	407	GTR	uce-4792
+662	DNA	51	494	1	472	GTR	uce-7707
+663	DNA	52	400	4	374	GTR	uce-2861
+664	DNA	50	356	1	349	GTR	uce-7843
+665	DNA	45	431	2	421	GTR	uce-5022
+666	DNA	46	353	8	332	GTR	uce-6080
+667	DNA	51	294	2	281	GTR	uce-6739
+668	DNA	51	375	1	361	GTR	uce-8036
+669	DNA	51	422	1	416	GTR	uce-3264
+670	DNA	50	389	5	371	GTR	uce-3715
+671	DNA	53	548	3	540	GTR	uce-6340
+672	DNA	43	513	2	475	GTR	uce-1886
+673	DNA	47	430	10	401	GTR	uce-6566
+674	DNA	52	394	0	386	GTR	uce-2400
+WARNING: No parsimony-informative sites in partition uce-2400
+675	DNA	51	402	12	363	GTR	uce-5943
+676	DNA	48	388	0	385	GTR	uce-263
+WARNING: No parsimony-informative sites in partition uce-263
+677	DNA	49	413	0	407	GTR	uce-381
+WARNING: No parsimony-informative sites in partition uce-381
+678	DNA	43	474	3	464	GTR	uce-19
+679	DNA	52	417	0	408	GTR	uce-7081
+WARNING: No parsimony-informative sites in partition uce-7081
+680	DNA	38	327	0	319	GTR	uce-1141
+WARNING: No parsimony-informative sites in partition uce-1141
+681	DNA	55	403	4	388	GTR	uce-1963
+682	DNA	41	341	0	339	GTR	uce-7592
+WARNING: No parsimony-informative sites in partition uce-7592
+683	DNA	39	345	1	331	GTR	uce-3093
+684	DNA	53	424	0	415	GTR	uce-7415
+WARNING: No parsimony-informative sites in partition uce-7415
+685	DNA	52	410	10	371	GTR	uce-4574
+686	DNA	44	469	1	460	GTR	uce-889
+687	DNA	46	419	5	398	GTR	uce-6569
+688	DNA	42	367	0	363	GTR	uce-3239
+WARNING: No parsimony-informative sites in partition uce-3239
+689	DNA	43	360	3	338	GTR	uce-6568
+690	DNA	50	370	2	364	GTR	uce-253
+691	DNA	50	374	1	368	GTR	uce-6604
+692	DNA	51	324	2	317	GTR	uce-2070
+693	DNA	41	436	3	426	GTR	uce-5980
+694	DNA	50	419	2	411	GTR	uce-4264
+695	DNA	41	367	0	361	GTR	uce-5856
+WARNING: No parsimony-informative sites in partition uce-5856
+696	DNA	44	431	7	397	GTR	uce-2953
+697	DNA	48	453	0	446	GTR	uce-1768
+WARNING: No parsimony-informative sites in partition uce-1768
+698	DNA	45	449	5	406	GTR	uce-3337
+699	DNA	48	370	0	368	GTR	uce-802
+WARNING: No parsimony-informative sites in partition uce-802
+700	DNA	52	354	14	296	GTR	uce-4466
+701	DNA	55	361	3	348	GTR	uce-185
+702	DNA	37	341	5	326	GTR	uce-6688
+703	DNA	52	433	0	419	GTR	uce-3303
+WARNING: No parsimony-informative sites in partition uce-3303
+704	DNA	52	299	1	297	GTR	uce-934
+705	DNA	43	422	2	401	GTR	uce-1823
+706	DNA	43	454	1	446	GTR	uce-3584
+707	DNA	45	392	0	386	GTR	uce-2693
+WARNING: No parsimony-informative sites in partition uce-2693
+708	DNA	58	394	2	383	GTR	uce-1746
+709	DNA	56	388	1	380	GTR	uce-392
+710	DNA	48	468	7	436	GTR	uce-5397
+711	DNA	51	388	0	384	GTR	uce-2131
+WARNING: No parsimony-informative sites in partition uce-2131
+712	DNA	45	444	0	436	GTR	uce-7721
+WARNING: No parsimony-informative sites in partition uce-7721
+713	DNA	47	430	0	422	GTR	uce-4045
+WARNING: No parsimony-informative sites in partition uce-4045
+714	DNA	49	495	4	466	GTR	uce-5498
+715	DNA	53	367	3	357	GTR	uce-3469
+716	DNA	43	308	0	302	GTR	uce-5783
+WARNING: No parsimony-informative sites in partition uce-5783
+717	DNA	39	314	2	308	GTR	uce-132
+718	DNA	36	339	1	302	GTR	uce-2365
+719	DNA	51	400	0	397	GTR	uce-291
+WARNING: No parsimony-informative sites in partition uce-291
+720	DNA	46	423	6	403	GTR	uce-4184
+721	DNA	48	361	3	344	GTR	uce-6591
+722	DNA	46	367	1	357	GTR	uce-3426
+723	DNA	48	367	2	357	GTR	uce-6698
+724	DNA	49	380	0	375	GTR	uce-1307
+WARNING: No parsimony-informative sites in partition uce-1307
+725	DNA	47	316	0	308	GTR	uce-1029
+WARNING: No parsimony-informative sites in partition uce-1029
+726	DNA	50	450	3	440	GTR	uce-7095
+727	DNA	48	486	0	478	GTR	uce-4562
+WARNING: No parsimony-informative sites in partition uce-4562
+728	DNA	52	337	0	334	GTR	uce-1849
+WARNING: No parsimony-informative sites in partition uce-1849
+729	DNA	51	466	1	457	GTR	uce-4293
+730	DNA	44	333	3	328	GTR	uce-3095
+731	DNA	53	429	0	417	GTR	uce-7909
+WARNING: No parsimony-informative sites in partition uce-7909
+732	DNA	52	378	0	371	GTR	uce-3324
+WARNING: No parsimony-informative sites in partition uce-3324
+733	DNA	38	303	1	288	GTR	uce-1468
+734	DNA	44	352	2	342	GTR	uce-4729
+735	DNA	39	591	12	560	GTR	uce-1970
+736	DNA	44	419	2	397	GTR	uce-4110
+737	DNA	44	338	0	334	GTR	uce-6270
+WARNING: No parsimony-informative sites in partition uce-6270
+738	DNA	52	412	1	406	GTR	uce-6625
+739	DNA	46	375	3	365	GTR	uce-2545
+740	DNA	55	364	2	346	GTR	uce-5077
+741	DNA	46	448	2	429	GTR	uce-627
+742	DNA	55	491	0	483	GTR	uce-5709
+WARNING: No parsimony-informative sites in partition uce-5709
+743	DNA	54	377	1	371	GTR	uce-4643
+744	DNA	53	438	2	425	GTR	uce-1004
+745	DNA	48	311	0	309	GTR	uce-4222
+WARNING: No parsimony-informative sites in partition uce-4222
+746	DNA	41	445	0	435	GTR	uce-2605
+WARNING: No parsimony-informative sites in partition uce-2605
+747	DNA	44	412	1	406	GTR	uce-850
+748	DNA	52	629	3	587	GTR	uce-7019
+749	DNA	48	411	0	409	GTR	uce-4384
+WARNING: No parsimony-informative sites in partition uce-4384
+750	DNA	37	321	1	313	GTR	uce-1969
+751	DNA	47	363	2	343	GTR	uce-7715
+752	DNA	41	414	4	399	GTR	uce-3933
+753	DNA	44	365	1	356	GTR	uce-5924
+754	DNA	53	373	2	362	GTR	uce-360
+755	DNA	52	426	5	403	GTR	uce-7985
+756	DNA	49	462	5	450	GTR	uce-370
+757	DNA	41	349	0	339	GTR	uce-2157
+WARNING: No parsimony-informative sites in partition uce-2157
+758	DNA	42	410	0	406	GTR	uce-5551
+WARNING: No parsimony-informative sites in partition uce-5551
+759	DNA	42	282	1	281	GTR	uce-3423
+760	DNA	55	371	0	368	GTR	uce-1941
+WARNING: No parsimony-informative sites in partition uce-1941
+761	DNA	51	386	11	318	GTR	uce-171
+762	DNA	51	294	0	282	GTR	uce-6791
+WARNING: No parsimony-informative sites in partition uce-6791
+763	DNA	51	408	2	397	GTR	uce-2489
+764	DNA	47	403	4	373	GTR	uce-142
+765	DNA	47	314	0	304	GTR	uce-6152
+WARNING: No parsimony-informative sites in partition uce-6152
+766	DNA	46	453	2	442	GTR	uce-274
+767	DNA	53	456	3	443	GTR	uce-383
+768	DNA	36	317	0	309	GTR	uce-6729
+WARNING: No parsimony-informative sites in partition uce-6729
+769	DNA	48	457	6	431	GTR	uce-6245
+770	DNA	46	262	3	254	GTR	uce-1507
+771	DNA	55	418	2	402	GTR	uce-2671
+772	DNA	48	410	1	399	GTR	uce-5369
+773	DNA	42	361	2	347	GTR	uce-5630
+774	DNA	49	490	1	484	GTR	uce-3055
+775	DNA	50	422	5	406	GTR	uce-5290
+776	DNA	37	418	1	405	GTR	uce-5723
+777	DNA	44	442	2	435	GTR	uce-7304
+778	DNA	53	357	2	343	GTR	uce-2276
+779	DNA	48	404	1	391	GTR	uce-4477
+780	DNA	49	428	1	423	GTR	uce-1787
+781	DNA	48	440	5	415	GTR	uce-5193
+782	DNA	48	940	2	934	GTR	uce-7684
+783	DNA	46	431	1	417	GTR	uce-2676
+784	DNA	52	514	1	501	GTR	uce-794
+785	DNA	49	425	1	419	GTR	uce-1858
+786	DNA	41	397	0	386	GTR	uce-5321
+WARNING: No parsimony-informative sites in partition uce-5321
+787	DNA	36	598	3	583	GTR	uce-1964
+788	DNA	50	517	0	508	GTR	uce-1172
+WARNING: No parsimony-informative sites in partition uce-1172
+789	DNA	45	334	2	322	GTR	uce-4299
+790	DNA	49	309	6	286	GTR	uce-3605
+791	DNA	38	282	2	278	GTR	uce-6313
+792	DNA	48	331	3	319	GTR	uce-6167
+793	DNA	44	318	0	315	GTR	uce-3830
+WARNING: No parsimony-informative sites in partition uce-3830
+794	DNA	44	411	1	405	GTR	uce-5118
+795	DNA	54	421	0	410	GTR	uce-6806
+WARNING: No parsimony-informative sites in partition uce-6806
+796	DNA	45	496	2	483	GTR	uce-7219
+797	DNA	55	583	2	567	GTR	uce-2701
+798	DNA	48	379	0	373	GTR	uce-7318
+WARNING: No parsimony-informative sites in partition uce-7318
+799	DNA	47	472	1	465	GTR	uce-4327
+800	DNA	48	417	0	398	GTR	uce-2740
+WARNING: No parsimony-informative sites in partition uce-2740
+801	DNA	47	534	1	518	GTR	uce-553
+802	DNA	44	383	2	373	GTR	uce-648
+803	DNA	45	315	1	308	GTR	uce-6676
+804	DNA	51	360	3	346	GTR	uce-7636
+805	DNA	41	289	0	284	GTR	uce-1757
+WARNING: No parsimony-informative sites in partition uce-1757
+806	DNA	46	391	1	379	GTR	uce-5829
+807	DNA	47	321	3	313	GTR	uce-5156
+808	DNA	49	469	5	450	GTR	uce-7637
+809	DNA	50	448	9	421	GTR	uce-7237
+810	DNA	51	363	5	340	GTR	uce-4918
+811	DNA	51	385	1	376	GTR	uce-5208
+812	DNA	46	412	1	406	GTR	uce-1804
+813	DNA	49	374	1	368	GTR	uce-1564
+814	DNA	48	453	3	438	GTR	uce-7727
+815	DNA	49	479	3	463	GTR	uce-601
+816	DNA	52	440	1	428	GTR	uce-2997
+817	DNA	49	311	3	304	GTR	uce-3043
+818	DNA	43	458	0	450	GTR	uce-353
+WARNING: No parsimony-informative sites in partition uce-353
+819	DNA	47	377	6	360	GTR	uce-4511
+820	DNA	54	427	5	417	GTR	uce-2383
+821	DNA	51	393	2	383	GTR	uce-2397
+822	DNA	43	306	0	298	GTR	uce-2684
+WARNING: No parsimony-informative sites in partition uce-2684
+823	DNA	47	320	0	318	GTR	uce-3770
+WARNING: No parsimony-informative sites in partition uce-3770
+824	DNA	39	502	1	491	GTR	uce-5024
+825	DNA	41	518	0	514	GTR	uce-967
+WARNING: No parsimony-informative sites in partition uce-967
+826	DNA	48	391	0	384	GTR	uce-3425
+WARNING: No parsimony-informative sites in partition uce-3425
+827	DNA	41	286	4	267	GTR	uce-774
+828	DNA	44	396	1	379	GTR	uce-7871
+829	DNA	45	408	1	399	GTR	uce-1708
+830	DNA	43	364	1	362	GTR	uce-1394
+831	DNA	45	369	5	354	GTR	uce-4917
+832	DNA	43	310	0	304	GTR	uce-6012
+WARNING: No parsimony-informative sites in partition uce-6012
+833	DNA	46	378	2	360	GTR	uce-93
+834	DNA	52	337	0	330	GTR	uce-3294
+WARNING: No parsimony-informative sites in partition uce-3294
+835	DNA	57	432	5	411	GTR	uce-6693
+836	DNA	42	437	2	423	GTR	uce-1845
+837	DNA	54	498	3	489	GTR	uce-134
+838	DNA	48	393	3	381	GTR	uce-1064
+839	DNA	47	363	0	358	GTR	uce-1869
+WARNING: No parsimony-informative sites in partition uce-1869
+840	DNA	37	473	3	462	GTR	uce-790
+841	DNA	49	421	0	413	GTR	uce-1055
+WARNING: No parsimony-informative sites in partition uce-1055
+842	DNA	54	392	2	374	GTR	uce-7646
+843	DNA	55	414	4	389	GTR	uce-5076
+844	DNA	47	397	0	389	GTR	uce-7227
+WARNING: No parsimony-informative sites in partition uce-7227
+845	DNA	46	466	12	422	GTR	uce-6704
+846	DNA	44	360	4	347	GTR	uce-7350
+847	DNA	55	368	3	354	GTR	uce-2299
+848	DNA	47	529	2	510	GTR	uce-3287
+849	DNA	51	414	2	409	GTR	uce-7148
+850	DNA	49	358	0	344	GTR	uce-589
+WARNING: No parsimony-informative sites in partition uce-589
+851	DNA	51	453	5	415	GTR	uce-4122
+852	DNA	45	407	0	389	GTR	uce-2799
+WARNING: No parsimony-informative sites in partition uce-2799
+853	DNA	41	552	1	538	GTR	uce-5106
+854	DNA	54	421	3	406	GTR	uce-2399
+855	DNA	53	365	1	354	GTR	uce-6950
+856	DNA	37	484	0	482	GTR	uce-1048
+WARNING: No parsimony-informative sites in partition uce-1048
+857	DNA	48	436	1	432	GTR	uce-1630
+858	DNA	45	339	6	304	GTR	uce-675
+859	DNA	40	325	1	316	GTR	uce-2094
+860	DNA	52	514	0	502	GTR	uce-1800
+WARNING: No parsimony-informative sites in partition uce-1800
+861	DNA	51	407	0	399	GTR	uce-7748
+WARNING: No parsimony-informative sites in partition uce-7748
+862	DNA	48	410	1	404	GTR	uce-7654
+863	DNA	45	522	6	491	GTR	uce-4027
+864	DNA	49	400	4	363	GTR	uce-4446
+865	DNA	52	431	2	418	GTR	uce-1378
+866	DNA	48	326	6	307	GTR	uce-7622
+867	DNA	42	404	0	397	GTR	uce-4952
+WARNING: No parsimony-informative sites in partition uce-4952
+868	DNA	47	437	2	425	GTR	uce-744
+869	DNA	44	331	2	317	GTR	uce-4900
+870	DNA	47	375	3	365	GTR	uce-6347
+871	DNA	49	413	1	407	GTR	uce-1420
+872	DNA	40	296	1	287	GTR	uce-2371
+873	DNA	47	365	1	360	GTR	uce-4174
+874	DNA	44	301	3	282	GTR	uce-6959
+875	DNA	45	407	1	399	GTR	uce-7352
+876	DNA	53	336	6	314	GTR	uce-5415
+877	DNA	47	336	1	325	GTR	uce-5683
+878	DNA	49	398	2	381	GTR	uce-5371
+879	DNA	50	345	12	317	GTR	uce-3631
+880	DNA	48	314	0	304	GTR	uce-66
+WARNING: No parsimony-informative sites in partition uce-66
+881	DNA	46	372	1	365	GTR	uce-905
+882	DNA	46	346	1	338	GTR	uce-4904
+883	DNA	47	411	1	405	GTR	uce-7704
+884	DNA	43	525	3	515	GTR	uce-2104
+885	DNA	51	422	1	412	GTR	uce-7541
+886	DNA	46	496	9	463	GTR	uce-4828
+887	DNA	36	321	1	318	GTR	uce-3814
+888	DNA	43	241	1	229	GTR	uce-6418
+889	DNA	53	356	8	338	GTR	uce-6598
+890	DNA	48	471	1	461	GTR	uce-7459
+891	DNA	49	434	1	422	GTR	uce-7053
+892	DNA	45	449	0	439	GTR	uce-5119
+WARNING: No parsimony-informative sites in partition uce-5119
+893	DNA	36	404	3	383	GTR	uce-3345
+894	DNA	47	470	4	425	GTR	uce-6047
+895	DNA	44	539	13	476	GTR	uce-3775
+896	DNA	43	457	1	441	GTR	uce-2370
+897	DNA	50	419	1	411	GTR	uce-1913
+898	DNA	43	460	5	440	GTR	uce-6020
+899	DNA	46	505	6	471	GTR	uce-1163
+900	DNA	51	349	3	341	GTR	uce-1500
+901	DNA	40	313	0	308	GTR	uce-6434
+WARNING: No parsimony-informative sites in partition uce-6434
+902	DNA	55	451	1	441	GTR	uce-4885
+903	DNA	47	369	5	348	GTR	uce-4881
+904	DNA	48	394	0	389	GTR	uce-6486
+WARNING: No parsimony-informative sites in partition uce-6486
+905	DNA	55	427	0	425	GTR	uce-953
+WARNING: No parsimony-informative sites in partition uce-953
+906	DNA	51	432	2	419	GTR	uce-681
+907	DNA	52	433	0	390	GTR	uce-6342
+WARNING: No parsimony-informative sites in partition uce-6342
+908	DNA	41	304	2	296	GTR	uce-7443
+909	DNA	36	357	9	338	GTR	uce-5974
+910	DNA	38	405	0	397	GTR	uce-1119
+WARNING: No parsimony-informative sites in partition uce-1119
+911	DNA	51	370	1	352	GTR	uce-2565
+912	DNA	46	367	2	348	GTR	uce-7994
+913	DNA	56	452	1	445	GTR	uce-883
+914	DNA	48	352	4	336	GTR	uce-3929
+915	DNA	47	383	0	379	GTR	uce-2356
+WARNING: No parsimony-informative sites in partition uce-2356
+916	DNA	47	410	2	400	GTR	uce-4619
+917	DNA	46	439	1	433	GTR	uce-1742
+918	DNA	43	598	1	588	GTR	uce-396
+919	DNA	47	447	0	445	GTR	uce-5313
+WARNING: No parsimony-informative sites in partition uce-5313
+920	DNA	47	440	6	414	GTR	uce-7362
+921	DNA	53	447	1	439	GTR	uce-3497
+922	DNA	39	275	0	271	GTR	uce-6585
+WARNING: No parsimony-informative sites in partition uce-6585
+923	DNA	47	435	3	414	GTR	uce-6757
+924	DNA	48	321	9	295	GTR	uce-5220
+925	DNA	47	401	2	377	GTR	uce-7984
+926	DNA	37	281	3	273	GTR	uce-6018
+927	DNA	51	530	9	468	GTR	uce-1107
+928	DNA	45	411	8	381	GTR	uce-5806
+929	DNA	46	372	2	364	GTR	uce-7420
+930	DNA	43	442	4	401	GTR	uce-5936
+931	DNA	50	694	0	678	GTR	uce-4711
+WARNING: No parsimony-informative sites in partition uce-4711
+932	DNA	49	349	5	330	GTR	uce-8044
+933	DNA	50	466	1	452	GTR	uce-7253
+934	DNA	52	387	6	365	GTR	uce-5697
+935	DNA	49	404	5	359	GTR	uce-7067
+936	DNA	48	351	2	336	GTR	uce-398
+937	DNA	51	332	4	319	GTR	uce-1948
+938	DNA	52	466	12	428	GTR	uce-3099
+939	DNA	47	391	5	371	GTR	uce-7484
+940	DNA	39	309	5	302	GTR	uce-7929
+941	DNA	46	398	2	382	GTR	uce-7876
+942	DNA	45	498	0	487	GTR	uce-772
+WARNING: No parsimony-informative sites in partition uce-772
+943	DNA	45	275	1	272	GTR	uce-5580
+944	DNA	44	399	1	393	GTR	uce-2127
+945	DNA	46	451	1	446	GTR	uce-898
+946	DNA	49	416	0	412	GTR	uce-5528
+WARNING: No parsimony-informative sites in partition uce-5528
+947	DNA	45	402	8	363	GTR	uce-3529
+948	DNA	47	403	3	370	GTR	uce-7691
+949	DNA	48	432	3	422	GTR	uce-7550
+950	DNA	54	398	8	360	GTR	uce-7357
+951	DNA	39	445	0	434	GTR	uce-1830
+WARNING: No parsimony-informative sites in partition uce-1830
+952	DNA	37	281	3	274	GTR	uce-7184
+953	DNA	49	338	2	325	GTR	uce-4485
+954	DNA	51	472	3	447	GTR	uce-3571
+955	DNA	47	392	5	377	GTR	uce-3242
+956	DNA	46	440	1	423	GTR	uce-3246
+957	DNA	42	431	10	404	GTR	uce-1230
+958	DNA	40	363	1	352	GTR	uce-7648
+959	DNA	49	299	9	277	GTR	uce-2924
+960	DNA	45	308	1	297	GTR	uce-2045
+961	DNA	50	409	2	400	GTR	uce-2487
+962	DNA	40	318	0	312	GTR	uce-1972
+WARNING: No parsimony-informative sites in partition uce-1972
+963	DNA	54	315	0	309	GTR	uce-5704
+WARNING: No parsimony-informative sites in partition uce-5704
+964	DNA	49	314	2	304	GTR	uce-7098
+965	DNA	50	337	1	333	GTR	uce-5039
+966	DNA	44	424	2	409	GTR	uce-2103
+967	DNA	44	386	1	378	GTR	uce-6823
+968	DNA	48	440	4	419	GTR	uce-7542
+969	DNA	44	527	0	519	GTR	uce-1110
+WARNING: No parsimony-informative sites in partition uce-1110
+970	DNA	50	405	0	394	GTR	uce-6183
+WARNING: No parsimony-informative sites in partition uce-6183
+971	DNA	42	387	3	367	GTR	uce-2830
+972	DNA	49	374	3	359	GTR	uce-1334
+973	DNA	44	469	7	440	GTR	uce-6372
+974	DNA	42	496	1	484	GTR	uce-2647
+975	DNA	49	323	1	315	GTR	uce-3354
+976	DNA	52	430	0	426	GTR	uce-400
+WARNING: No parsimony-informative sites in partition uce-400
+977	DNA	41	358	1	335	GTR	uce-3234
+978	DNA	37	283	3	273	GTR	uce-7686
+979	DNA	51	427	0	423	GTR	uce-1354
+WARNING: No parsimony-informative sites in partition uce-1354
+980	DNA	50	441	3	425	GTR	uce-5510
+981	DNA	52	397	0	387	GTR	uce-4302
+WARNING: No parsimony-informative sites in partition uce-4302
+982	DNA	49	438	0	430	GTR	uce-1366
+WARNING: No parsimony-informative sites in partition uce-1366
+983	DNA	50	400	1	390	GTR	uce-1113
+984	DNA	45	327	3	318	GTR	uce-4401
+985	DNA	45	424	4	402	GTR	uce-5269
+986	DNA	41	456	0	453	GTR	uce-7854
+WARNING: No parsimony-informative sites in partition uce-7854
+987	DNA	53	370	2	362	GTR	uce-2625
+988	DNA	41	424	3	371	GTR	uce-4820
+989	DNA	43	399	2	378	GTR	uce-6454
+990	DNA	52	472	1	453	GTR	uce-2849
+991	DNA	45	352	3	323	GTR	uce-2797
+992	DNA	48	424	1	418	GTR	uce-4862
+993	DNA	44	366	4	350	GTR	uce-6955
+994	DNA	47	389	0	358	GTR	uce-6286
+WARNING: No parsimony-informative sites in partition uce-6286
+995	DNA	44	380	1	376	GTR	uce-2376
+996	DNA	47	362	0	356	GTR	uce-4096
+WARNING: No parsimony-informative sites in partition uce-4096
+997	DNA	44	387	1	380	GTR	uce-1581
+998	DNA	39	297	2	286	GTR	uce-3105
+999	DNA	39	286	3	264	GTR	uce-3101
+1000	DNA	53	392	0	392	GTR	uce-1555
+WARNING: No variant sites in partition uce-1555
+1001	DNA	48	348	7	324	GTR	uce-2585
+1002	DNA	38	356	0	352	GTR	uce-2100
+WARNING: No parsimony-informative sites in partition uce-2100
+1003	DNA	57	384	1	349	GTR	uce-2817
+1004	DNA	47	412	0	407	GTR	uce-3913
+WARNING: No parsimony-informative sites in partition uce-3913
+1005	DNA	50	486	2	477	GTR	uce-6478
+1006	DNA	54	439	0	433	GTR	uce-1919
+WARNING: No parsimony-informative sites in partition uce-1919
+1007	DNA	37	295	0	292	GTR	uce-5772
+WARNING: No parsimony-informative sites in partition uce-5772
+1008	DNA	49	370	0	362	GTR	uce-4160
+WARNING: No parsimony-informative sites in partition uce-4160
+1009	DNA	46	415	2	403	GTR	uce-3912
+1010	DNA	49	402	0	391	GTR	uce-1155
+WARNING: No parsimony-informative sites in partition uce-1155
+1011	DNA	39	303	2	295	GTR	uce-3906
+1012	DNA	48	402	4	358	GTR	uce-128
+1013	DNA	40	457	4	432	GTR	uce-3129
+1014	DNA	52	536	4	494	GTR	uce-1865
+1015	DNA	52	443	1	419	GTR	uce-4978
+1016	DNA	45	315	0	311	GTR	uce-5096
+WARNING: No parsimony-informative sites in partition uce-5096
+1017	DNA	39	302	3	293	GTR	uce-2869
+1018	DNA	50	337	1	323	GTR	uce-1193
+1019	DNA	54	385	1	379	GTR	uce-5969
+1020	DNA	45	418	2	406	GTR	uce-663
+1021	DNA	44	340	3	325	GTR	uce-4430
+1022	DNA	50	435	5	410	GTR	uce-5146
+1023	DNA	44	379	3	367	GTR	uce-7263
+1024	DNA	41	312	2	300	GTR	uce-545
+1025	DNA	56	420	2	408	GTR	uce-3199
+1026	DNA	54	387	0	378	GTR	uce-3674
+WARNING: No parsimony-informative sites in partition uce-3674
+1027	DNA	50	413	0	404	GTR	uce-1035
+WARNING: No parsimony-informative sites in partition uce-1035
+1028	DNA	43	457	7	441	GTR	uce-6953
+1029	DNA	46	409	0	404	GTR	uce-2515
+WARNING: No parsimony-informative sites in partition uce-2515
+1030	DNA	53	447	0	444	GTR	uce-1520
+WARNING: No parsimony-informative sites in partition uce-1520
+1031	DNA	40	418	1	411	GTR	uce-4902
+1032	DNA	50	387	1	373	GTR	uce-418
+1033	DNA	49	321	0	307	GTR	uce-2546
+WARNING: No parsimony-informative sites in partition uce-2546
+1034	DNA	48	458	4	431	GTR	uce-1003
+1035	DNA	45	453	0	426	GTR	uce-292
+WARNING: No parsimony-informative sites in partition uce-292
+1036	DNA	45	359	0	353	GTR	uce-5261
+WARNING: No parsimony-informative sites in partition uce-5261
+1037	DNA	43	399	0	391	GTR	uce-4544
+WARNING: No parsimony-informative sites in partition uce-4544
+1038	DNA	48	445	0	430	GTR	uce-1573
+WARNING: No parsimony-informative sites in partition uce-1573
+1039	DNA	50	438	2	422	GTR	uce-44
+1040	DNA	47	352	6	314	GTR	uce-3334
+1041	DNA	45	472	4	454	GTR	uce-1157
+1042	DNA	47	490	1	481	GTR	uce-2950
+1043	DNA	50	484	0	472	GTR	uce-5239
+WARNING: No parsimony-informative sites in partition uce-5239
+1044	DNA	47	403	1	398	GTR	uce-1995
+1045	DNA	42	484	3	458	GTR	uce-2613
+1046	DNA	48	421	2	411	GTR	uce-2809
+1047	DNA	39	358	0	353	GTR	uce-2890
+WARNING: No parsimony-informative sites in partition uce-2890
+1048	DNA	49	395	2	379	GTR	uce-1794
+1049	DNA	44	541	4	524	GTR	uce-7965
+1050	DNA	37	332	2	322	GTR	uce-3989
+1051	DNA	53	372	0	366	GTR	uce-1759
+WARNING: No parsimony-informative sites in partition uce-1759
+1052	DNA	48	456	3	411	GTR	uce-5629
+1053	DNA	49	391	3	380	GTR	uce-7417
+1054	DNA	50	426	5	412	GTR	uce-7190
+1055	DNA	41	316	0	308	GTR	uce-1169
+WARNING: No parsimony-informative sites in partition uce-1169
+1056	DNA	46	453	0	447	GTR	uce-7914
+WARNING: No parsimony-informative sites in partition uce-7914
+1057	DNA	43	324	2	315	GTR	uce-6871
+1058	DNA	54	370	0	358	GTR	uce-1718
+WARNING: No parsimony-informative sites in partition uce-1718
+1059	DNA	45	402	1	393	GTR	uce-6974
+1060	DNA	44	286	3	280	GTR	uce-4741
+1061	DNA	44	483	2	466	GTR	uce-5453
+1062	DNA	50	446	3	438	GTR	uce-5639
+1063	DNA	47	411	0	399	GTR	uce-4724
+WARNING: No parsimony-informative sites in partition uce-4724
+1064	DNA	47	446	5	428	GTR	uce-1476
+1065	DNA	38	454	16	408	GTR	uce-2642
+1066	DNA	42	454	4	439	GTR	uce-2968
+1067	DNA	45	450	2	441	GTR	uce-788
+1068	DNA	44	478	0	470	GTR	uce-1206
+WARNING: No parsimony-informative sites in partition uce-1206
+1069	DNA	44	383	4	367	GTR	uce-139
+1070	DNA	47	336	2	324	GTR	uce-2718
+1071	DNA	52	393	0	386	GTR	uce-2255
+WARNING: No parsimony-informative sites in partition uce-2255
+1072	DNA	49	363	0	358	GTR	uce-175
+WARNING: No parsimony-informative sites in partition uce-175
+1073	DNA	46	400	1	392	GTR	uce-3387
+1074	DNA	54	360	2	347	GTR	uce-5227
+1075	DNA	41	415	4	395	GTR	uce-7224
+1076	DNA	46	347	2	340	GTR	uce-667
+1077	DNA	51	422	0	415	GTR	uce-101
+WARNING: No parsimony-informative sites in partition uce-101
+1078	DNA	49	375	1	368	GTR	uce-6034
+1079	DNA	44	501	1	488	GTR	uce-7218
+1080	DNA	48	522	19	471	GTR	uce-5300
+1081	DNA	46	439	4	423	GTR	uce-4963
+1082	DNA	51	474	2	461	GTR	uce-3188
+1083	DNA	51	481	2	468	GTR	uce-5649
+1084	DNA	42	384	4	352	GTR	uce-3288
+1085	DNA	46	397	2	386	GTR	uce-1679
+1086	DNA	53	384	5	359	GTR	uce-5238
+1087	DNA	45	407	2	391	GTR	uce-4932
+1088	DNA	50	396	5	384	GTR	uce-7472
+1089	DNA	47	475	7	453	GTR	uce-2069
+1090	DNA	50	351	4	327	GTR	uce-4622
+1091	DNA	51	418	0	412	GTR	uce-2142
+WARNING: No parsimony-informative sites in partition uce-2142
+1092	DNA	47	438	7	410	GTR	uce-3180
+1093	DNA	49	426	4	379	GTR	uce-5759
+1094	DNA	43	397	4	365	GTR	uce-3314
+1095	DNA	50	384	1	375	GTR	uce-4438
+1096	DNA	48	356	1	344	GTR	uce-519
+1097	DNA	55	415	1	406	GTR	uce-6398
+1098	DNA	53	389	8	330	GTR	uce-5716
+1099	DNA	54	328	1	323	GTR	uce-1393
+1100	DNA	45	416	0	406	GTR	uce-4874
+WARNING: No parsimony-informative sites in partition uce-4874
+1101	DNA	36	352	0	348	GTR	uce-6653
+WARNING: No parsimony-informative sites in partition uce-6653
+1102	DNA	49	380	0	374	GTR	uce-1345
+WARNING: No parsimony-informative sites in partition uce-1345
+1103	DNA	53	399	0	385	GTR	uce-4445
+WARNING: No parsimony-informative sites in partition uce-4445
+1104	DNA	49	456	2	447	GTR	uce-747
+1105	DNA	59	345	4	332	GTR	uce-6652
+1106	DNA	52	414	1	404	GTR	uce-1566
+1107	DNA	50	399	2	385	GTR	uce-3660
+1108	DNA	48	784	5	718	GTR	uce-1485
+1109	DNA	51	495	1	490	GTR	uce-710
+1110	DNA	44	428	11	380	GTR	uce-5166
+1111	DNA	52	448	4	430	GTR	uce-2274
+1112	DNA	42	395	0	387	GTR	uce-6998
+WARNING: No parsimony-informative sites in partition uce-6998
+1113	DNA	39	280	2	274	GTR	uce-570
+1114	DNA	54	426	11	393	GTR	uce-7348
+1115	DNA	45	472	3	457	GTR	uce-805
+1116	DNA	52	348	1	334	GTR	uce-1677
+1117	DNA	44	414	0	411	GTR	uce-8030
+WARNING: No parsimony-informative sites in partition uce-8030
+1118	DNA	49	436	0	430	GTR	uce-5055
+WARNING: No parsimony-informative sites in partition uce-5055
+1119	DNA	52	419	3	408	GTR	uce-357
+1120	DNA	40	312	4	298	GTR	uce-5051
+1121	DNA	42	525	2	513	GTR	uce-5158
+1122	DNA	42	309	1	290	GTR	uce-7380
+1123	DNA	43	468	0	464	GTR	uce-1693
+WARNING: No parsimony-informative sites in partition uce-1693
+1124	DNA	48	482	0	467	GTR	uce-55
+WARNING: No parsimony-informative sites in partition uce-55
+1125	DNA	46	420	0	406	GTR	uce-3723
+WARNING: No parsimony-informative sites in partition uce-3723
+1126	DNA	41	286	4	272	GTR	uce-485
+1127	DNA	51	433	7	387	GTR	uce-7084
+1128	DNA	41	304	1	280	GTR	uce-2888
+1129	DNA	46	474	1	464	GTR	uce-1545
+1130	DNA	43	582	2	570	GTR	uce-1425
+1131	DNA	51	521	3	513	GTR	uce-916
+1132	DNA	40	377	3	360	GTR	uce-607
+1133	DNA	51	436	2	425	GTR	uce-590
+1134	DNA	39	275	3	268	GTR	uce-4442
+1135	DNA	41	344	0	333	GTR	uce-6890
+WARNING: No parsimony-informative sites in partition uce-6890
+1136	DNA	50	354	2	338	GTR	uce-2507
+1137	DNA	51	543	2	511	GTR	uce-85
+1138	DNA	45	314	2	306	GTR	uce-6880
+1139	DNA	48	413	2	396	GTR	uce-3852
+1140	DNA	45	364	1	354	GTR	uce-3473
+1141	DNA	47	533	2	506	GTR	uce-872
+1142	DNA	49	491	0	479	GTR	uce-261
+WARNING: No parsimony-informative sites in partition uce-261
+1143	DNA	50	366	1	356	GTR	uce-6564
+1144	DNA	48	518	9	456	GTR	uce-5713
+1145	DNA	51	483	1	474	GTR	uce-871
+1146	DNA	52	476	3	459	GTR	uce-2288
+1147	DNA	47	418	2	397	GTR	uce-7102
+1148	DNA	50	333	1	319	GTR	uce-3697
+1149	DNA	49	467	0	462	GTR	uce-1908
+WARNING: No parsimony-informative sites in partition uce-1908
+1150	DNA	39	325	0	319	GTR	uce-3483
+WARNING: No parsimony-informative sites in partition uce-3483
+1151	DNA	41	379	2	361	GTR	uce-5228
+1152	DNA	36	470	1	469	GTR	uce-83
+1153	DNA	48	408	7	380	GTR	uce-2392
+1154	DNA	43	472	1	456	GTR	uce-6743
+1155	DNA	47	362	0	357	GTR	uce-4361
+WARNING: No parsimony-informative sites in partition uce-4361
+1156	DNA	47	310	3	297	GTR	uce-413
+1157	DNA	38	374	4	337	GTR	uce-4231
+1158	DNA	51	369	2	360	GTR	uce-2205
+1159	DNA	47	382	2	376	GTR	uce-249
+1160	DNA	37	467	8	450	GTR	uce-454
+1161	DNA	43	355	0	348	GTR	uce-2911
+WARNING: No parsimony-informative sites in partition uce-2911
+1162	DNA	52	464	2	446	GTR	uce-843
+1163	DNA	48	488	5	466	GTR	uce-3619
+1164	DNA	53	405	3	390	GTR	uce-5532
+1165	DNA	41	546	18	507	GTR	uce-6842
+1166	DNA	49	378	1	369	GTR	uce-125
+1167	DNA	45	490	1	472	GTR	uce-1906
+1168	DNA	49	436	2	420	GTR	uce-4656
+1169	DNA	50	402	2	385	GTR	uce-1351
+1170	DNA	42	424	0	408	GTR	uce-3291
+WARNING: No parsimony-informative sites in partition uce-3291
+1171	DNA	43	335	0	323	GTR	uce-7960
+WARNING: No parsimony-informative sites in partition uce-7960
+1172	DNA	53	404	0	391	GTR	uce-6200
+WARNING: No parsimony-informative sites in partition uce-6200
+1173	DNA	43	362	1	355	GTR	uce-1758
+1174	DNA	43	309	2	293	GTR	uce-3786
+1175	DNA	54	351	2	340	GTR	uce-2845
+1176	DNA	58	431	0	418	GTR	uce-437
+WARNING: No parsimony-informative sites in partition uce-437
+1177	DNA	49	299	2	294	GTR	uce-201
+1178	DNA	38	473	5	454	GTR	uce-1463
+1179	DNA	49	378	5	360	GTR	uce-5951
+1180	DNA	47	299	1	289	GTR	uce-4696
+1181	DNA	42	499	3	466	GTR	uce-1997
+1182	DNA	48	355	3	338	GTR	uce-3789
+1183	DNA	44	386	0	379	GTR	uce-3837
+WARNING: No parsimony-informative sites in partition uce-3837
+1184	DNA	49	364	4	349	GTR	uce-3490
+1185	DNA	53	452	3	438	GTR	uce-7958
+1186	DNA	40	367	3	357	GTR	uce-6938
+1187	DNA	39	439	3	423	GTR	uce-5914
+1188	DNA	48	324	1	318	GTR	uce-2794
+1189	DNA	51	357	0	355	GTR	uce-4070
+WARNING: No parsimony-informative sites in partition uce-4070
+1190	DNA	48	508	1	498	GTR	uce-2468
+1191	DNA	45	492	0	474	GTR	uce-587
+WARNING: No parsimony-informative sites in partition uce-587
+1192	DNA	46	509	5	492	GTR	uce-502
+1193	DNA	43	397	2	387	GTR	uce-3330
+1194	DNA	51	481	0	476	GTR	uce-2978
+WARNING: No parsimony-informative sites in partition uce-2978
+1195	DNA	46	421	5	365	GTR	uce-7399
+1196	DNA	50	516	0	504	GTR	uce-6261
+WARNING: No parsimony-informative sites in partition uce-6261
+1197	DNA	44	343	0	332	GTR	uce-7514
+WARNING: No parsimony-informative sites in partition uce-7514
+1198	DNA	46	435	4	415	GTR	uce-2498
+1199	DNA	44	439	0	433	GTR	uce-7924
+WARNING: No parsimony-informative sites in partition uce-7924
+1200	DNA	49	386	2	367	GTR	uce-7398
+1201	DNA	39	361	2	356	GTR	uce-6907
+1202	DNA	51	472	0	470	GTR	uce-1988
+WARNING: No parsimony-informative sites in partition uce-1988
+1203	DNA	50	427	9	389	GTR	uce-7047
+1204	DNA	42	334	0	334	GTR	uce-1176
+WARNING: No variant sites in partition uce-1176
+1205	DNA	45	375	1	369	GTR	uce-2541
+1206	DNA	51	398	2	381	GTR	uce-1281
+1207	DNA	45	490	4	443	GTR	uce-5899
+1208	DNA	46	368	2	355	GTR	uce-4121
+1209	DNA	45	397	1	383	GTR	uce-6770
+1210	DNA	51	482	1	471	GTR	uce-2035
+1211	DNA	55	361	2	356	GTR	uce-4022
+1212	DNA	45	430	1	427	GTR	uce-1629
+1213	DNA	47	405	2	381	GTR	uce-2690
+1214	DNA	53	419	0	406	GTR	uce-533
+WARNING: No parsimony-informative sites in partition uce-533
+1215	DNA	48	494	0	476	GTR	uce-8011
+WARNING: No parsimony-informative sites in partition uce-8011
+1216	DNA	52	390	2	381	GTR	uce-3689
+1217	DNA	52	365	1	361	GTR	uce-65
+1218	DNA	45	482	0	469	GTR	uce-1359
+WARNING: No parsimony-informative sites in partition uce-1359
+1219	DNA	42	341	3	323	GTR	uce-5442
+1220	DNA	48	358	2	349	GTR	uce-6723
+1221	DNA	41	389	11	349	GTR	uce-6926
+1222	DNA	45	392	1	389	GTR	uce-3493
+1223	DNA	42	309	4	290	GTR	uce-7208
+1224	DNA	42	346	3	335	GTR	uce-4838
+1225	DNA	49	410	5	391	GTR	uce-7746
+1226	DNA	46	354	1	345	GTR	uce-4025
+1227	DNA	49	406	12	382	GTR	uce-7865
+1228	DNA	52	379	4	358	GTR	uce-1568
+1229	DNA	48	424	7	407	GTR	uce-2446
+1230	DNA	47	362	2	354	GTR	uce-1798
+1231	DNA	54	449	2	440	GTR	uce-554
+1232	DNA	47	370	4	350	GTR	uce-2737
+1233	DNA	44	352	0	349	GTR	uce-5904
+WARNING: No parsimony-informative sites in partition uce-5904
+1234	DNA	45	469	1	455	GTR	uce-3280
+1235	DNA	46	428	2	410	GTR	uce-451
+1236	DNA	51	303	5	280	GTR	uce-5989
+1237	DNA	52	390	1	381	GTR	uce-2109
+1238	DNA	44	317	4	306	GTR	uce-3592
+1239	DNA	55	310	1	295	GTR	uce-5781
+1240	DNA	48	307	5	278	GTR	uce-4118
+1241	DNA	49	590	0	545	GTR	uce-5110
+WARNING: No parsimony-informative sites in partition uce-5110
+1242	DNA	56	450	1	438	GTR	uce-6499
+1243	DNA	52	415	9	369	GTR	uce-5114
+1244	DNA	51	373	1	367	GTR	uce-224
+1245	DNA	49	410	7	387	GTR	uce-3692
+1246	DNA	48	300	0	287	GTR	uce-7240
+WARNING: No parsimony-informative sites in partition uce-7240
+1247	DNA	47	466	2	458	GTR	uce-610
+1248	DNA	46	355	0	348	GTR	uce-6954
+WARNING: No parsimony-informative sites in partition uce-6954
+1249	DNA	53	385	0	375	GTR	uce-2586
+WARNING: No parsimony-informative sites in partition uce-2586
+1250	DNA	50	498	0	480	GTR	uce-6446
+WARNING: No parsimony-informative sites in partition uce-6446
+1251	DNA	49	338	0	329	GTR	uce-2665
+WARNING: No parsimony-informative sites in partition uce-2665
+1252	DNA	38	296	3	285	GTR	uce-3328
+1253	DNA	52	487	4	478	GTR	uce-5934
+1254	DNA	49	403	1	388	GTR	uce-5722
+1255	DNA	52	363	0	358	GTR	uce-1063
+WARNING: No parsimony-informative sites in partition uce-1063
+1256	DNA	41	315	0	307	GTR	uce-95
+WARNING: No parsimony-informative sites in partition uce-95
+1257	DNA	49	324	1	306	GTR	uce-6480
+1258	DNA	44	402	0	392	GTR	uce-2156
+WARNING: No parsimony-informative sites in partition uce-2156
+1259	DNA	46	398	5	385	GTR	uce-3669
+1260	DNA	50	348	1	330	GTR	uce-4858
+1261	DNA	48	436	5	416	GTR	uce-1051
+1262	DNA	43	263	0	261	GTR	uce-5380
+WARNING: No parsimony-informative sites in partition uce-5380
+1263	DNA	44	366	0	361	GTR	uce-3419
+WARNING: No parsimony-informative sites in partition uce-3419
+1264	DNA	52	381	1	370	GTR	uce-1434
+1265	DNA	48	499	1	488	GTR	uce-6209
+1266	DNA	42	541	7	482	GTR	uce-4850
+1267	DNA	44	296	2	289	GTR	uce-7
+1268	DNA	42	429	6	414	GTR	uce-7303
+1269	DNA	38	466	6	439	GTR	uce-2518
+1270	DNA	45	423	3	412	GTR	uce-4113
+1271	DNA	51	457	1	446	GTR	uce-5672
+1272	DNA	40	334	4	314	GTR	uce-4977
+1273	DNA	50	463	3	444	GTR	uce-319
+1274	DNA	38	517	6	490	GTR	uce-1624
+1275	DNA	48	460	10	426	GTR	uce-4716
+1276	DNA	53	433	6	404	GTR	uce-8009
+1277	DNA	49	395	2	385	GTR	uce-2389
+1278	DNA	41	306	2	294	GTR	uce-6444
+1279	DNA	46	472	6	443	GTR	uce-4693
+1280	DNA	48	379	2	371	GTR	uce-6515
+1281	DNA	38	304	2	292	GTR	uce-131
+1282	DNA	49	382	1	373	GTR	uce-5095
+1283	DNA	48	485	4	464	GTR	uce-5265
+1284	DNA	38	255	0	244	GTR	uce-6736
+WARNING: No parsimony-informative sites in partition uce-6736
+1285	DNA	45	362	1	333	GTR	uce-4410
+1286	DNA	41	583	1	574	GTR	uce-7903
+1287	DNA	44	435	1	428	GTR	uce-4195
+1288	DNA	48	456	0	454	GTR	uce-3224
+WARNING: No parsimony-informative sites in partition uce-3224
+1289	DNA	49	460	1	449	GTR	uce-4831
+1290	DNA	50	479	3	473	GTR	uce-1805
+1291	DNA	45	453	6	433	GTR	uce-7582
+1292	DNA	54	367	3	357	GTR	uce-3247
+1293	DNA	51	402	6	387	GTR	uce-7425
+1294	DNA	46	413	2	402	GTR	uce-6804
+1295	DNA	54	368	4	358	GTR	uce-1694
+1296	DNA	49	417	5	396	GTR	uce-5033
+1297	DNA	53	503	0	496	GTR	uce-6204
+WARNING: No parsimony-informative sites in partition uce-6204
+1298	DNA	52	319	0	312	GTR	uce-1462
+WARNING: No parsimony-informative sites in partition uce-1462
+1299	DNA	43	335	0	324	GTR	uce-7162
+WARNING: No parsimony-informative sites in partition uce-7162
+1300	DNA	52	421	2	408	GTR	uce-2965
+1301	DNA	46	384	1	376	GTR	uce-4652
+1302	DNA	40	417	1	408	GTR	uce-4166
+1303	DNA	48	403	1	394	GTR	uce-6715
+1304	DNA	46	342	4	315	GTR	uce-733
+1305	DNA	46	384	4	368	GTR	uce-2510
+1306	DNA	48	434	4	420	GTR	uce-2882
+1307	DNA	47	404	2	393	GTR	uce-4295
+1308	DNA	51	348	5	338	GTR	uce-5505
+1309	DNA	43	353	0	348	GTR	uce-1808
+WARNING: No parsimony-informative sites in partition uce-1808
+1310	DNA	52	423	2	416	GTR	uce-3792
+1311	DNA	40	333	0	331	GTR	uce-997
+WARNING: No parsimony-informative sites in partition uce-997
+1312	DNA	47	363	0	357	GTR	uce-1966
+WARNING: No parsimony-informative sites in partition uce-1966
+1313	DNA	43	378	0	372	GTR	uce-2291
+WARNING: No parsimony-informative sites in partition uce-2291
+1314	DNA	52	487	1	474	GTR	uce-233
+1315	DNA	53	417	1	415	GTR	uce-6866
+1316	DNA	43	487	1	469	GTR	uce-1561
+1317	DNA	44	423	5	399	GTR	uce-6692
+1318	DNA	48	463	0	452	GTR	uce-5855
+WARNING: No parsimony-informative sites in partition uce-5855
+1319	DNA	47	445	2	432	GTR	uce-6449
+1320	DNA	46	392	1	390	GTR	uce-3533
+1321	DNA	49	447	18	370	GTR	uce-7246
+1322	DNA	47	434	5	398	GTR	uce-6169
+1323	DNA	47	470	2	455	GTR	uce-2079
+1324	DNA	54	387	2	370	GTR	uce-7329
+1325	DNA	38	355	8	322	GTR	uce-5003
+1326	DNA	57	417	3	400	GTR	uce-538
+1327	DNA	41	435	0	423	GTR	uce-7202
+WARNING: No parsimony-informative sites in partition uce-7202
+1328	DNA	46	465	1	454	GTR	uce-2503
+1329	DNA	37	434	3	428	GTR	uce-1678
+1330	DNA	49	417	3	406	GTR	uce-1680
+1331	DNA	37	312	7	282	GTR	uce-7719
+1332	DNA	53	441	1	430	GTR	uce-1255
+1333	DNA	49	394	2	382	GTR	uce-4305
+1334	DNA	48	436	1	431	GTR	uce-823
+1335	DNA	44	383	4	366	GTR	uce-5956
+1336	DNA	45	452	1	439	GTR	uce-6684
+1337	DNA	46	430	0	417	GTR	uce-5606
+WARNING: No parsimony-informative sites in partition uce-5606
+1338	DNA	52	380	2	364	GTR	uce-6501
+1339	DNA	44	290	4	273	GTR	uce-6095
+1340	DNA	44	329	1	319	GTR	uce-7829
+1341	DNA	45	407	0	400	GTR	uce-6309
+WARNING: No parsimony-informative sites in partition uce-6309
+1342	DNA	52	421	0	409	GTR	uce-6094
+WARNING: No parsimony-informative sites in partition uce-6094
+1343	DNA	49	411	5	397	GTR	uce-3976
+1344	DNA	49	436	1	430	GTR	uce-2000
+1345	DNA	49	356	0	329	GTR	uce-3642
+WARNING: No parsimony-informative sites in partition uce-3642
+1346	DNA	50	392	12	358	GTR	uce-3178
+1347	DNA	48	447	3	427	GTR	uce-3680
+1348	DNA	54	353	1	337	GTR	uce-3167
+1349	DNA	45	395	4	369	GTR	uce-1998
+1350	DNA	49	375	0	367	GTR	uce-4788
+WARNING: No parsimony-informative sites in partition uce-4788
+1351	DNA	43	398	0	387	GTR	uce-2145
+WARNING: No parsimony-informative sites in partition uce-2145
+1352	DNA	51	489	2	475	GTR	uce-1745
+1353	DNA	52	330	1	322	GTR	uce-3452
+1354	DNA	40	445	0	437	GTR	uce-6614
+WARNING: No parsimony-informative sites in partition uce-6614
+1355	DNA	54	475	3	465	GTR	uce-7521
+1356	DNA	46	420	1	415	GTR	uce-5932
+1357	DNA	46	318	0	313	GTR	uce-5392
+WARNING: No parsimony-informative sites in partition uce-5392
+1358	DNA	51	433	0	432	GTR	uce-2521
+WARNING: No parsimony-informative sites in partition uce-2521
+1359	DNA	50	481	1	468	GTR	uce-394
+1360	DNA	53	409	0	400	GTR	uce-2
+WARNING: No parsimony-informative sites in partition uce-2
+1361	DNA	41	280	5	265	GTR	uce-3699
+1362	DNA	41	482	1	471	GTR	uce-6136
+1363	DNA	46	499	1	441	GTR	uce-937
+1364	DNA	46	454	3	441	GTR	uce-6277
+1365	DNA	48	470	2	455	GTR	uce-2728
+1366	DNA	51	422	4	401	GTR	uce-838
+1367	DNA	43	290	1	275	GTR	uce-3625
+1368	DNA	48	393	0	384	GTR	uce-3999
+WARNING: No parsimony-informative sites in partition uce-3999
+1369	DNA	44	422	1	403	GTR	uce-4425
+1370	DNA	44	405	3	392	GTR	uce-6747
+1371	DNA	46	399	2	342	GTR	uce-6671
+1372	DNA	50	392	0	384	GTR	uce-3910
+WARNING: No parsimony-informative sites in partition uce-3910
+1373	DNA	53	410	5	394	GTR	uce-4744
+1374	DNA	54	484	9	447	GTR	uce-4806
+1375	DNA	47	371	1	359	GTR	uce-2517
+1376	DNA	58	465	4	448	GTR	uce-4654
+1377	DNA	48	348	0	343	GTR	uce-241
+WARNING: No parsimony-informative sites in partition uce-241
+1378	DNA	44	431	0	427	GTR	uce-3277
+WARNING: No parsimony-informative sites in partition uce-3277
+1379	DNA	51	418	11	376	GTR	uce-4610
+1380	DNA	50	433	0	426	GTR	uce-972
+WARNING: No parsimony-informative sites in partition uce-972
+1381	DNA	46	374	0	368	GTR	uce-1922
+WARNING: No parsimony-informative sites in partition uce-1922
+1382	DNA	53	410	0	410	GTR	uce-1639
+WARNING: No variant sites in partition uce-1639
+1383	DNA	49	444	0	441	GTR	uce-1703
+WARNING: No parsimony-informative sites in partition uce-1703
+1384	DNA	45	398	1	388	GTR	uce-1065
+1385	DNA	48	288	3	274	GTR	uce-1570
+1386	DNA	40	303	0	299	GTR	uce-5661
+WARNING: No parsimony-informative sites in partition uce-5661
+1387	DNA	37	293	1	287	GTR	uce-5734
+1388	DNA	44	288	6	261	GTR	uce-6509
+1389	DNA	42	401	0	397	GTR	uce-2055
+WARNING: No parsimony-informative sites in partition uce-2055
+1390	DNA	36	630	0	609	GTR	uce-1611
+WARNING: No parsimony-informative sites in partition uce-1611
+1391	DNA	49	442	1	432	GTR	uce-2668
+1392	DNA	46	590	1	579	GTR	uce-1996
+1393	DNA	50	418	3	403	GTR	uce-309
+1394	DNA	48	374	3	355	GTR	uce-7489
+1395	DNA	47	508	11	469	GTR	uce-7643
+1396	DNA	49	487	1	482	GTR	uce-1260
+1397	DNA	50	440	10	404	GTR	uce-3548
+1398	DNA	41	595	4	577	GTR	uce-882
+1399	DNA	53	441	4	423	GTR	uce-7488
+1400	DNA	43	312	2	301	GTR	uce-3694
+1401	DNA	44	457	0	455	GTR	uce-115
+WARNING: No parsimony-informative sites in partition uce-115
+1402	DNA	51	428	2	421	GTR	uce-5185
+1403	DNA	46	482	8	456	GTR	uce-449
+1404	DNA	51	418	4	398	GTR	uce-3547
+1405	DNA	46	398	0	390	GTR	uce-478
+WARNING: No parsimony-informative sites in partition uce-478
+1406	DNA	53	383	6	353	GTR	uce-4479
+1407	DNA	43	361	3	319	GTR	uce-2202
+1408	DNA	45	484	0	470	GTR	uce-4725
+WARNING: No parsimony-informative sites in partition uce-4725
+1409	DNA	49	388	2	368	GTR	uce-8026
+1410	DNA	46	361	1	357	GTR	uce-5811
+1411	DNA	53	417	1	408	GTR	uce-17
+1412	DNA	47	438	1	429	GTR	uce-3014
+1413	DNA	43	489	2	476	GTR	uce-4232
+1414	DNA	54	373	0	350	GTR	uce-3902
+WARNING: No parsimony-informative sites in partition uce-3902
+1415	DNA	49	369	4	357	GTR	uce-3067
+1416	DNA	48	347	2	334	GTR	uce-3421
+1417	DNA	56	470	4	456	GTR	uce-18
+1418	DNA	48	486	4	466	GTR	uce-380
+1419	DNA	55	477	4	462	GTR	uce-3602
+1420	DNA	48	336	2	326	GTR	uce-173
+1421	DNA	48	323	2	308	GTR	uce-6645
+1422	DNA	52	313	1	308	GTR	uce-5839
+1423	DNA	46	436	2	430	GTR	uce-6113
+1424	DNA	41	523	3	502	GTR	uce-2648
+1425	DNA	48	383	2	371	GTR	uce-7552
+1426	DNA	49	354	6	334	GTR	uce-3514
+1427	DNA	45	553	0	547	GTR	uce-1470
+WARNING: No parsimony-informative sites in partition uce-1470
+1428	DNA	51	420	5	399	GTR	uce-4912
+1429	DNA	49	473	5	450	GTR	uce-5701
+1430	DNA	44	468	2	451	GTR	uce-6461
+1431	DNA	46	379	5	359	GTR	uce-5289
+1432	DNA	51	495	2	481	GTR	uce-2031
+1433	DNA	46	356	1	341	GTR	uce-7787
+1434	DNA	46	360	1	353	GTR	uce-2770
+1435	DNA	44	405	0	395	GTR	uce-5889
+WARNING: No parsimony-informative sites in partition uce-5889
+1436	DNA	51	442	0	432	GTR	uce-421
+WARNING: No parsimony-informative sites in partition uce-421
+1437	DNA	46	403	4	382	GTR	uce-6643
+1438	DNA	40	341	6	320	GTR	uce-4777
+1439	DNA	36	487	0	484	GTR	uce-2147
+WARNING: No parsimony-informative sites in partition uce-2147
+1440	DNA	42	372	0	366	GTR	uce-1707
+WARNING: No parsimony-informative sites in partition uce-1707
+1441	DNA	47	349	3	340	GTR	uce-2233
+1442	DNA	36	349	0	339	GTR	uce-1597
+WARNING: No parsimony-informative sites in partition uce-1597
+1443	DNA	52	395	2	380	GTR	uce-4733
+1444	DNA	49	354	2	345	GTR	uce-1531
+1445	DNA	48	347	3	338	GTR	uce-3967
+1446	DNA	51	443	6	416	GTR	uce-6254
+1447	DNA	44	400	8	375	GTR	uce-4349
+1448	DNA	46	323	0	318	GTR	uce-2086
+WARNING: No parsimony-informative sites in partition uce-2086
+1449	DNA	54	383	0	376	GTR	uce-301
+WARNING: No parsimony-informative sites in partition uce-301
+1450	DNA	43	466	2	454	GTR	uce-2176
+1451	DNA	51	521	3	483	GTR	uce-7725
+1452	DNA	46	425	1	416	GTR	uce-2550
+1453	DNA	39	357	0	347	GTR	uce-4303
+WARNING: No parsimony-informative sites in partition uce-4303
+1454	DNA	50	412	1	406	GTR	uce-7414
+1455	DNA	50	455	6	427	GTR	uce-7014
+1456	DNA	45	386	3	353	GTR	uce-7044
+1457	DNA	41	450	1	445	GTR	uce-390
+1458	DNA	42	462	4	412	GTR	uce-2358
+1459	DNA	47	416	1	403	GTR	uce-1744
+1460	DNA	36	307	0	301	GTR	uce-7863
+WARNING: No parsimony-informative sites in partition uce-7863
+1461	DNA	47	393	0	389	GTR	uce-1014
+WARNING: No parsimony-informative sites in partition uce-1014
+1462	DNA	45	430	1	424	GTR	uce-7249
+1463	DNA	51	460	1	441	GTR	uce-4314
+1464	DNA	46	399	3	386	GTR	uce-7789
+1465	DNA	52	462	2	452	GTR	uce-3353
+1466	DNA	48	391	1	376	GTR	uce-7877
+1467	DNA	49	486	1	466	GTR	uce-2001
+1468	DNA	45	386	7	357	GTR	uce-2275
+1469	DNA	48	382	0	377	GTR	uce-3527
+WARNING: No parsimony-informative sites in partition uce-3527
+1470	DNA	52	366	4	352	GTR	uce-654
+1471	DNA	42	332	0	315	GTR	uce-6943
+WARNING: No parsimony-informative sites in partition uce-6943
+1472	DNA	42	452	4	435	GTR	uce-5602
+1473	DNA	43	359	4	344	GTR	uce-3942
+1474	DNA	49	418	3	399	GTR	uce-3417
+1475	DNA	49	468	1	455	GTR	uce-2023
+1476	DNA	45	431	2	420	GTR	uce-1346
+1477	DNA	53	341	1	338	GTR	uce-2735
+1478	DNA	48	403	2	393	GTR	uce-2639
+1479	DNA	38	299	0	293	GTR	uce-4028
+WARNING: No parsimony-informative sites in partition uce-4028
+1480	DNA	53	329	5	309	GTR	uce-4629
+1481	DNA	44	537	2	524	GTR	uce-1747
+1482	DNA	42	565	0	555	GTR	uce-1368
+WARNING: No parsimony-informative sites in partition uce-1368
+1483	DNA	44	547	0	536	GTR	uce-393
+WARNING: No parsimony-informative sites in partition uce-393
+1484	DNA	38	315	2	304	GTR	uce-512
+1485	DNA	44	455	2	451	GTR	uce-4760
+1486	DNA	53	396	2	389	GTR	uce-6780
+1487	DNA	49	416	0	411	GTR	uce-2742
+WARNING: No parsimony-informative sites in partition uce-2742
+1488	DNA	55	507	6	482	GTR	uce-990
+1489	DNA	50	397	2	381	GTR	uce-2705
+1490	DNA	47	525	3	516	GTR	uce-220
+1491	DNA	47	442	2	425	GTR	uce-7505
+1492	DNA	46	440	0	432	GTR	uce-120
+WARNING: No parsimony-informative sites in partition uce-120
+1493	DNA	52	458	2	437	GTR	uce-2321
+1494	DNA	46	380	2	370	GTR	uce-693
+1495	DNA	45	318	0	315	GTR	uce-358
+WARNING: No parsimony-informative sites in partition uce-358
+1496	DNA	49	319	0	317	GTR	uce-6141
+WARNING: No parsimony-informative sites in partition uce-6141
+1497	DNA	52	438	4	408	GTR	uce-6731
+1498	DNA	41	393	2	378	GTR	uce-7724
+1499	DNA	46	434	0	432	GTR	uce-4523
+WARNING: No parsimony-informative sites in partition uce-4523
+1500	DNA	52	496	1	482	GTR	uce-6786
+1501	DNA	54	397	0	359	GTR	uce-6735
+WARNING: No parsimony-informative sites in partition uce-6735
+1502	DNA	50	549	1	541	GTR	uce-4618
+1503	DNA	52	486	0	467	GTR	uce-1642
+WARNING: No parsimony-informative sites in partition uce-1642
+1504	DNA	41	490	1	481	GTR	uce-4107
+1505	DNA	50	436	1	415	GTR	uce-4324
+1506	DNA	57	441	5	419	GTR	uce-5857
+1507	DNA	44	399	0	393	GTR	uce-915
+WARNING: No parsimony-informative sites in partition uce-915
+1508	DNA	47	424	5	404	GTR	uce-1985
+1509	DNA	45	299	1	291	GTR	uce-5223
+1510	DNA	45	443	7	409	GTR	uce-2587
+1511	DNA	42	246	1	239	GTR	uce-7336
+1512	DNA	36	450	2	438	GTR	uce-445
+1513	DNA	45	386	1	365	GTR	uce-2253
+1514	DNA	47	369	0	367	GTR	uce-3363
+WARNING: No parsimony-informative sites in partition uce-3363
+1515	DNA	55	401	1	392	GTR	uce-7692
+1516	DNA	39	270	0	266	GTR	uce-3842
+WARNING: No parsimony-informative sites in partition uce-3842
+1517	DNA	48	420	0	411	GTR	uce-345
+WARNING: No parsimony-informative sites in partition uce-345
+1518	DNA	50	395	0	387	GTR	uce-7620
+WARNING: No parsimony-informative sites in partition uce-7620
+1519	DNA	56	386	1	369	GTR	uce-273
+1520	DNA	54	429	1	423	GTR	uce-4
+1521	DNA	53	441	4	429	GTR	uce-7504
+1522	DNA	54	445	0	428	GTR	uce-6479
+WARNING: No parsimony-informative sites in partition uce-6479
+1523	DNA	41	402	5	382	GTR	uce-826
+1524	DNA	48	443	3	431	GTR	uce-3982
+1525	DNA	49	387	2	376	GTR	uce-7641
+1526	DNA	38	387	1	373	GTR	uce-5590
+1527	DNA	49	442	3	415	GTR	uce-2784
+1528	DNA	50	527	15	440	GTR	uce-4071
+1529	DNA	45	458	3	421	GTR	uce-2478
+1530	DNA	49	379	0	371	GTR	uce-7223
+WARNING: No parsimony-informative sites in partition uce-7223
+1531	DNA	46	432	1	398	GTR	uce-3358
+1532	DNA	48	447	3	403	GTR	uce-3959
+1533	DNA	49	428	0	419	GTR	uce-7647
+WARNING: No parsimony-informative sites in partition uce-7647
+1534	DNA	40	402	8	380	GTR	uce-6171
+1535	DNA	55	407	3	401	GTR	uce-777
+1536	DNA	52	339	0	334	GTR	uce-1977
+WARNING: No parsimony-informative sites in partition uce-1977
+1537	DNA	40	313	1	293	GTR	uce-4498
+1538	DNA	46	376	2	370	GTR	uce-3887
+1539	DNA	44	350	2	344	GTR	uce-2126
+1540	DNA	43	395	1	383	GTR	uce-2687
+1541	DNA	50	394	1	381	GTR	uce-3333
+1542	DNA	44	440	2	429	GTR	uce-54
+1543	DNA	46	382	1	375	GTR	uce-4739
+1544	DNA	40	362	11	321	GTR	uce-5586
+1545	DNA	58	378	5	353	GTR	uce-5743
+1546	DNA	50	448	3	436	GTR	uce-325
+1547	DNA	47	347	3	333	GTR	uce-6655
+1548	DNA	50	466	3	405	GTR	uce-6703
+1549	DNA	52	410	6	396	GTR	uce-1305
+1550	DNA	44	419	2	404	GTR	uce-1961
+1551	DNA	52	338	1	331	GTR	uce-7025
+1552	DNA	42	463	1	440	GTR	uce-2007
+1553	DNA	50	428	2	416	GTR	uce-7621
+1554	DNA	44	367	2	343	GTR	uce-2457
+1555	DNA	52	453	0	449	GTR	uce-334
+WARNING: No parsimony-informative sites in partition uce-334
+1556	DNA	49	412	0	407	GTR	uce-3448
+WARNING: No parsimony-informative sites in partition uce-3448
+1557	DNA	46	439	2	425	GTR	uce-7532
+1558	DNA	56	356	2	345	GTR	uce-5640
+1559	DNA	48	459	7	437	GTR	uce-2387
+1560	DNA	43	609	2	596	GTR	uce-1910
+1561	DNA	44	483	2	470	GTR	uce-1560
+1562	DNA	50	374	3	347	GTR	uce-7540
+1563	DNA	44	444	2	429	GTR	uce-7739
+1564	DNA	46	348	0	342	GTR	uce-2073
+WARNING: No parsimony-informative sites in partition uce-2073
+1565	DNA	45	474	1	458	GTR	uce-181
+1566	DNA	58	321	6	290	GTR	uce-7386
+1567	DNA	47	479	8	378	GTR	uce-7563
+1568	DNA	45	310	0	295	GTR	uce-2284
+WARNING: No parsimony-informative sites in partition uce-2284
+1569	DNA	43	332	1	328	GTR	uce-2395
+1570	DNA	45	470	2	457	GTR	uce-1052
+1571	DNA	51	507	7	488	GTR	uce-1323
+1572	DNA	48	397	1	387	GTR	uce-5120
+1573	DNA	50	508	1	501	GTR	uce-671
+1574	DNA	53	373	0	367	GTR	uce-4878
+WARNING: No parsimony-informative sites in partition uce-4878
+1575	DNA	53	428	0	418	GTR	uce-119
+WARNING: No parsimony-informative sites in partition uce-119
+1576	DNA	45	469	12	427	GTR	uce-7340
+1577	DNA	52	411	1	406	GTR	uce-7008
+1578	DNA	48	442	2	415	GTR	uce-2551
+1579	DNA	52	415	0	395	GTR	uce-4453
+WARNING: No parsimony-informative sites in partition uce-4453
+1580	DNA	47	608	0	588	GTR	uce-7943
+WARNING: No parsimony-informative sites in partition uce-7943
+1581	DNA	46	469	4	457	GTR	uce-5852
+1582	DNA	48	450	18	411	GTR	uce-7205
+1583	DNA	50	369	3	357	GTR	uce-2009
+1584	DNA	44	404	1	395	GTR	uce-290
+1585	DNA	41	515	1	506	GTR	uce-136
+1586	DNA	48	446	0	442	GTR	uce-6059
+WARNING: No parsimony-informative sites in partition uce-6059
+1587	DNA	46	440	1	424	GTR	uce-3020
+1588	DNA	45	399	0	385	GTR	uce-3632
+WARNING: No parsimony-informative sites in partition uce-3632
+1589	DNA	47	419	0	415	GTR	uce-618
+WARNING: No parsimony-informative sites in partition uce-618
+1590	DNA	48	443	2	415	GTR	uce-1850
+1591	DNA	40	283	0	274	GTR	uce-3042
+WARNING: No parsimony-informative sites in partition uce-3042
+1592	DNA	55	935	2	887	GTR	uce-6719
+1593	DNA	51	428	0	416	GTR	uce-1810
+WARNING: No parsimony-informative sites in partition uce-1810
+1594	DNA	48	456	1	445	GTR	uce-1324
+1595	DNA	51	405	5	395	GTR	uce-4704
+1596	DNA	46	400	1	387	GTR	uce-7615
+1597	DNA	43	385	1	380	GTR	uce-1188
+1598	DNA	52	437	1	428	GTR	uce-6898
+1599	DNA	47	435	2	414	GTR	uce-3698
+1600	DNA	44	430	0	424	GTR	uce-7768
+WARNING: No parsimony-informative sites in partition uce-7768
+1601	DNA	45	556	2	533	GTR	uce-415
+1602	DNA	38	272	0	261	GTR	uce-2628
+WARNING: No parsimony-informative sites in partition uce-2628
+1603	DNA	48	405	4	371	GTR	uce-6177
+1604	DNA	42	383	2	371	GTR	uce-6541
+1605	DNA	54	320	0	313	GTR	uce-7613
+WARNING: No parsimony-informative sites in partition uce-7613
+1606	DNA	48	388	0	384	GTR	uce-5147
+WARNING: No parsimony-informative sites in partition uce-5147
+1607	DNA	45	409	1	400	GTR	uce-3377
+1608	DNA	47	498	0	495	GTR	uce-3263
+WARNING: No parsimony-informative sites in partition uce-3263
+1609	DNA	40	361	0	356	GTR	uce-4081
+WARNING: No parsimony-informative sites in partition uce-4081
+1610	DNA	45	376	2	365	GTR	uce-5724
+1611	DNA	46	398	2	391	GTR	uce-6945
+1612	DNA	45	479	2	464	GTR	uce-6540
+1613	DNA	48	431	0	422	GTR	uce-323
+WARNING: No parsimony-informative sites in partition uce-323
+1614	DNA	46	346	0	336	GTR	uce-5579
+WARNING: No parsimony-informative sites in partition uce-5579
+1615	DNA	43	326	3	311	GTR	uce-3904
+1616	DNA	43	459	4	446	GTR	uce-962
+1617	DNA	42	287	2	277	GTR	uce-3346
+1618	DNA	44	385	2	380	GTR	uce-4605
+1619	DNA	37	266	0	260	GTR	uce-4187
+WARNING: No parsimony-informative sites in partition uce-4187
+1620	DNA	50	387	11	362	GTR	uce-6103
+1621	DNA	45	420	5	406	GTR	uce-5383
+1622	DNA	52	405	1	397	GTR	uce-5188
+1623	DNA	44	367	1	363	GTR	uce-7344
+1624	DNA	52	461	2	449	GTR	uce-1058
+1625	DNA	51	441	2	432	GTR	uce-1138
+1626	DNA	40	420	1	406	GTR	uce-7652
+1627	DNA	42	304	4	282	GTR	uce-4007
+1628	DNA	40	406	1	397	GTR	uce-280
+1629	DNA	54	399	2	383	GTR	uce-4413
+1630	DNA	40	382	5	353	GTR	uce-7783
+1631	DNA	50	600	2	553	GTR	uce-1863
+1632	DNA	54	296	0	284	GTR	uce-836
+WARNING: No parsimony-informative sites in partition uce-836
+1633	DNA	47	414	3	406	GTR	uce-4752
+1634	DNA	45	432	1	426	GTR	uce-7023
+1635	DNA	45	336	0	330	GTR	uce-3597
+WARNING: No parsimony-informative sites in partition uce-3597
+1636	DNA	55	479	2	467	GTR	uce-2531
+1637	DNA	46	517	0	508	GTR	uce-2616
+WARNING: No parsimony-informative sites in partition uce-2616
+1638	DNA	50	350	1	339	GTR	uce-876
+1639	DNA	52	399	1	392	GTR	uce-2480
+1640	DNA	48	451	7	417	GTR	uce-7801
+1641	DNA	47	460	4	437	GTR	uce-3701
+1642	DNA	47	350	0	337	GTR	uce-2875
+WARNING: No parsimony-informative sites in partition uce-2875
+1643	DNA	51	371	3	359	GTR	uce-231
+1644	DNA	54	443	7	410	GTR	uce-4651
+1645	DNA	42	347	2	337	GTR	uce-1264
+1646	DNA	46	491	5	473	GTR	uce-5478
+1647	DNA	45	488	0	480	GTR	uce-5679
+WARNING: No parsimony-informative sites in partition uce-5679
+1648	DNA	51	403	1	390	GTR	uce-1403
+1649	DNA	49	400	16	337	GTR	uce-4304
+1650	DNA	58	459	3	422	GTR	uce-3089
+1651	DNA	53	366	2	355	GTR	uce-6850
+1652	DNA	40	384	0	377	GTR	uce-1733
+WARNING: No parsimony-informative sites in partition uce-1733
+1653	DNA	49	459	1	452	GTR	uce-3831
+1654	DNA	42	271	0	263	GTR	uce-3575
+WARNING: No parsimony-informative sites in partition uce-3575
+1655	DNA	49	382	5	354	GTR	uce-7740
+1656	DNA	54	441	11	407	GTR	uce-7164
+1657	DNA	46	399	3	385	GTR	uce-5599
+1658	DNA	47	438	3	428	GTR	uce-2300
+1659	DNA	47	384	2	371	GTR	uce-7371
+1660	DNA	53	475	2	466	GTR	uce-1263
+1661	DNA	49	408	0	395	GTR	uce-486
+WARNING: No parsimony-informative sites in partition uce-486
+1662	DNA	49	430	0	424	GTR	uce-1190
+WARNING: No parsimony-informative sites in partition uce-1190
+1663	DNA	49	468	5	453	GTR	uce-7576
+1664	DNA	46	460	0	453	GTR	uce-347
+WARNING: No parsimony-informative sites in partition uce-347
+1665	DNA	48	483	6	462	GTR	uce-7207
+1666	DNA	44	317	5	295	GTR	uce-6232
+1667	DNA	37	276	1	262	GTR	uce-4608
+1668	DNA	54	387	0	377	GTR	uce-5165
+WARNING: No parsimony-informative sites in partition uce-5165
+1669	DNA	45	407	3	382	GTR	uce-3873
+1670	DNA	39	303	1	294	GTR	uce-5514
+1671	DNA	45	355	5	340	GTR	uce-7188
+1672	DNA	46	350	0	338	GTR	uce-3988
+WARNING: No parsimony-informative sites in partition uce-3988
+1673	DNA	42	394	2	380	GTR	uce-7786
+1674	DNA	50	408	2	390	GTR	uce-6355
+1675	DNA	47	459	1	446	GTR	uce-2899
+1676	DNA	49	344	1	338	GTR	uce-7143
+1677	DNA	54	508	2	467	GTR	uce-337
+1678	DNA	46	417	10	390	GTR	uce-2973
+1679	DNA	43	406	5	383	GTR	uce-7236
+1680	DNA	44	381	1	375	GTR	uce-5619
+1681	DNA	41	317	1	304	GTR	uce-2239
+1682	DNA	45	441	1	432	GTR	uce-5822
+1683	DNA	39	389	6	365	GTR	uce-6987
+1684	DNA	42	342	4	330	GTR	uce-2248
+1685	DNA	51	406	0	398	GTR	uce-2049
+WARNING: No parsimony-informative sites in partition uce-2049
+1686	DNA	46	381	2	371	GTR	uce-2790
+1687	DNA	48	353	1	349	GTR	uce-6986
+1688	DNA	49	324	2	311	GTR	uce-4039
+1689	DNA	44	371	0	365	GTR	uce-7091
+WARNING: No parsimony-informative sites in partition uce-7091
+1690	DNA	50	407	5	382	GTR	uce-3627
+1691	DNA	47	374	4	352	GTR	uce-2788
+1692	DNA	43	567	0	558	GTR	uce-1017
+WARNING: No parsimony-informative sites in partition uce-1017
+1693	DNA	45	340	1	325	GTR	uce-7018
+1694	DNA	51	569	5	540	GTR	uce-1591
+1695	DNA	50	428	1	406	GTR	uce-7138
+1696	DNA	48	348	6	337	GTR	uce-5211
+1697	DNA	42	418	5	394	GTR	uce-5937
+1698	DNA	48	406	3	383	GTR	uce-3028
+1699	DNA	40	412	5	400	GTR	uce-3567
+1700	DNA	53	488	2	480	GTR	uce-5805
+1701	DNA	38	373	4	362	GTR	uce-2462
+1702	DNA	48	463	4	451	GTR	uce-1120
+1703	DNA	46	480	2	470	GTR	uce-2247
+1704	DNA	52	424	1	416	GTR	uce-6570
+1705	DNA	44	504	1	494	GTR	uce-3323
+1706	DNA	51	375	3	366	GTR	uce-995
+1707	DNA	44	346	5	315	GTR	uce-5048
+1708	DNA	46	372	4	350	GTR	uce-608
+1709	DNA	54	388	1	381	GTR	uce-7363
+1710	DNA	47	443	0	434	GTR	uce-2952
+WARNING: No parsimony-informative sites in partition uce-2952
+1711	DNA	53	437	0	423	GTR	uce-4956
+WARNING: No parsimony-informative sites in partition uce-4956
+1712	DNA	53	421	1	414	GTR	uce-1523
+1713	DNA	45	402	1	394	GTR	uce-4423
+1714	DNA	40	361	4	329	GTR	uce-6811
+1715	DNA	53	324	8	309	GTR	uce-6584
+1716	DNA	47	471	5	452	GTR	uce-7535
+1717	DNA	42	288	6	264	GTR	uce-5699
+1718	DNA	49	331	1	319	GTR	uce-6314
+1719	DNA	44	515	0	499	GTR	uce-1650
+WARNING: No parsimony-informative sites in partition uce-1650
+1720	DNA	45	399	2	381	GTR	uce-6593
+1721	DNA	36	413	0	400	GTR	uce-3416
+WARNING: No parsimony-informative sites in partition uce-3416
+1722	DNA	52	373	2	366	GTR	uce-7605
+1723	DNA	48	404	9	385	GTR	uce-4988
+1724	DNA	49	557	3	544	GTR	uce-726
+1725	DNA	55	371	0	363	GTR	uce-800
+WARNING: No parsimony-informative sites in partition uce-800
+1726	DNA	47	445	1	405	GTR	uce-6555
+1727	DNA	40	347	3	333	GTR	uce-232
+1728	DNA	54	424	2	416	GTR	uce-2651
+1729	DNA	48	437	1	423	GTR	uce-7833
+1730	DNA	41	541	4	524	GTR	uce-855
+1731	DNA	56	415	0	402	GTR	uce-5234
+WARNING: No parsimony-informative sites in partition uce-5234
+1732	DNA	42	432	1	421	GTR	uce-7495
+1733	DNA	56	446	1	440	GTR	uce-6131
+1734	DNA	46	444	2	436	GTR	uce-4615
+1735	DNA	42	338	3	324	GTR	uce-6351
+1736	DNA	47	448	1	435	GTR	uce-638
+1737	DNA	51	461	2	450	GTR	uce-2178
+1738	DNA	52	452	1	448	GTR	uce-6696
+1739	DNA	46	460	19	416	GTR	uce-6730
+1740	DNA	48	455	3	446	GTR	uce-764
+1741	DNA	47	370	1	357	GTR	uce-2504
+1742	DNA	45	370	0	366	GTR	uce-5733
+WARNING: No parsimony-informative sites in partition uce-5733
+1743	DNA	52	418	4	408	GTR	uce-6882
+1744	DNA	51	369	0	359	GTR	uce-1178
+WARNING: No parsimony-informative sites in partition uce-1178
+1745	DNA	47	362	1	352	GTR	uce-7490
+1746	DNA	52	402	1	388	GTR	uce-3551
+1747	DNA	41	342	28	308	GTR	uce-1976
+1748	DNA	41	473	1	466	GTR	uce-4463
+1749	DNA	47	485	1	475	GTR	uce-7283
+1750	DNA	42	449	2	437	GTR	uce-258
+1751	DNA	44	396	2	388	GTR	uce-690
+1752	DNA	45	517	7	487	GTR	uce-1766
+1753	DNA	49	416	2	397	GTR	uce-2698
+1754	DNA	55	420	8	395	GTR	uce-1511
+1755	DNA	52	465	6	448	GTR	uce-5570
+1756	DNA	48	443	2	430	GTR	uce-2003
+1757	DNA	52	435	4	419	GTR	uce-5148
+1758	DNA	48	421	2	398	GTR	uce-5810
+1759	DNA	53	402	2	388	GTR	uce-67
+1760	DNA	42	396	6	370	GTR	uce-4143
+1761	DNA	54	471	1	467	GTR	uce-904
+1762	DNA	38	246	1	234	GTR	uce-3764
+1763	DNA	39	460	7	429	GTR	uce-3130
+1764	DNA	39	437	3	425	GTR	uce-3783
+1765	DNA	41	499	2	486	GTR	uce-5387
+1766	DNA	47	483	14	441	GTR	uce-7266
+1767	DNA	43	504	7	446	GTR	uce-6790
+1768	DNA	49	475	2	437	GTR	uce-3135
+1769	DNA	55	363	2	352	GTR	uce-6287
+1770	DNA	49	403	0	392	GTR	uce-6932
+WARNING: No parsimony-informative sites in partition uce-6932
+1771	DNA	47	405	2	391	GTR	uce-1512
+1772	DNA	53	360	0	355	GTR	uce-2893
+WARNING: No parsimony-informative sites in partition uce-2893
+1773	DNA	52	443	1	414	GTR	uce-3134
+1774	DNA	49	406	3	399	GTR	uce-5670
+1775	DNA	40	270	0	269	GTR	uce-4018
+WARNING: No parsimony-informative sites in partition uce-4018
+1776	DNA	56	380	1	369	GTR	uce-2116
+1777	DNA	48	364	1	356	GTR	uce-1891
+1778	DNA	48	430	5	418	GTR	uce-976
+1779	DNA	47	407	12	380	GTR	uce-5401
+1780	DNA	51	335	5	308	GTR	uce-5273
+1781	DNA	43	413	7	377	GTR	uce-4640
+1782	DNA	46	314	1	306	GTR	uce-1648
+1783	DNA	50	371	2	359	GTR	uce-5812
+1784	DNA	42	359	1	345	GTR	uce-4224
+1785	DNA	44	269	2	260	GTR	uce-6058
+1786	DNA	47	415	3	400	GTR	uce-6997
+1787	DNA	49	359	3	349	GTR	uce-6771
+1788	DNA	45	405	1	397	GTR	uce-2006
+1789	DNA	48	505	2	459	GTR	uce-6126
+1790	DNA	50	455	1	446	GTR	uce-3528
+1791	DNA	41	368	1	358	GTR	uce-3539
+1792	DNA	48	461	1	452	GTR	uce-3436
+1793	DNA	44	327	1	320	GTR	uce-4363
+1794	DNA	44	341	1	337	GTR	uce-7997
+1795	DNA	46	397	2	377	GTR	uce-4566
+1796	DNA	54	411	2	384	GTR	uce-1012
+1797	DNA	47	376	1	369	GTR	uce-955
+1798	DNA	52	514	7	466	GTR	uce-7587
+1799	DNA	50	541	0	538	GTR	uce-200
+WARNING: No parsimony-informative sites in partition uce-200
+1800	DNA	53	374	0	370	GTR	uce-7432
+WARNING: No parsimony-informative sites in partition uce-7432
+1801	DNA	50	424	5	410	GTR	uce-6468
+1802	DNA	45	453	0	447	GTR	uce-1291
+WARNING: No parsimony-informative sites in partition uce-1291
+1803	DNA	52	360	1	355	GTR	uce-3667
+1804	DNA	50	429	4	416	GTR	uce-389
+1805	DNA	52	399	6	375	GTR	uce-11
+1806	DNA	51	416	2	394	GTR	uce-88
+1807	DNA	45	346	0	337	GTR	uce-6173
+WARNING: No parsimony-informative sites in partition uce-6173
+1808	DNA	47	379	4	344	GTR	uce-1072
+1809	DNA	54	448	2	437	GTR	uce-6964
+1810	DNA	45	448	1	437	GTR	uce-7349
+1811	DNA	53	305	4	290	GTR	uce-2910
+1812	DNA	43	473	0	461	GTR	uce-2611
+WARNING: No parsimony-informative sites in partition uce-2611
+1813	DNA	36	442	3	432	GTR	uce-3845
+1814	DNA	49	356	0	350	GTR	uce-6588
+WARNING: No parsimony-informative sites in partition uce-6588
+1815	DNA	50	413	1	406	GTR	uce-1749
+1816	DNA	47	351	0	331	GTR	uce-4833
+WARNING: No parsimony-informative sites in partition uce-4833
+1817	DNA	53	409	1	403	GTR	uce-7083
+1818	DNA	47	509	0	499	GTR	uce-5464
+WARNING: No parsimony-informative sites in partition uce-5464
+1819	DNA	45	384	0	379	GTR	uce-885
+WARNING: No parsimony-informative sites in partition uce-885
+1820	DNA	49	415	0	412	GTR	uce-3198
+WARNING: No parsimony-informative sites in partition uce-3198
+1821	DNA	48	439	3	423	GTR	uce-7726
+1822	DNA	43	406	1	399	GTR	uce-4342
+1823	DNA	55	439	10	415	GTR	uce-5601
+1824	DNA	58	415	0	412	GTR	uce-6870
+WARNING: No parsimony-informative sites in partition uce-6870
+1825	DNA	42	349	3	338	GTR	uce-2064
+1826	DNA	41	423	3	389	GTR	uce-192
+1827	DNA	52	332	0	323	GTR	uce-7708
+WARNING: No parsimony-informative sites in partition uce-7708
+1828	DNA	48	509	3	493	GTR	uce-5013
+1829	DNA	45	326	0	323	GTR	uce-3208
+WARNING: No parsimony-informative sites in partition uce-3208
+1830	DNA	49	473	4	460	GTR	uce-2185
+1831	DNA	51	425	5	380	GTR	uce-3957
+1832	DNA	40	331	1	299	GTR	uce-5404
+1833	DNA	51	408	3	396	GTR	uce-2273
+1834	DNA	45	428	1	421	GTR	uce-1482
+1835	DNA	50	359	0	348	GTR	uce-5964
+WARNING: No parsimony-informative sites in partition uce-5964
+1836	DNA	50	421	0	410	GTR	uce-7105
+WARNING: No parsimony-informative sites in partition uce-7105
+1837	DNA	51	401	1	391	GTR	uce-3267
+1838	DNA	43	339	2	323	GTR	uce-4140
+1839	DNA	47	462	6	439	GTR	uce-2328
+1840	DNA	48	464	3	446	GTR	uce-3655
+1841	DNA	49	400	0	384	GTR	uce-5842
+WARNING: No parsimony-informative sites in partition uce-5842
+1842	DNA	41	504	1	495	GTR	uce-2925
+1843	DNA	55	373	3	355	GTR	uce-6855
+1844	DNA	48	448	1	438	GTR	uce-1192
+1845	DNA	45	348	11	327	GTR	uce-7476
+1846	DNA	44	435	0	431	GTR	uce-6176
+WARNING: No parsimony-informative sites in partition uce-6176
+1847	DNA	45	384	5	371	GTR	uce-7657
+1848	DNA	45	453	1	443	GTR	uce-2250
+1849	DNA	41	295	3	280	GTR	uce-5694
+1850	DNA	51	385	2	376	GTR	uce-2122
+1851	DNA	42	317	1	316	GTR	uce-4141
+1852	DNA	40	457	9	411	GTR	uce-3810
+1853	DNA	53	520	3	482	GTR	uce-190
+1854	DNA	44	460	2	447	GTR	uce-2922
+1855	DNA	40	422	0	416	GTR	uce-2140
+WARNING: No parsimony-informative sites in partition uce-2140
+1856	DNA	49	357	1	348	GTR	uce-8031
+1857	DNA	54	414	3	399	GTR	uce-5346
+1858	DNA	47	380	1	374	GTR	uce-416
+1859	DNA	52	444	0	424	GTR	uce-442
+WARNING: No parsimony-informative sites in partition uce-442
+1860	DNA	42	368	3	355	GTR	uce-599
+1861	DNA	43	389	0	380	GTR	uce-6427
+WARNING: No parsimony-informative sites in partition uce-6427
+1862	DNA	40	580	3	572	GTR	uce-680
+1863	DNA	49	386	0	381	GTR	uce-6860
+WARNING: No parsimony-informative sites in partition uce-6860
+1864	DNA	57	383	2	371	GTR	uce-2289
+1865	DNA	42	630	5	610	GTR	uce-1357
+1866	DNA	49	496	0	488	GTR	uce-1329
+WARNING: No parsimony-informative sites in partition uce-1329
+1867	DNA	44	383	0	378	GTR	uce-2041
+WARNING: No parsimony-informative sites in partition uce-2041
+1868	DNA	56	377	0	370	GTR	uce-2036
+WARNING: No parsimony-informative sites in partition uce-2036
+1869	DNA	38	353	3	333	GTR	uce-5667
+1870	DNA	47	435	4	421	GTR	uce-1257
+1871	DNA	43	436	2	424	GTR	uce-685
+1872	DNA	45	446	2	433	GTR	uce-686
+1873	DNA	43	475	0	470	GTR	uce-499
+WARNING: No parsimony-informative sites in partition uce-499
+1874	DNA	53	353	1	345	GTR	uce-7287
+1875	DNA	50	392	2	368	GTR	uce-3217
+1876	DNA	44	345	2	326	GTR	uce-6329
+1877	DNA	48	512	2	500	GTR	uce-1736
+1878	DNA	49	449	0	440	GTR	uce-7623
+WARNING: No parsimony-informative sites in partition uce-7623
+1879	DNA	47	436	1	426	GTR	uce-4557
+1880	DNA	49	424	1	414	GTR	uce-5142
+1881	DNA	46	462	0	456	GTR	uce-7688
+WARNING: No parsimony-informative sites in partition uce-7688
+1882	DNA	42	425	0	417	GTR	uce-2505
+WARNING: No parsimony-informative sites in partition uce-2505
+1883	DNA	44	376	0	373	GTR	uce-5561
+WARNING: No parsimony-informative sites in partition uce-5561
+1884	DNA	49	473	12	428	GTR	uce-2169
+1885	DNA	45	435	5	398	GTR	uce-6863
+1886	DNA	45	442	3	426	GTR	uce-4513
+1887	DNA	53	463	4	450	GTR	uce-4863
+1888	DNA	47	408	6	375	GTR	uce-6165
+1889	DNA	48	341	4	329	GTR	uce-6552
+1890	DNA	42	454	5	433	GTR	uce-4035
+1891	DNA	51	383	0	380	GTR	uce-2331
+WARNING: No parsimony-informative sites in partition uce-2331
+1892	DNA	44	284	7	266	GTR	uce-5861
+1893	DNA	46	363	0	357	GTR	uce-7516
+WARNING: No parsimony-informative sites in partition uce-7516
+1894	DNA	43	346	2	334	GTR	uce-4050
+1895	DNA	47	448	3	434	GTR	uce-620
+1896	DNA	51	445	1	434	GTR	uce-4443
+1897	DNA	44	568	7	501	GTR	uce-62
+1898	DNA	42	423	1	413	GTR	uce-4865
+1899	DNA	44	307	1	296	GTR	uce-5820
+1900	DNA	51	388	6	343	GTR	uce-5645
+1901	DNA	46	356	2	342	GTR	uce-7653
+1902	DNA	44	393	3	382	GTR	uce-5280
+1903	DNA	50	430	8	408	GTR	uce-2211
+1904	DNA	43	266	4	252	GTR	uce-7012
+1905	DNA	45	425	3	407	GTR	uce-2566
+1906	DNA	39	355	0	346	GTR	uce-5678
+WARNING: No parsimony-informative sites in partition uce-5678
+1907	DNA	45	318	0	310	GTR	uce-3734
+WARNING: No parsimony-informative sites in partition uce-3734
+1908	DNA	47	407	0	400	GTR	uce-4839
+WARNING: No parsimony-informative sites in partition uce-4839
+1909	DNA	44	517	0	509	GTR	uce-25
+WARNING: No parsimony-informative sites in partition uce-25
+1910	DNA	42	489	2	469	GTR	uce-5634
+1911	DNA	46	458	0	408	GTR	uce-4586
+WARNING: No parsimony-informative sites in partition uce-4586
+1912	DNA	51	324	1	317	GTR	uce-658
+1913	DNA	38	402	0	372	GTR	uce-541
+WARNING: No parsimony-informative sites in partition uce-541
+1914	DNA	39	498	1	491	GTR	uce-4695
+1915	DNA	50	334	0	327	GTR	uce-117
+WARNING: No parsimony-informative sites in partition uce-117
+1916	DNA	48	425	0	423	GTR	uce-1492
+WARNING: No parsimony-informative sites in partition uce-1492
+1917	DNA	45	400	1	395	GTR	uce-6100
+1918	DNA	54	545	4	502	GTR	uce-540
+1919	DNA	43	387	4	369	GTR	uce-6522
+1920	DNA	44	426	1	419	GTR	uce-6595
+1921	DNA	47	393	2	374	GTR	uce-3981
+1922	DNA	44	333	0	325	GTR	uce-6535
+WARNING: No parsimony-informative sites in partition uce-6535
+1923	DNA	43	339	1	334	GTR	uce-5041
+1924	DNA	52	502	5	486	GTR	uce-318
+1925	DNA	47	357	1	341	GTR	uce-1572
+1926	DNA	49	433	1	422	GTR	uce-2051
+1927	DNA	40	276	4	267	GTR	uce-1781
+1928	DNA	52	387	3	382	GTR	uce-41
+1929	DNA	48	510	2	499	GTR	uce-6758
+1930	DNA	45	475	0	470	GTR	uce-784
+WARNING: No parsimony-informative sites in partition uce-784
+1931	DNA	52	374	0	370	GTR	uce-493
+WARNING: No parsimony-informative sites in partition uce-493
+1932	DNA	54	417	5	367	GTR	uce-4632
+1933	DNA	51	491	1	472	GTR	uce-2703
+1934	DNA	45	466	4	454	GTR	uce-3482
+1935	DNA	43	434	1	426	GTR	uce-7560
+1936	DNA	49	402	4	391	GTR	uce-4570
+1937	DNA	46	432	1	421	GTR	uce-3085
+1938	DNA	57	462	0	448	GTR	uce-6966
+WARNING: No parsimony-informative sites in partition uce-6966
+1939	DNA	48	470	5	450	GTR	uce-2088
+1940	DNA	44	455	0	436	GTR	uce-6990
+WARNING: No parsimony-informative sites in partition uce-6990
+1941	DNA	46	425	1	412	GTR	uce-866
+1942	DNA	49	385	0	376	GTR	uce-636
+WARNING: No parsimony-informative sites in partition uce-636
+1943	DNA	45	333	1	321	GTR	uce-6888
+1944	DNA	45	341	2	321	GTR	uce-5448
+1945	DNA	46	384	0	381	GTR	uce-3326
+WARNING: No parsimony-informative sites in partition uce-3326
+1946	DNA	47	380	1	370	GTR	uce-5250
+1947	DNA	54	306	0	297	GTR	uce-1241
+WARNING: No parsimony-informative sites in partition uce-1241
+1948	DNA	51	411	2	403	GTR	uce-3211
+1949	DNA	45	399	1	396	GTR	uce-887
+1950	DNA	38	429	4	422	GTR	uce-6238
+1951	DNA	37	314	6	299	GTR	uce-7131
+1952	DNA	43	451	3	439	GTR	uce-6049
+1953	DNA	45	403	0	397	GTR	uce-5052
+WARNING: No parsimony-informative sites in partition uce-5052
+1954	DNA	45	361	2	334	GTR	uce-2969
+1955	DNA	53	403	5	386	GTR	uce-2839
+1956	DNA	49	468	0	459	GTR	uce-7889
+WARNING: No parsimony-informative sites in partition uce-7889
+1957	DNA	46	421	2	408	GTR	uce-1367
+1958	DNA	41	316	4	304	GTR	uce-3984
+1959	DNA	43	379	0	356	GTR	uce-3790
+WARNING: No parsimony-informative sites in partition uce-3790
+1960	DNA	44	261	0	248	GTR	uce-3613
+WARNING: No parsimony-informative sites in partition uce-3613
+1961	DNA	51	419	2	414	GTR	uce-1868
+1962	DNA	49	462	2	441	GTR	uce-2781
+1963	DNA	38	350	1	344	GTR	uce-4547
+1964	DNA	47	315	1	301	GTR	uce-4747
+1965	DNA	40	256	0	249	GTR	uce-5316
+WARNING: No parsimony-informative sites in partition uce-5316
+1966	DNA	50	370	0	361	GTR	uce-1102
+WARNING: No parsimony-informative sites in partition uce-1102
+1967	DNA	43	356	1	352	GTR	uce-6376
+1968	DNA	42	434	0	424	GTR	uce-5677
+WARNING: No parsimony-informative sites in partition uce-5677
+1969	DNA	51	401	1	382	GTR	uce-3317
+1970	DNA	46	375	2	364	GTR	uce-3561
+1971	DNA	49	487	3	474	GTR	uce-956
+1972	DNA	39	330	0	322	GTR	uce-4742
+WARNING: No parsimony-informative sites in partition uce-4742
+1973	DNA	53	501	0	491	GTR	uce-1498
+WARNING: No parsimony-informative sites in partition uce-1498
+1974	DNA	42	452	4	437	GTR	uce-2037
+1975	DNA	44	455	2	441	GTR	uce-5348
+1976	DNA	50	393	3	388	GTR	uce-3668
+1977	DNA	44	453	1	432	GTR	uce-6826
+1978	DNA	48	434	3	423	GTR	uce-5922
+1979	DNA	47	473	2	460	GTR	uce-7022
+1980	DNA	45	511	6	491	GTR	uce-4919
+1981	DNA	47	404	5	378	GTR	uce-5845
+1982	DNA	48	408	0	400	GTR	uce-6256
+WARNING: No parsimony-informative sites in partition uce-6256
+1983	DNA	51	458	1	446	GTR	uce-1392
+1984	DNA	39	315	0	309	GTR	uce-443
+WARNING: No parsimony-informative sites in partition uce-443
+1985	DNA	47	438	3	428	GTR	uce-2694
+1986	DNA	43	468	3	458	GTR	uce-3856
+1987	DNA	48	327	1	315	GTR	uce-4161
+1988	DNA	45	347	3	333	GTR	uce-3378
+1989	DNA	37	470	0	463	GTR	uce-2108
+WARNING: No parsimony-informative sites in partition uce-2108
+1990	DNA	45	398	0	395	GTR	uce-7463
+WARNING: No parsimony-informative sites in partition uce-7463
+1991	DNA	46	343	2	335	GTR	uce-6973
+1992	DNA	43	351	0	346	GTR	uce-571
+WARNING: No parsimony-informative sites in partition uce-571
+1993	DNA	48	430	4	417	GTR	uce-5568
+1994	DNA	40	431	8	409	GTR	uce-3807
+1995	DNA	53	422	0	410	GTR	uce-3223
+WARNING: No parsimony-informative sites in partition uce-3223
+1996	DNA	52	315	3	301	GTR	uce-2577
+1997	DNA	46	470	3	455	GTR	uce-4486
+1998	DNA	46	382	1	367	GTR	uce-3174
+1999	DNA	47	378	3	369	GTR	uce-857
+2000	DNA	43	361	0	353	GTR	uce-1550
+WARNING: No parsimony-informative sites in partition uce-1550
+2001	DNA	46	426	2	418	GTR	uce-1582
+2002	DNA	42	379	1	369	GTR	uce-4829
+2003	DNA	53	419	1	405	GTR	uce-5288
+2004	DNA	44	597	3	581	GTR	uce-717
+2005	DNA	39	302	2	292	GTR	uce-6184
+2006	DNA	43	311	0	303	GTR	uce-1692
+WARNING: No parsimony-informative sites in partition uce-1692
+2007	DNA	53	443	0	441	GTR	uce-1989
+WARNING: No parsimony-informative sites in partition uce-1989
+2008	DNA	49	443	6	420	GTR	uce-2146
+2009	DNA	49	282	2	276	GTR	uce-3849
+2010	DNA	48	462	8	386	GTR	uce-3033
+2011	DNA	51	320	3	310	GTR	uce-7235
+2012	DNA	44	436	0	429	GTR	uce-899
+WARNING: No parsimony-informative sites in partition uce-899
+2013	DNA	47	399	1	383	GTR	uce-1215
+2014	DNA	48	439	2	428	GTR	uce-712
+2015	DNA	48	368	3	345	GTR	uce-4079
+2016	DNA	50	360	2	353	GTR	uce-2303
+2017	DNA	37	404	1	396	GTR	uce-1695
+2018	DNA	46	293	0	290	GTR	uce-2866
+WARNING: No parsimony-informative sites in partition uce-2866
+2019	DNA	41	447	3	434	GTR	uce-4550
+2020	DNA	43	341	1	331	GTR	uce-1603
+2021	DNA	48	420	0	412	GTR	uce-2309
+WARNING: No parsimony-informative sites in partition uce-2309
+2022	DNA	46	408	3	363	GTR	uce-6929
+2023	DNA	46	483	11	452	GTR	uce-6242
+2024	DNA	48	537	5	500	GTR	uce-5205
+2025	DNA	42	339	1	325	GTR	uce-2886
+2026	DNA	43	458	1	450	GTR	uce-6579
+2027	DNA	51	313	2	298	GTR	uce-6330
+2028	DNA	43	386	3	372	GTR	uce-7848
+2029	DNA	40	327	3	315	GTR	uce-6843
+2030	DNA	53	335	0	331	GTR	uce-1907
+WARNING: No parsimony-informative sites in partition uce-1907
+2031	DNA	44	416	4	383	GTR	uce-3011
+2032	DNA	48	450	3	414	GTR	uce-7159
+2033	DNA	48	388	2	384	GTR	uce-5955
+2034	DNA	47	419	2	409	GTR	uce-3400
+2035	DNA	46	362	4	349	GTR	uce-4626
+2036	DNA	52	418	0	414	GTR	uce-4159
+WARNING: No parsimony-informative sites in partition uce-4159
+2037	DNA	43	486	5	467	GTR	uce-5327
+2038	DNA	53	525	4	463	GTR	uce-520
+2039	DNA	46	320	0	306	GTR	uce-7583
+WARNING: No parsimony-informative sites in partition uce-7583
+2040	DNA	43	493	1	488	GTR	uce-958
+2041	DNA	52	393	1	379	GTR	uce-3359
+2042	DNA	48	483	5	448	GTR	uce-5259
+2043	DNA	55	418	4	398	GTR	uce-5315
+2044	DNA	50	379	3	373	GTR	uce-1259
+2045	DNA	50	423	2	409	GTR	uce-3554
+2046	DNA	46	501	0	486	GTR	uce-7941
+WARNING: No parsimony-informative sites in partition uce-7941
+2047	DNA	47	418	2	412	GTR	uce-3160
+2048	DNA	42	454	0	444	GTR	uce-6195
+WARNING: No parsimony-informative sites in partition uce-6195
+2049	DNA	51	390	1	381	GTR	uce-1447
+2050	DNA	52	407	1	394	GTR	uce-4095
+2051	DNA	53	361	2	349	GTR	uce-5093
+2052	DNA	56	404	3	389	GTR	uce-6274
+2053	DNA	52	487	4	474	GTR	uce-3186
+2054	DNA	57	399	2	385	GTR	uce-5920
+2055	DNA	49	389	3	373	GTR	uce-7068
+2056	DNA	36	359	1	346	GTR	uce-5786
+2057	DNA	49	407	0	399	GTR	uce-1937
+WARNING: No parsimony-informative sites in partition uce-1937
+2058	DNA	50	449	3	439	GTR	uce-7969
+2059	DNA	42	357	1	349	GTR	uce-1606
+2060	DNA	50	437	0	429	GTR	uce-3905
+WARNING: No parsimony-informative sites in partition uce-3905
+2061	DNA	45	353	2	339	GTR	uce-2201
+2062	DNA	49	468	2	453	GTR	uce-3069
+2063	DNA	47	416	1	407	GTR	uce-3516
+2064	DNA	36	510	4	493	GTR	uce-408
+2065	DNA	38	334	4	312	GTR	uce-2848
+2066	DNA	45	477	1	470	GTR	uce-3970
+2067	DNA	39	430	0	426	GTR	uce-737
+WARNING: No parsimony-informative sites in partition uce-737
+2068	DNA	49	348	0	336	GTR	uce-5652
+WARNING: No parsimony-informative sites in partition uce-5652
+2069	DNA	51	484	1	434	GTR	uce-6664
+2070	DNA	46	354	1	333	GTR	uce-5595
+2071	DNA	48	374	3	353	GTR	uce-7200
+2072	DNA	48	437	0	429	GTR	uce-2802
+WARNING: No parsimony-informative sites in partition uce-2802
+2073	DNA	42	512	3	497	GTR	uce-1333
+2074	DNA	45	339	1	330	GTR	uce-3687
+2075	DNA	43	355	0	350	GTR	uce-7712
+WARNING: No parsimony-informative sites in partition uce-7712
+2076	DNA	44	348	0	348	GTR	uce-221
+WARNING: No variant sites in partition uce-221
+2077	DNA	43	400	2	384	GTR	uce-366
+2078	DNA	52	377	4	364	GTR	uce-1371
+2079	DNA	46	339	0	336	GTR	uce-1039
+WARNING: No parsimony-informative sites in partition uce-1039
+2080	DNA	45	394	3	383	GTR	uce-6648
+2081	DNA	48	537	6	523	GTR	uce-371
+2082	DNA	45	440	1	433	GTR	uce-1419
+2083	DNA	51	416	2	407	GTR	uce-3966
+2084	DNA	52	418	1	406	GTR	uce-919
+2085	DNA	49	437	6	418	GTR	uce-6031
+2086	DNA	54	429	0	421	GTR	uce-6225
+WARNING: No parsimony-informative sites in partition uce-6225
+2087	DNA	49	382	2	364	GTR	uce-2831
+2088	DNA	43	338	1	334	GTR	uce-7320
+2089	DNA	44	373	6	347	GTR	uce-2213
+2090	DNA	47	447	1	437	GTR	uce-3573
+2091	DNA	47	478	2	468	GTR	uce-1036
+2092	DNA	51	334	5	307	GTR	uce-5928
+2093	DNA	49	428	5	402	GTR	uce-8016
+2094	DNA	48	398	0	394	GTR	uce-5275
+WARNING: No parsimony-informative sites in partition uce-5275
+2095	DNA	48	467	1	458	GTR	uce-7229
+2096	DNA	51	405	1	387	GTR	uce-3077
+2097	DNA	44	385	0	374	GTR	uce-1037
+WARNING: No parsimony-informative sites in partition uce-1037
+2098	DNA	46	491	1	486	GTR	uce-5797
+2099	DNA	45	386	3	379	GTR	uce-1173
+2100	DNA	46	371	0	361	GTR	uce-6718
+WARNING: No parsimony-informative sites in partition uce-6718
+2101	DNA	50	413	3	404	GTR	uce-6981
+2102	DNA	50	454	5	436	GTR	uce-1127
+2103	DNA	41	478	1	457	GTR	uce-3879
+2104	DNA	43	468	1	456	GTR	uce-6323
+2105	DNA	45	348	0	345	GTR	uce-6497
+WARNING: No parsimony-informative sites in partition uce-6497
+2106	DNA	44	407	6	386	GTR	uce-6317
+2107	DNA	41	363	2	351	GTR	uce-903
+2108	DNA	45	496	1	480	GTR	uce-3752
+2109	DNA	44	434	0	425	GTR	uce-917
+WARNING: No parsimony-informative sites in partition uce-917
+2110	DNA	39	273	1	261	GTR	uce-6800
+2111	DNA	50	467	2	455	GTR	uce-5560
+2112	DNA	53	419	1	413	GTR	uce-4762
+2113	DNA	47	457	4	446	GTR	uce-6249
+2114	DNA	46	437	1	428	GTR	uce-3893
+2115	DNA	46	448	1	443	GTR	uce-4208
+2116	DNA	47	451	1	439	GTR	uce-6214
+2117	DNA	48	391	7	369	GTR	uce-5295
+2118	DNA	47	481	2	470	GTR	uce-492
+2119	DNA	45	466	0	449	GTR	uce-1027
+WARNING: No parsimony-informative sites in partition uce-1027
+2120	DNA	40	310	1	305	GTR	uce-4612
+2121	DNA	42	538	5	517	GTR	uce-6014
+2122	DNA	49	437	8	409	GTR	uce-3304
+2123	DNA	48	430	2	422	GTR	uce-5966
+2124	DNA	46	482	0	472	GTR	uce-2345
+WARNING: No parsimony-informative sites in partition uce-2345
+2125	DNA	46	490	4	450	GTR	uce-1427
+2126	DNA	55	404	5	387	GTR	uce-6484
+2127	DNA	47	363	6	344	GTR	uce-5287
+2128	DNA	41	343	5	327	GTR	uce-1748
+2129	DNA	47	351	1	336	GTR	uce-2388
+2130	DNA	41	300	1	277	GTR	uce-4712
+2131	DNA	55	453	3	431	GTR	uce-1893
+2132	DNA	50	431	1	428	GTR	uce-5125
+2133	DNA	43	385	3	381	GTR	uce-7904
+2134	DNA	52	344	4	323	GTR	uce-3410
+2135	DNA	52	431	3	423	GTR	uce-1159
+2136	DNA	47	427	1	398	GTR	uce-5825
+2137	DNA	48	449	0	440	GTR	uce-3338
+WARNING: No parsimony-informative sites in partition uce-3338
+2138	DNA	54	413	2	403	GTR	uce-222
+2139	DNA	46	382	1	380	GTR	uce-2235
+2140	DNA	51	302	3	292	GTR	uce-438
+2141	DNA	44	397	2	391	GTR	uce-6258
+2142	DNA	49	445	0	440	GTR	uce-4237
+WARNING: No parsimony-informative sites in partition uce-4237
+2143	DNA	52	340	2	334	GTR	uce-3747
+2144	DNA	55	483	2	466	GTR	uce-8043
+2145	DNA	51	426	1	413	GTR	uce-583
+2146	DNA	51	404	7	367	GTR	uce-6752
+2147	DNA	46	328	2	317	GTR	uce-7324
+2148	DNA	44	374	0	367	GTR	uce-6700
+WARNING: No parsimony-informative sites in partition uce-6700
+2149	DNA	51	528	0	521	GTR	uce-3671
+WARNING: No parsimony-informative sites in partition uce-3671
+2150	DNA	46	351	1	342	GTR	uce-1880
+2151	DNA	45	418	0	409	GTR	uce-3376
+WARNING: No parsimony-informative sites in partition uce-3376
+2152	DNA	51	407	2	397	GTR	uce-7297
+2153	DNA	54	410	1	405	GTR	uce-4250
+2154	DNA	56	410	3	395	GTR	uce-7897
+2155	DNA	45	294	2	281	GTR	uce-5971
+2156	DNA	46	354	3	346	GTR	uce-5240
+2157	DNA	47	469	2	461	GTR	uce-603
+2158	DNA	50	414	5	391	GTR	uce-5254
+2159	DNA	46	380	0	377	GTR	uce-2656
+WARNING: No parsimony-informative sites in partition uce-2656
+2160	DNA	42	272	5	260	GTR	uce-4285
+2161	DNA	41	399	3	370	GTR	uce-72
+2162	DNA	39	372	0	362	GTR	uce-6628
+WARNING: No parsimony-informative sites in partition uce-6628
+2163	DNA	43	393	1	387	GTR	uce-7912
+2164	DNA	53	389	0	379	GTR	uce-4223
+WARNING: No parsimony-informative sites in partition uce-4223
+2165	DNA	53	424	1	414	GTR	uce-7515
+2166	DNA	40	350	3	341	GTR	uce-3746
+2167	DNA	54	358	3	342	GTR	uce-884
+2168	DNA	55	318	0	313	GTR	uce-4021
+WARNING: No parsimony-informative sites in partition uce-4021
+2169	DNA	52	432	3	415	GTR	uce-6690
+2170	DNA	45	416	9	381	GTR	uce-5895
+2171	DNA	46	402	3	392	GTR	uce-2406
+2172	DNA	38	651	0	639	GTR	uce-2092
+WARNING: No parsimony-informative sites in partition uce-2092
+2173	DNA	47	493	0	478	GTR	uce-5597
+WARNING: No parsimony-informative sites in partition uce-5597
+2174	DNA	48	337	1	332	GTR	uce-1301
+2175	DNA	48	355	3	339	GTR	uce-2231
+2176	DNA	47	483	2	450	GTR	uce-6879
+2177	DNA	47	396	3	373	GTR	uce-6424
+2178	DNA	52	497	0	492	GTR	uce-343
+WARNING: No parsimony-informative sites in partition uce-343
+2179	DNA	47	452	4	446	GTR	uce-1232
+2180	DNA	39	408	5	394	GTR	uce-3170
+2181	DNA	42	306	1	301	GTR	uce-4026
+2182	DNA	49	436	0	436	GTR	uce-4301
+WARNING: No variant sites in partition uce-4301
+2183	DNA	47	382	3	372	GTR	uce-2190
+2184	DNA	51	415	0	414	GTR	uce-180
+WARNING: No parsimony-informative sites in partition uce-180
+2185	DNA	48	442	2	428	GTR	uce-1480
+2186	DNA	48	367	0	346	GTR	uce-7841
+WARNING: No parsimony-informative sites in partition uce-7841
+2187	DNA	46	413	4	386	GTR	uce-5676
+2188	DNA	44	394	5	376	GTR	uce-7248
+2189	DNA	51	416	5	394	GTR	uce-36
+2190	DNA	45	314	7	294	GTR	uce-327
+2191	DNA	38	276	0	273	GTR	uce-4206
+WARNING: No parsimony-informative sites in partition uce-4206
+2192	DNA	46	445	1	436	GTR	uce-81
+2193	DNA	50	443	1	430	GTR	uce-12
+2194	DNA	47	452	3	436	GTR	uce-4642
+2195	DNA	43	494	1	487	GTR	uce-2246
+2196	DNA	46	430	0	420	GTR	uce-1826
+WARNING: No parsimony-informative sites in partition uce-1826
+2197	DNA	47	389	4	369	GTR	uce-3509
+2198	DNA	52	390	4	372	GTR	uce-2119
+2199	DNA	53	458	5	432	GTR	uce-7298
+2200	DNA	46	407	11	362	GTR	uce-2816
+2201	DNA	53	400	0	386	GTR	uce-5588
+WARNING: No parsimony-informative sites in partition uce-5588
+2202	DNA	50	404	2	396	GTR	uce-1361
+2203	DNA	55	401	0	393	GTR	uce-1846
+WARNING: No parsimony-informative sites in partition uce-1846
+2204	DNA	44	296	2	276	GTR	uce-3181
+2205	DNA	49	308	0	301	GTR	uce-6077
+WARNING: No parsimony-informative sites in partition uce-6077
+2206	DNA	49	404	3	382	GTR	uce-5917
+2207	DNA	47	450	0	440	GTR	uce-7913
+WARNING: No parsimony-informative sites in partition uce-7913
+2208	DNA	38	294	3	282	GTR	uce-6619
+2209	DNA	48	374	2	367	GTR	uce-6043
+2210	DNA	36	306	3	293	GTR	uce-5832
+2211	DNA	43	334	1	325	GTR	uce-5992
+2212	DNA	42	455	2	441	GTR	uce-1552
+2213	DNA	44	541	1	529	GTR	uce-783
+2214	DNA	48	484	13	445	GTR	uce-4312
+2215	DNA	45	395	2	382	GTR	uce-3251
+2216	DNA	44	372	0	364	GTR	uce-3472
+WARNING: No parsimony-informative sites in partition uce-3472
+2217	DNA	40	496	4	459	GTR	uce-491
+2218	DNA	37	319	1	314	GTR	uce-5340
+2219	DNA	40	363	3	340	GTR	uce-5637
+2220	DNA	54	462	3	445	GTR	uce-4658
+2221	DNA	37	489	2	483	GTR	uce-1453
+2222	DNA	54	397	1	387	GTR	uce-746
+2223	DNA	43	622	2	587	GTR	uce-558
+2224	DNA	47	324	3	313	GTR	uce-2731
+2225	DNA	48	430	0	419	GTR	uce-5919
+WARNING: No parsimony-informative sites in partition uce-5919
+2226	DNA	43	519	2	505	GTR	uce-3958
+2227	DNA	46	461	4	448	GTR	uce-5968
+2228	DNA	46	395	1	385	GTR	uce-2138
+2229	DNA	45	295	1	290	GTR	uce-3804
+2230	DNA	49	406	8	361	GTR	uce-3016
+2231	DNA	52	421	5	399	GTR	uce-949
+2232	DNA	41	442	5	425	GTR	uce-734
+2233	DNA	49	427	5	410	GTR	uce-266
+2234	DNA	50	430	1	426	GTR	uce-38
+2235	DNA	48	404	2	396	GTR	uce-1148
+2236	DNA	53	451	3	445	GTR	uce-27
+2237	DNA	44	379	2	367	GTR	uce-6956
+2238	DNA	46	389	3	377	GTR	uce-1350
+2239	DNA	49	345	3	336	GTR	uce-441
+2240	DNA	50	352	1	340	GTR	uce-3260
+2241	DNA	50	468	0	463	GTR	uce-4778
+WARNING: No parsimony-informative sites in partition uce-4778
+2242	DNA	41	370	5	356	GTR	uce-6748
+2243	DNA	51	462	1	457	GTR	uce-2043
+2244	DNA	50	430	3	418	GTR	uce-1576
+2245	DNA	54	346	1	335	GTR	uce-6968
+2246	DNA	53	306	4	289	GTR	uce-5502
+2247	DNA	48	379	3	367	GTR	uce-2915
+2248	DNA	48	292	1	281	GTR	uce-7051
+2249	DNA	50	479	1	427	GTR	uce-8014
+2250	DNA	47	376	1	369	GTR	uce-3113
+2251	DNA	46	368	1	357	GTR	uce-4106
+2252	DNA	47	471	9	437	GTR	uce-3803
+2253	DNA	46	438	0	430	GTR	uce-6407
+WARNING: No parsimony-informative sites in partition uce-6407
+2254	DNA	50	367	3	351	GTR	uce-2812
+2255	DNA	47	403	2	400	GTR	uce-1342
+2256	DNA	45	431	1	417	GTR	uce-7967
+2257	DNA	49	349	1	339	GTR	uce-920
+2258	DNA	50	329	0	321	GTR	uce-1417
+WARNING: No parsimony-informative sites in partition uce-1417
+2259	DNA	39	335	3	317	GTR	uce-7076
+2260	DNA	43	439	1	430	GTR	uce-4014
+2261	DNA	49	495	0	492	GTR	uce-1202
+WARNING: No parsimony-informative sites in partition uce-1202
+2262	DNA	46	448	0	441	GTR	uce-412
+WARNING: No parsimony-informative sites in partition uce-412
+2263	DNA	49	524	1	517	GTR	uce-987
+2264	DNA	50	409	3	374	GTR	uce-4337
+2265	DNA	46	373	1	366	GTR	uce-7167
+2266	DNA	46	330	8	287	GTR	uce-7661
+2267	DNA	43	449	2	421	GTR	uce-1786
+2268	DNA	45	383	2	368	GTR	uce-7500
+2269	DNA	42	340	1	334	GTR	uce-7015
+2270	DNA	44	382	0	374	GTR	uce-6352
+WARNING: No parsimony-informative sites in partition uce-6352
+2271	DNA	55	377	1	369	GTR	uce-2320
+2272	DNA	53	410	1	398	GTR	uce-550
+2273	DNA	49	337	1	334	GTR	uce-4614
+2274	DNA	53	395	4	362	GTR	uce-2655
+2275	DNA	43	297	1	289	GTR	uce-2582
+2276	DNA	40	395	4	386	GTR	uce-3320
+2277	DNA	48	402	0	388	GTR	uce-1242
+WARNING: No parsimony-informative sites in partition uce-1242
+2278	DNA	48	483	0	475	GTR	uce-7869
+WARNING: No parsimony-informative sites in partition uce-7869
+2279	DNA	45	389	1	372	GTR	uce-4548
+2280	DNA	44	485	1	466	GTR	uce-5642
+2281	DNA	51	368	0	358	GTR	uce-7666
+WARNING: No parsimony-informative sites in partition uce-7666
+2282	DNA	50	414	6	388	GTR	uce-3861
+2283	DNA	47	451	1	445	GTR	uce-978
+2284	DNA	46	308	1	297	GTR	uce-5859
+2285	DNA	47	394	4	376	GTR	uce-2746
+2286	DNA	43	434	6	415	GTR	uce-6476
+2287	DNA	49	382	2	372	GTR	uce-4646
+2288	DNA	47	382	0	375	GTR	uce-6017
+WARNING: No parsimony-informative sites in partition uce-6017
+2289	DNA	39	388	3	372	GTR	uce-2168
+2290	DNA	47	420	3	413	GTR	uce-1474
+2291	DNA	47	383	1	377	GTR	uce-6082
+2292	DNA	45	323	0	318	GTR	uce-1397
+WARNING: No parsimony-informative sites in partition uce-1397
+2293	DNA	43	550	4	535	GTR	uce-660
+2294	DNA	48	420	1	404	GTR	uce-2177
+2295	DNA	54	326	1	318	GTR	uce-3543
+2296	DNA	46	437	1	427	GTR	uce-7209
+2297	DNA	49	310	9	288	GTR	uce-2772
+2298	DNA	51	410	2	397	GTR	uce-2456
+2299	DNA	48	460	0	455	GTR	uce-7511
+WARNING: No parsimony-informative sites in partition uce-7511
+2300	DNA	45	513	9	493	GTR	uce-7588
+2301	DNA	46	383	2	378	GTR	uce-248
+2302	DNA	47	397	1	387	GTR	uce-76
+2303	DNA	46	519	6	497	GTR	uce-5627
+2304	DNA	45	449	0	438	GTR	uce-4998
+WARNING: No parsimony-informative sites in partition uce-4998
+2305	DNA	46	374	0	365	GTR	uce-3355
+WARNING: No parsimony-informative sites in partition uce-3355
+2306	DNA	47	399	4	378	GTR	uce-6779
+2307	DNA	41	519	3	499	GTR	uce-6464
+2308	DNA	51	394	4	366	GTR	uce-2386
+2309	DNA	40	341	8	319	GTR	uce-2699
+2310	DNA	48	441	0	437	GTR	uce-547
+WARNING: No parsimony-informative sites in partition uce-547
+2311	DNA	48	478	1	457	GTR	uce-7369
+2312	DNA	50	380	0	376	GTR	uce-968
+WARNING: No parsimony-informative sites in partition uce-968
+2313	DNA	49	475	1	458	GTR	uce-6412
+2314	DNA	54	441	3	426	GTR	uce-4395
+2315	DNA	58	407	4	394	GTR	uce-5961
+2316	DNA	53	386	0	376	GTR	uce-4686
+WARNING: No parsimony-informative sites in partition uce-4686
+2317	DNA	50	388	1	375	GTR	uce-2350
+2318	DNA	51	477	2	403	GTR	uce-7062
+2319	DNA	45	449	0	448	GTR	uce-7522
+WARNING: No parsimony-informative sites in partition uce-7522
+2320	DNA	49	467	1	457	GTR	uce-7864
+2321	DNA	51	431	7	404	GTR	uce-1395
+2322	DNA	56	362	5	342	GTR	uce-2533
+2323	DNA	50	351	1	343	GTR	uce-655
+2324	DNA	41	345	3	334	GTR	uce-1653
+2325	DNA	47	429	8	408	GTR	uce-1756
+2326	DNA	49	337	5	307	GTR	uce-7257
+2327	DNA	48	421	7	394	GTR	uce-1385
+2328	DNA	39	287	3	270	GTR	uce-6702
+2329	DNA	53	448	2	435	GTR	uce-5113
+2330	DNA	48	328	4	307	GTR	uce-4225
+2331	DNA	49	346	0	341	GTR	uce-2732
+WARNING: No parsimony-informative sites in partition uce-2732
+2332	DNA	50	389	0	382	GTR	uce-7126
+WARNING: No parsimony-informative sites in partition uce-7126
+2333	DNA	44	333	0	331	GTR	uce-4256
+WARNING: No parsimony-informative sites in partition uce-4256
+2334	DNA	48	370	0	368	GTR	uce-3686
+WARNING: No parsimony-informative sites in partition uce-3686
+2335	DNA	42	394	1	384	GTR	uce-1501
+2336	DNA	45	371	1	356	GTR	uce-205
+2337	DNA	50	425	5	414	GTR	uce-7678
+2338	DNA	45	380	4	362	GTR	uce-652
+2339	DNA	47	398	2	393	GTR	uce-5101
+2340	DNA	46	344	0	336	GTR	uce-5224
+WARNING: No parsimony-informative sites in partition uce-5224
+2341	DNA	44	344	3	323	GTR	uce-4830
+2342	DNA	48	432	3	420	GTR	uce-5682
+2343	DNA	46	410	2	397	GTR	uce-786
+2344	DNA	47	418	1	404	GTR	uce-6551
+2345	DNA	50	438	12	403	GTR	uce-4927
+2346	DNA	49	417	1	413	GTR	uce-268
+2347	DNA	49	427	0	422	GTR	uce-1217
+WARNING: No parsimony-informative sites in partition uce-1217
+2348	DNA	45	457	0	450	GTR	uce-6310
+WARNING: No parsimony-informative sites in partition uce-6310
+2349	DNA	40	259	1	252	GTR	uce-5598
+2350	DNA	47	330	5	306	GTR	uce-2198
+2351	DNA	43	469	0	461	GTR	uce-3907
+WARNING: No parsimony-informative sites in partition uce-3907
+2352	DNA	51	464	4	442	GTR	uce-5617
+2353	DNA	42	480	0	471	GTR	uce-765
+WARNING: No parsimony-informative sites in partition uce-765
+2354	DNA	52	473	3	455	GTR	uce-5190
+2355	DNA	42	490	0	487	GTR	uce-2252
+WARNING: No parsimony-informative sites in partition uce-2252
+2356	DNA	49	327	2	320	GTR	uce-5531
+2357	DNA	51	403	2	393	GTR	uce-6920
+2358	DNA	43	281	2	272	GTR	uce-4150
+2359	DNA	51	427	4	411	GTR	uce-2575
+2360	DNA	49	419	0	417	GTR	uce-6101
+WARNING: No parsimony-informative sites in partition uce-6101
+2361	DNA	53	488	2	468	GTR	uce-4347
+2362	DNA	54	315	1	299	GTR	uce-5364
+2363	DNA	45	376	5	352	GTR	uce-4616
+2364	DNA	49	392	0	384	GTR	uce-3262
+WARNING: No parsimony-informative sites in partition uce-3262
+2365	DNA	50	449	0	440	GTR	uce-4837
+WARNING: No parsimony-informative sites in partition uce-4837
+2366	DNA	53	468	3	457	GTR	uce-5995
+2367	DNA	37	303	0	282	GTR	uce-4694
+WARNING: No parsimony-informative sites in partition uce-4694
+2368	DNA	52	463	1	446	GTR	uce-888
+2369	DNA	52	388	5	359	GTR	uce-3821
+2370	DNA	51	392	4	350	GTR	uce-3683
+2371	DNA	46	447	1	439	GTR	uce-5481
+2372	DNA	45	409	0	398	GTR	uce-4287
+WARNING: No parsimony-informative sites in partition uce-4287
+2373	DNA	43	454	0	444	GTR	uce-1775
+WARNING: No parsimony-informative sites in partition uce-1775
+2374	DNA	51	440	7	417	GTR	uce-5323
+2375	DNA	39	480	7	459	GTR	uce-3407
+2376	DNA	52	398	1	384	GTR	uce-5864
+2377	DNA	47	408	1	396	GTR	uce-6732
+2378	DNA	41	278	0	275	GTR	uce-3758
+WARNING: No parsimony-informative sites in partition uce-3758
+2379	DNA	47	486	0	479	GTR	uce-70
+WARNING: No parsimony-informative sites in partition uce-70
+2380	DNA	58	416	1	405	GTR	uce-1272
+2381	DNA	54	410	0	400	GTR	uce-6353
+WARNING: No parsimony-informative sites in partition uce-6353
+2382	DNA	47	351	0	350	GTR	uce-297
+WARNING: No parsimony-informative sites in partition uce-297
+2383	DNA	48	455	0	450	GTR	uce-1038
+WARNING: No parsimony-informative sites in partition uce-1038
+2384	DNA	47	319	2	302	GTR	uce-5189
+2385	DNA	42	779	3	758	GTR	uce-1817
+2386	DNA	50	401	0	393	GTR	uce-4190
+WARNING: No parsimony-informative sites in partition uce-4190
+2387	DNA	46	304	0	298	GTR	uce-5543
+WARNING: No parsimony-informative sites in partition uce-5543
+2388	DNA	46	472	10	427	GTR	uce-472
+2389	DNA	44	409	0	404	GTR	uce-2016
+WARNING: No parsimony-informative sites in partition uce-2016
+2390	DNA	47	400	4	385	GTR	uce-4697
+2391	DNA	46	418	0	407	GTR	uce-2708
+WARNING: No parsimony-informative sites in partition uce-2708
+2392	DNA	47	455	6	436	GTR	uce-7079
+2393	DNA	43	440	2	430	GTR	uce-7840
+2394	DNA	51	417	0	407	GTR	uce-5292
+WARNING: No parsimony-informative sites in partition uce-5292
+2395	DNA	60	473	1	449	GTR	uce-2315
+2396	DNA	46	416	2	365	GTR	uce-2955
+2397	DNA	49	478	0	472	GTR	uce-1602
+WARNING: No parsimony-informative sites in partition uce-1602
+2398	DNA	44	431	9	399	GTR	uce-7313
+2399	DNA	47	391	0	379	GTR	uce-771
+WARNING: No parsimony-informative sites in partition uce-771
+2400	DNA	48	370	2	358	GTR	uce-2943
+2401	DNA	49	481	4	468	GTR	uce-3308
+2402	DNA	50	330	5	313	GTR	uce-3864
+2403	DNA	52	458	1	450	GTR	uce-7753
+2404	DNA	47	332	1	312	GTR	uce-6705
+2405	DNA	43	434	0	426	GTR	uce-5754
+WARNING: No parsimony-informative sites in partition uce-5754
+2406	DNA	49	368	2	364	GTR	uce-998
+2407	DNA	48	376	9	346	GTR	uce-3540
+2408	DNA	49	537	6	505	GTR	uce-3381
+2409	DNA	53	391	1	376	GTR	uce-1895
+2410	DNA	52	527	1	518	GTR	uce-3122
+2411	DNA	47	488	1	479	GTR	uce-365
+2412	DNA	45	470	3	450	GTR	uce-3065
+2413	DNA	50	446	2	437	GTR	uce-4426
+2414	DNA	46	430	7	396	GTR	uce-7531
+2415	DNA	56	469	4	449	GTR	uce-3479
+2416	DNA	49	372	4	350	GTR	uce-7479
+2417	DNA	57	333	5	321	GTR	uce-4587
+2418	DNA	37	292	1	290	GTR	uce-2113
+2419	DNA	42	370	4	350	GTR	uce-5869
+2420	DNA	50	371	0	359	GTR	uce-4891
+WARNING: No parsimony-informative sites in partition uce-4891
+2421	DNA	47	428	2	411	GTR	uce-3079
+2422	DNA	47	350	1	347	GTR	uce-1809
+2423	DNA	51	453	0	440	GTR	uce-5730
+WARNING: No parsimony-informative sites in partition uce-5730
+2424	DNA	47	386	1	375	GTR	uce-4659
+2425	DNA	44	360	0	349	GTR	uce-1246
+WARNING: No parsimony-informative sites in partition uce-1246
+2426	DNA	48	431	2	420	GTR	uce-6776
+2427	DNA	57	407	4	358	GTR	uce-207
+2428	DNA	45	399	4	383	GTR	uce-2843
+2429	DNA	38	424	3	408	GTR	uce-4735
+2430	DNA	45	459	0	449	GTR	uce-1971
+WARNING: No parsimony-informative sites in partition uce-1971
+2431	DNA	48	422	3	408	GTR	uce-4925
+2432	DNA	51	339	0	318	GTR	uce-3121
+WARNING: No parsimony-informative sites in partition uce-3121
+2433	DNA	56	386	1	372	GTR	uce-243
+2434	DNA	42	466	4	443	GTR	uce-6512
+2435	DNA	45	361	1	358	GTR	uce-235
+2436	DNA	40	452	12	416	GTR	uce-2508
+2437	DNA	44	432	0	425	GTR	uce-5332
+WARNING: No parsimony-informative sites in partition uce-5332
+2438	DNA	47	501	10	462	GTR	uce-2963
+2439	DNA	48	410	2	392	GTR	uce-1616
+2440	DNA	47	443	0	434	GTR	uce-539
+WARNING: No parsimony-informative sites in partition uce-539
+2441	DNA	51	349	4	335	GTR	uce-3921
+2442	DNA	47	499	3	483	GTR	uce-3500
+2443	DNA	48	447	2	441	GTR	uce-2004
+2444	DNA	44	351	0	342	GTR	uce-1041
+WARNING: No parsimony-informative sites in partition uce-1041
+2445	DNA	51	525	2	517	GTR	uce-912
+2446	DNA	46	356	0	351	GTR	uce-153
+WARNING: No parsimony-informative sites in partition uce-153
+2447	DNA	48	474	3	467	GTR	uce-5129
+2448	DNA	48	320	0	310	GTR	uce-1843
+WARNING: No parsimony-informative sites in partition uce-1843
+2449	DNA	36	540	3	521	GTR	uce-129
+2450	DNA	50	357	3	351	GTR	uce-7650
+2451	DNA	50	383	1	364	GTR	uce-5427
+2452	DNA	47	384	5	359	GTR	uce-4063
+2453	DNA	52	501	5	454	GTR	uce-7906
+2454	DNA	53	460	1	449	GTR	uce-511
+2455	DNA	51	459	2	445	GTR	uce-3894
+2456	DNA	47	442	2	431	GTR	uce-114
+2457	DNA	49	489	1	478	GTR	uce-6166
+2458	DNA	49	426	1	418	GTR	uce-6367
+2459	DNA	47	463	3	439	GTR	uce-6320
+2460	DNA	53	423	7	403	GTR	uce-6797
+2461	DNA	46	372	0	361	GTR	uce-3911
+WARNING: No parsimony-informative sites in partition uce-3911
+2462	DNA	49	431	2	407	GTR	uce-5927
+2463	DNA	43	437	3	390	GTR	uce-7278
+2464	DNA	42	386	0	381	GTR	uce-697
+WARNING: No parsimony-informative sites in partition uce-697
+2465	DNA	48	403	1	398	GTR	uce-1689
+2466	DNA	45	389	4	372	GTR	uce-7151
+2467	DNA	48	408	4	387	GTR	uce-841
+2468	DNA	45	446	0	440	GTR	uce-837
+WARNING: No parsimony-informative sites in partition uce-837
+2469	DNA	51	464	0	451	GTR	uce-4808
+WARNING: No parsimony-informative sites in partition uce-4808
+2470	DNA	48	408	3	401	GTR	uce-6896
+2471	DNA	40	392	2	383	GTR	uce-2008
+2472	DNA	45	430	0	421	GTR	uce-3722
+WARNING: No parsimony-informative sites in partition uce-3722
+2473	DNA	48	335	1	325	GTR	uce-7632
+2474	DNA	46	448	0	438	GTR	uce-308
+WARNING: No parsimony-informative sites in partition uce-308
+2475	DNA	47	417	4	401	GTR	uce-6881
+2476	DNA	46	412	0	406	GTR	uce-729
+WARNING: No parsimony-informative sites in partition uce-729
+2477	DNA	48	444	0	438	GTR	uce-1751
+WARNING: No parsimony-informative sites in partition uce-1751
+2478	DNA	49	567	6	538	GTR	uce-2748
+2479	DNA	53	464	3	420	GTR	uce-15
+2480	DNA	44	391	0	382	GTR	uce-6102
+WARNING: No parsimony-informative sites in partition uce-6102
+2481	DNA	44	426	6	405	GTR	uce-4976
+2482	DNA	49	406	3	391	GTR	uce-2623
+2483	DNA	52	437	2	421	GTR	uce-7073
+2484	DNA	48	429	2	418	GTR	uce-5463
+2485	DNA	51	525	1	490	GTR	uce-7616
+2486	DNA	45	439	4	401	GTR	uce-1044
+2487	DNA	50	455	2	444	GTR	uce-315
+2488	DNA	46	318	8	300	GTR	uce-5615
+2489	DNA	43	575	6	554	GTR	uce-1598
+2490	DNA	44	388	5	376	GTR	uce-2179
+2491	DNA	39	240	0	230	GTR	uce-7895
+WARNING: No parsimony-informative sites in partition uce-7895
+2492	DNA	47	375	4	357	GTR	uce-7878
+2493	DNA	40	404	2	397	GTR	uce-3761
+2494	DNA	52	422	2	410	GTR	uce-463
+2495	DNA	44	451	11	415	GTR	uce-4939
+2496	DNA	37	426	0	417	GTR	uce-1201
+WARNING: No parsimony-informative sites in partition uce-1201
+2497	DNA	45	556	1	545	GTR	uce-1311
+2498	DNA	39	434	1	418	GTR	uce-256
+2499	DNA	54	463	0	454	GTR	uce-2338
+WARNING: No parsimony-informative sites in partition uce-2338
+2500	DNA	40	229	1	224	GTR	uce-124
+2501	DNA	49	309	3	250	GTR	uce-6575
+2502	DNA	50	499	17	445	GTR	uce-7173
+2503	DNA	46	334	1	324	GTR	uce-7299
+2504	DNA	39	283	0	275	GTR	uce-4414
+WARNING: No parsimony-informative sites in partition uce-4414
+2505	DNA	43	398	1	388	GTR	uce-666
+2506	DNA	47	335	1	324	GTR	uce-2561
+2507	DNA	43	388	1	378	GTR	uce-5311
+2508	DNA	54	499	0	487	GTR	uce-5107
+WARNING: No parsimony-informative sites in partition uce-5107
+2509	DNA	46	466	12	435	GTR	uce-3542
+2510	DNA	52	476	7	447	GTR	uce-6383
+2511	DNA	53	479	1	466	GTR	uce-3695
+2512	DNA	53	348	3	310	GTR	uce-2853
+2513	DNA	53	401	4	386	GTR	uce-2999
+2514	DNA	51	304	0	296	GTR	uce-5357
+WARNING: No parsimony-informative sites in partition uce-5357
+2515	DNA	41	447	0	435	GTR	uce-401
+WARNING: No parsimony-informative sites in partition uce-401
+2516	DNA	53	426	5	401	GTR	uce-727
+2517	DNA	56	412	0	400	GTR	uce-5356
+WARNING: No parsimony-informative sites in partition uce-5356
+2518	DNA	47	440	1	431	GTR	uce-6260
+2519	DNA	45	319	0	315	GTR	uce-4847
+WARNING: No parsimony-informative sites in partition uce-4847
+2520	DNA	43	416	2	405	GTR	uce-2335
+2521	DNA	44	372	0	371	GTR	uce-2758
+WARNING: No parsimony-informative sites in partition uce-2758
+2522	DNA	55	420	1	411	GTR	uce-6379
+2523	DNA	50	323	3	311	GTR	uce-7160
+2524	DNA	45	411	5	395	GTR	uce-1636
+2525	DNA	47	384	5	369	GTR	uce-3202
+2526	DNA	48	424	2	407	GTR	uce-2238
+2527	DNA	49	353	2	319	GTR	uce-3111
+2528	DNA	48	448	1	438	GTR	uce-999
+2529	DNA	42	509	2	496	GTR	uce-3924
+2530	DNA	36	284	4	265	GTR	uce-5577
+2531	DNA	45	354	0	340	GTR	uce-4207
+WARNING: No parsimony-informative sites in partition uce-4207
+2532	DNA	54	614	5	585	GTR	uce-1802
+2533	DNA	50	354	1	349	GTR	uce-3309
+2534	DNA	46	344	1	341	GTR	uce-4354
+2535	DNA	50	447	13	412	GTR	uce-5646
+2536	DNA	50	503	0	471	GTR	uce-5021
+WARNING: No parsimony-informative sites in partition uce-5021
+2537	DNA	47	482	4	467	GTR	uce-6983
+2538	DNA	45	455	2	441	GTR	uce-406
+2539	DNA	57	587	13	550	GTR	uce-4457
+2540	DNA	41	388	3	381	GTR	uce-279
+2541	DNA	48	302	1	300	GTR	uce-7590
+2542	DNA	42	440	2	431	GTR	uce-3586
+2543	DNA	46	476	2	463	GTR	uce-3488
+2544	DNA	44	463	2	441	GTR	uce-6641
+2545	DNA	51	412	4	400	GTR	uce-7701
+2546	DNA	46	417	1	410	GTR	uce-3603
+2547	DNA	50	306	6	284	GTR	uce-5260
+2548	DNA	43	344	5	322	GTR	uce-4592
+2549	DNA	50	333	3	320	GTR	uce-7709
+2550	DNA	53	449	0	432	GTR	uce-3025
+WARNING: No parsimony-informative sites in partition uce-3025
+2551	DNA	56	389	1	378	GTR	uce-6682
+2552	DNA	50	390	1	372	GTR	uce-1820
+2553	DNA	55	348	0	344	GTR	uce-1918
+WARNING: No parsimony-informative sites in partition uce-1918
+2554	DNA	49	415	3	404	GTR	uce-5080
+2555	DNA	43	435	0	426	GTR	uce-1562
+WARNING: No parsimony-informative sites in partition uce-1562
+2556	DNA	53	446	0	443	GTR	uce-6187
+WARNING: No parsimony-informative sites in partition uce-6187
+2557	DNA	54	418	6	391	GTR	uce-5042
+2558	DNA	51	501	1	497	GTR	uce-4309
+2559	DNA	48	368	3	352	GTR	uce-2833
+2560	DNA	48	299	1	292	GTR	uce-3774
+2561	DNA	48	357	2	339	GTR	uce-575
+2562	DNA	52	460	7	413	GTR	uce-7857
+2563	DNA	52	366	1	352	GTR	uce-2970
+2564	DNA	40	280	0	275	GTR	uce-4346
+WARNING: No parsimony-informative sites in partition uce-4346
+2565	DNA	43	461	4	452	GTR	uce-7487
+2566	DNA	44	392	2	384	GTR	uce-6074
+2567	DNA	49	369	1	357	GTR	uce-4455
+2568	DNA	45	479	7	462	GTR	uce-5230
+2569	DNA	47	424	2	418	GTR	uce-4504
+2570	DNA	50	348	1	332	GTR	uce-544
+2571	DNA	44	382	3	365	GTR	uce-411
+2572	DNA	50	422	0	412	GTR	uce-2529
+WARNING: No parsimony-informative sites in partition uce-2529
+2573	DNA	47	395	0	387	GTR	uce-3919
+WARNING: No parsimony-informative sites in partition uce-3919
+2574	DNA	41	383	2	369	GTR	uce-5231
+2575	DNA	50	479	6	471	GTR	uce-692
+2576	DNA	41	438	0	435	GTR	uce-4982
+WARNING: No parsimony-informative sites in partition uce-4982
+2577	DNA	44	431	0	418	GTR	uce-2450
+WARNING: No parsimony-informative sites in partition uce-2450
+2578	DNA	54	511	2	492	GTR	uce-4136
+2579	DNA	50	346	2	337	GTR	uce-1451
+2580	DNA	47	354	0	347	GTR	uce-344
+WARNING: No parsimony-informative sites in partition uce-344
+2581	DNA	50	363	1	349	GTR	uce-4995
+2582	DNA	51	459	1	452	GTR	uce-1123
+2583	DNA	51	491	5	474	GTR	uce-4588
+2584	DNA	52	389	0	381	GTR	uce-4216
+WARNING: No parsimony-informative sites in partition uce-4216
+2585	DNA	39	541	1	527	GTR	uce-1225
+2586	DNA	43	473	1	455	GTR	uce-4889
+2587	DNA	52	425	2	408	GTR	uce-59
+2588	DNA	47	451	6	426	GTR	uce-1062
+2589	DNA	40	285	2	268	GTR	uce-8033
+2590	DNA	44	353	1	343	GTR	uce-94
+2591	DNA	48	466	1	458	GTR	uce-1762
+2592	DNA	41	449	3	433	GTR	uce-3824
+2593	DNA	47	367	3	357	GTR	uce-7778
+2594	DNA	50	356	0	347	GTR	uce-121
+WARNING: No parsimony-informative sites in partition uce-121
+2595	DNA	45	426	3	414	GTR	uce-5450
+2596	DNA	44	452	7	424	GTR	uce-6528
+2597	DNA	39	364	3	335	GTR	uce-7887
+2598	DNA	42	526	4	513	GTR	uce-5410
+2599	DNA	52	468	2	457	GTR	uce-4090
+2600	DNA	47	372	0	367	GTR	uce-4530
+WARNING: No parsimony-informative sites in partition uce-4530
+2601	DNA	45	388	3	377	GTR	uce-7722
+2602	DNA	47	296	0	291	GTR	uce-5187
+WARNING: No parsimony-informative sites in partition uce-5187
+2603	DNA	51	422	3	410	GTR	uce-1458
+2604	DNA	43	419	0	413	GTR	uce-3738
+WARNING: No parsimony-informative sites in partition uce-3738
+2605	DNA	53	467	3	449	GTR	uce-1150
+2606	DNA	45	526	3	511	GTR	uce-1154
+2607	DNA	43	352	2	344	GTR	uce-4435
+2608	DNA	43	437	3	428	GTR	uce-6294
+2609	DNA	48	431	1	422	GTR	uce-868
+2610	DNA	44	342	3	332	GTR	uce-6198
+2611	DNA	52	467	6	433	GTR	uce-7221
+2612	DNA	53	470	26	401	GTR	uce-7482
+2613	DNA	44	278	2	267	GTR	uce-7255
+2614	DNA	53	416	2	409	GTR	uce-2444
+2615	DNA	37	340	1	332	GTR	uce-5181
+2616	DNA	44	374	2	360	GTR	uce-1446
+2617	DNA	45	548	1	537	GTR	uce-708
+2618	DNA	50	372	0	356	GTR	uce-1529
+WARNING: No parsimony-informative sites in partition uce-1529
+2619	DNA	38	327	0	315	GTR	uce-3782
+WARNING: No parsimony-informative sites in partition uce-3782
+2620	DNA	42	390	3	357	GTR	uce-1134
+2621	DNA	44	367	8	333	GTR	uce-3828
+2622	DNA	50	473	5	445	GTR	uce-1402
+2623	DNA	43	381	2	368	GTR	uce-576
+2624	DNA	50	467	2	457	GTR	uce-5921
+2625	DNA	45	399	1	384	GTR	uce-2782
+2626	DNA	49	425	5	401	GTR	uce-6106
+2627	DNA	46	414	1	410	GTR	uce-3225
+2628	DNA	49	315	0	309	GTR	uce-102
+WARNING: No parsimony-informative sites in partition uce-102
+2629	DNA	49	332	0	320	GTR	uce-4553
+WARNING: No parsimony-informative sites in partition uce-4553
+2630	DNA	42	475	2	463	GTR	uce-5
+2631	DNA	50	494	5	475	GTR	uce-6939
+2632	DNA	52	447	1	437	GTR	uce-4532
+2633	DNA	40	341	7	332	GTR	uce-7567
+2634	DNA	44	399	4	375	GTR	uce-8040
+2635	DNA	39	477	0	471	GTR	uce-3785
+WARNING: No parsimony-informative sites in partition uce-3785
+2636	DNA	43	484	0	477	GTR	uce-5562
+WARNING: No parsimony-informative sites in partition uce-5562
+2637	DNA	47	396	2	382	GTR	uce-7978
+2638	DNA	47	344	9	302	GTR	uce-6385
+2639	DNA	48	336	2	325	GTR	uce-5307
+2640	DNA	46	372	0	364	GTR	uce-1658
+WARNING: No parsimony-informative sites in partition uce-1658
+2641	DNA	41	496	7	472	GTR	uce-6838
+2642	DNA	43	422	3	406	GTR	uce-4653
+2643	DNA	46	370	0	365	GTR	uce-2112
+WARNING: No parsimony-informative sites in partition uce-2112
+2644	DNA	49	370	2	362	GTR	uce-6994
+2645	DNA	44	427	3	404	GTR	uce-6988
+2646	DNA	47	275	0	270	GTR	uce-5910
+WARNING: No parsimony-informative sites in partition uce-5910
+2647	DNA	44	497	0	491	GTR	uce-1793
+WARNING: No parsimony-informative sites in partition uce-1793
+2648	DNA	48	465	2	451	GTR	uce-662
+2649	DNA	50	389	1	379	GTR	uce-4944
+2650	DNA	43	424	0	416	GTR	uce-991
+WARNING: No parsimony-informative sites in partition uce-991
+2651	DNA	40	334	0	327	GTR	uce-7996
+WARNING: No parsimony-informative sites in partition uce-7996
+2652	DNA	51	499	0	492	GTR	uce-1471
+WARNING: No parsimony-informative sites in partition uce-1471
+2653	DNA	47	404	4	385	GTR	uce-6010
+2654	DNA	45	288	0	284	GTR	uce-3361
+WARNING: No parsimony-informative sites in partition uce-3361
+2655	DNA	44	292	4	277	GTR	uce-1667
+2656	DNA	47	467	5	448	GTR	uce-1832
+2657	DNA	37	325	2	318	GTR	uce-3252
+2658	DNA	48	341	1	331	GTR	uce-6821
+2659	DNA	50	461	4	449	GTR	uce-7610
+2660	DNA	50	399	0	390	GTR	uce-5930
+WARNING: No parsimony-informative sites in partition uce-5930
+2661	DNA	43	390	5	369	GTR	uce-7844
+2662	DNA	53	438	2	425	GTR	uce-5803
+2663	DNA	44	353	0	349	GTR	uce-7627
+WARNING: No parsimony-informative sites in partition uce-7627
+2664	DNA	43	368	6	353	GTR	uce-4539
+2665	DNA	53	478	2	425	GTR	uce-2349
+2666	DNA	50	391	1	384	GTR	uce-3349
+2667	DNA	51	397	2	384	GTR	uce-1912
+2668	DNA	45	312	1	306	GTR	uce-7251
+2669	DNA	52	354	0	345	GTR	uce-1077
+WARNING: No parsimony-informative sites in partition uce-1077
+2670	DNA	37	378	4	358	GTR	uce-3943
+2671	DNA	51	430	5	409	GTR	uce-6363
+2672	DNA	48	312	1	304	GTR	uce-6237
+2673	DNA	45	398	0	392	GTR	uce-2396
+WARNING: No parsimony-informative sites in partition uce-2396
+2674	DNA	39	508	0	503	GTR	uce-2089
+WARNING: No parsimony-informative sites in partition uce-2089
+2675	DNA	46	442	2	430	GTR	uce-791
+2676	DNA	40	431	2	398	GTR	uce-3163
+2677	DNA	45	413	0	407	GTR	uce-1819
+WARNING: No parsimony-informative sites in partition uce-1819
+2678	DNA	45	412	3	396	GTR	uce-4343
+2679	DNA	48	470	3	451	GTR	uce-1424
+2680	DNA	42	361	10	334	GTR	uce-6538
+2681	DNA	38	258	0	245	GTR	uce-6069
+WARNING: No parsimony-informative sites in partition uce-6069
+2682	DNA	42	364	0	357	GTR	uce-7311
+WARNING: No parsimony-informative sites in partition uce-7311
+2683	DNA	47	438	0	436	GTR	uce-4345
+WARNING: No parsimony-informative sites in partition uce-4345
+2684	DNA	45	724	4	697	GTR	uce-752
+2685	DNA	52	496	5	461	GTR	uce-6071
+2686	DNA	41	425	5	405	GTR	uce-4702
+2687	DNA	53	421	1	413	GTR	uce-7037
+2688	DNA	43	538	4	525	GTR	uce-1043
+2689	DNA	50	363	1	356	GTR	uce-3601
+2690	DNA	53	437	0	427	GTR	uce-6409
+WARNING: No parsimony-informative sites in partition uce-6409
+2691	DNA	48	452	2	443	GTR	uce-6910
+2692	DNA	52	374	6	357	GTR	uce-1288
+2693	DNA	48	420	2	403	GTR	uce-3922
+2694	DNA	55	441	7	427	GTR	uce-3144
+2695	DNA	52	387	1	374	GTR	uce-4954
+2696	DNA	48	415	3	395	GTR	uce-7109
+2697	DNA	44	340	1	331	GTR	uce-3917
+2698	DNA	48	520	6	493	GTR	uce-2277
+2699	DNA	49	369	0	355	GTR	uce-7518
+WARNING: No parsimony-informative sites in partition uce-7518
+2700	DNA	50	465	5	442	GTR	uce-3823
+2701	DNA	41	460	3	443	GTR	uce-6246
+2702	DNA	48	565	3	547	GTR	uce-3517
+2703	DNA	45	435	2	425	GTR	uce-7215
+2704	DNA	53	350	0	341	GTR	uce-1069
+WARNING: No parsimony-informative sites in partition uce-1069
+2705	DNA	37	361	2	355	GTR	uce-1216
+2706	DNA	37	338	2	330	GTR	uce-7368
+2707	DNA	42	445	3	433	GTR	uce-6070
+2708	DNA	40	431	3	416	GTR	uce-5923
+2709	DNA	54	424	1	413	GTR	uce-4012
+2710	DNA	45	436	0	427	GTR	uce-613
+WARNING: No parsimony-informative sites in partition uce-613
+2711	DNA	45	406	4	386	GTR	uce-5053
+2712	DNA	46	462	3	452	GTR	uce-7574
+2713	DNA	47	526	32	463	GTR	uce-5087
+2714	DNA	58	407	4	386	GTR	uce-7100
+2715	DNA	50	384	4	373	GTR	uce-4124
+2716	DNA	45	435	4	408	GTR	uce-4389
+2717	DNA	49	343	3	323	GTR	uce-1946
+2718	DNA	51	484	2	477	GTR	uce-106
+2719	DNA	49	387	1	381	GTR	uce-4750
+2720	DNA	56	513	0	503	GTR	uce-1187
+WARNING: No parsimony-informative sites in partition uce-1187
+2721	DNA	52	365	2	358	GTR	uce-426
+2722	DNA	48	439	1	430	GTR	uce-7289
+2723	DNA	52	450	3	430	GTR	uce-4115
+2724	DNA	42	313	1	306	GTR	uce-6977
+2725	DNA	49	413	0	406	GTR	uce-7902
+WARNING: No parsimony-informative sites in partition uce-7902
+2726	DNA	47	563	4	555	GTR	uce-3678
+2727	DNA	51	346	1	315	GTR	uce-6933
+2728	DNA	50	442	1	437	GTR	uce-2279
+2729	DNA	45	371	2	355	GTR	uce-3327
+2730	DNA	54	402	2	390	GTR	uce-2754
+2731	DNA	48	389	2	380	GTR	uce-314
+2732	DNA	38	414	0	405	GTR	uce-5539
+WARNING: No parsimony-informative sites in partition uce-5539
+2733	DNA	38	322	1	318	GTR	uce-2958
+2734	DNA	50	437	0	426	GTR	uce-2245
+WARNING: No parsimony-informative sites in partition uce-2245
+2735	DNA	44	411	1	406	GTR	uce-3462
+2736	DNA	43	284	0	274	GTR	uce-803
+WARNING: No parsimony-informative sites in partition uce-803
+2737	DNA	52	350	0	345	GTR	uce-4355
+WARNING: No parsimony-informative sites in partition uce-4355
+2738	DNA	46	363	3	348	GTR	uce-5576
+2739	DNA	47	409	1	398	GTR	uce-2162
+2740	DNA	50	430	0	422	GTR	uce-4199
+WARNING: No parsimony-informative sites in partition uce-4199
+2741	DNA	48	380	1	371	GTR	uce-1304
+2742	DNA	48	332	4	322	GTR	uce-7982
+2743	DNA	53	380	1	359	GTR	uce-127
+2744	DNA	43	416	0	407	GTR	uce-7393
+WARNING: No parsimony-informative sites in partition uce-7393
+2745	DNA	45	284	9	257	GTR	uce-6432
+2746	DNA	46	320	4	311	GTR	uce-2823
+2747	DNA	52	408	3	396	GTR	uce-1614
+2748	DNA	42	504	1	496	GTR	uce-1644
+2749	DNA	44	486	2	480	GTR	uce-170
+2750	DNA	48	411	2	400	GTR	uce-2014
+2751	DNA	48	421	0	420	GTR	uce-674
+WARNING: No parsimony-informative sites in partition uce-674
+2752	DNA	42	395	0	388	GTR	uce-2077
+WARNING: No parsimony-informative sites in partition uce-2077
+2753	DNA	49	410	2	396	GTR	uce-5635
+2754	DNA	49	486	1	473	GTR	uce-3238
+2755	DNA	47	447	0	436	GTR	uce-4607
+WARNING: No parsimony-informative sites in partition uce-4607
+2756	DNA	48	503	11	455	GTR	uce-3583
+2757	DNA	48	429	1	425	GTR	uce-4897
+2758	DNA	52	451	0	441	GTR	uce-665
+WARNING: No parsimony-informative sites in partition uce-665
+2759	DNA	47	346	1	329	GTR	uce-4859
+2760	DNA	51	387	1	371	GTR	uce-5530
+2761	DNA	55	548	4	520	GTR	uce-2341
+2762	DNA	53	395	1	362	GTR	uce-3927
+2763	DNA	56	464	1	449	GTR	uce-4943
+2764	DNA	44	440	1	429	GTR	uce-5912
+2765	DNA	52	426	2	416	GTR	uce-1133
+2766	DNA	47	436	3	422	GTR	uce-7045
+2767	DNA	54	359	0	355	GTR	uce-4887
+WARNING: No parsimony-informative sites in partition uce-4887
+2768	DNA	43	338	0	328	GTR	uce-3038
+WARNING: No parsimony-informative sites in partition uce-3038
+2769	DNA	37	286	6	269	GTR	uce-5573
+2770	DNA	49	441	3	431	GTR	uce-645
+2771	DNA	42	450	2	441	GTR	uce-5258
+2772	DNA	41	280	0	270	GTR	uce-3445
+WARNING: No parsimony-informative sites in partition uce-3445
+2773	DNA	45	368	2	322	GTR	uce-6096
+2774	DNA	48	359	1	349	GTR	uce-3623
+2775	DNA	51	446	0	441	GTR	uce-1306
+WARNING: No parsimony-informative sites in partition uce-1306
+2776	DNA	45	350	0	345	GTR	uce-2075
+WARNING: No parsimony-informative sites in partition uce-2075
+2777	DNA	50	444	0	427	GTR	uce-6818
+WARNING: No parsimony-informative sites in partition uce-6818
+2778	DNA	54	482	1	473	GTR	uce-195
+2779	DNA	44	421	2	409	GTR	uce-3492
+2780	DNA	45	420	8	393	GTR	uce-7408
+2781	DNA	50	328	5	309	GTR	uce-7682
+2782	DNA	42	291	1	289	GTR	uce-7384
+2783	DNA	44	389	2	383	GTR	uce-6032
+2784	DNA	45	340	0	336	GTR	uce-3990
+WARNING: No parsimony-informative sites in partition uce-3990
+2785	DNA	45	513	1	510	GTR	uce-3222
+2786	DNA	41	368	6	355	GTR	uce-5284
+2787	DNA	46	453	1	440	GTR	uce-4335
+2788	DNA	49	372	3	352	GTR	uce-5140
+2789	DNA	52	414	2	400	GTR	uce-4038
+2790	DNA	45	407	2	392	GTR	uce-1822
+2791	DNA	46	411	2	365	GTR	uce-2111
+2792	DNA	51	372	5	356	GTR	uce-5451
+2793	DNA	38	575	0	556	GTR	uce-1131
+WARNING: No parsimony-informative sites in partition uce-1131
+2794	DNA	41	431	2	411	GTR	uce-8041
+2795	DNA	44	421	5	345	GTR	uce-754
+2796	DNA	51	454	2	446	GTR	uce-1098
+2797	DNA	48	438	1	430	GTR	uce-2940
+2798	DNA	40	388	2	382	GTR	uce-6437
+2799	DNA	51	317	2	303	GTR	uce-7252
+2800	DNA	41	373	1	360	GTR	uce-2926
+2801	DNA	40	454	0	446	GTR	uce-1203
+WARNING: No parsimony-informative sites in partition uce-1203
+2802	DNA	51	516	4	494	GTR	uce-6856
+2803	DNA	43	424	1	381	GTR	uce-3743
+2804	DNA	50	408	0	398	GTR	uce-3003
+WARNING: No parsimony-informative sites in partition uce-3003
+2805	DNA	55	335	4	320	GTR	uce-2030
+2806	DNA	43	396	3	378	GTR	uce-2689
+2807	DNA	53	470	8	440	GTR	uce-7536
+2808	DNA	46	375	3	362	GTR	uce-3322
+2809	DNA	41	339	2	323	GTR	uce-1816
+2810	DNA	56	516	2	506	GTR	uce-6107
+2811	DNA	47	484	0	469	GTR	uce-1732
+WARNING: No parsimony-informative sites in partition uce-1732
+2812	DNA	43	687	5	671	GTR	uce-1423
+2813	DNA	52	425	0	408	GTR	uce-4703
+WARNING: No parsimony-informative sites in partition uce-4703
+2814	DNA	47	493	5	463	GTR	uce-6571
+2815	DNA	59	410	2	384	GTR	uce-1047
+2816	DNA	45	432	0	429	GTR	uce-1776
+WARNING: No parsimony-informative sites in partition uce-1776
+2817	DNA	46	438	4	428	GTR	uce-4966
+2818	DNA	44	410	0	400	GTR	uce-1796
+WARNING: No parsimony-informative sites in partition uce-1796
+2819	DNA	52	380	8	364	GTR	uce-7033
+2820	DNA	47	408	0	396	GTR	uce-760
+WARNING: No parsimony-informative sites in partition uce-760
+2821	DNA	52	363	0	325	GTR	uce-7539
+WARNING: No parsimony-informative sites in partition uce-7539
+2822	DNA	50	353	2	349	GTR	uce-1506
+2823	DNA	50	405	1	395	GTR	uce-6750
+2824	DNA	44	445	3	430	GTR	uce-3368
+2825	DNA	48	450	1	444	GTR	uce-641
+2826	DNA	46	430	1	425	GTR	uce-4964
+2827	DNA	46	466	4	448	GTR	uce-6447
+2828	DNA	51	419	5	352	GTR	uce-212
+2829	DNA	51	381	3	361	GTR	uce-5882
+2830	DNA	47	328	2	312	GTR	uce-7113
+2831	DNA	49	435	2	423	GTR	uce-3903
+2832	DNA	50	520	2	507	GTR	uce-2353
+2833	DNA	49	382	3	372	GTR	uce-1625
+2834	DNA	53	502	6	445	GTR	uce-1021
+2835	DNA	47	306	3	297	GTR	uce-3212
+2836	DNA	39	364	7	336	GTR	uce-2559
+2837	DNA	45	480	6	461	GTR	uce-2152
+2838	DNA	52	383	1	377	GTR	uce-1652
+2839	DNA	49	471	1	464	GTR	uce-98
+2840	DNA	45	502	4	468	GTR	uce-2511
+2841	DNA	45	490	0	482	GTR	uce-2020
+WARNING: No parsimony-informative sites in partition uce-2020
+2842	DNA	40	322	4	312	GTR	uce-3161
+2843	DNA	48	408	0	397	GTR	uce-907
+WARNING: No parsimony-informative sites in partition uce-907
+2844	DNA	54	477	5	458	GTR	uce-793
+2845	DNA	47	467	5	412	GTR	uce-2814
+2846	DNA	40	345	2	341	GTR	uce-4835
+2847	DNA	40	412	2	403	GTR	uce-2710
+2848	DNA	53	499	3	483	GTR	uce-4364
+2849	DNA	46	368	1	343	GTR	uce-1413
+2850	DNA	51	424	2	418	GTR	uce-7468
+2851	DNA	38	405	3	390	GTR	uce-162
+2852	DNA	44	421	1	417	GTR	uce-1586
+2853	DNA	46	382	1	373	GTR	uce-4713
+2854	DNA	44	610	2	565	GTR	uce-1363
+2855	DNA	46	384	0	376	GTR	uce-6473
+WARNING: No parsimony-informative sites in partition uce-6473
+2856	DNA	47	444	3	427	GTR	uce-2598
+2857	DNA	41	273	7	254	GTR	uce-2959
+2858	DNA	47	418	1	395	GTR	uce-1540
+2859	DNA	43	490	7	451	GTR	uce-7048
+2860	DNA	53	423	2	407	GTR	uce-4011
+2861	DNA	43	454	1	446	GTR	uce-4249
+2862	DNA	50	384	1	370	GTR	uce-3053
+2863	DNA	52	420	0	407	GTR	uce-4844
+WARNING: No parsimony-informative sites in partition uce-4844
+2864	DNA	52	409	2	398	GTR	uce-556
+2865	DNA	52	415	2	401	GTR	uce-3227
+2866	DNA	47	372	7	343	GTR	uce-7056
+2867	DNA	43	492	1	481	GTR	uce-1405
+2868	DNA	43	385	3	369	GTR	uce-5007
+2869	DNA	40	429	0	420	GTR	uce-4078
+WARNING: No parsimony-informative sites in partition uce-4078
+2870	DNA	51	336	1	322	GTR	uce-3471
+2871	DNA	38	329	2	322	GTR	uce-1300
+2872	DNA	48	429	2	405	GTR	uce-5412
+2873	DNA	46	361	0	354	GTR	uce-3475
+WARNING: No parsimony-informative sites in partition uce-3475
+2874	DNA	50	350	5	330	GTR	uce-2769
+2875	DNA	45	462	2	451	GTR	uce-42
+2876	DNA	49	399	4	383	GTR	uce-2166
+2877	DNA	44	447	9	418	GTR	uce-943
+2878	DNA	37	406	9	389	GTR	uce-6496
+2879	DNA	50	368	0	355	GTR	uce-4400
+WARNING: No parsimony-informative sites in partition uce-4400
+2880	DNA	52	389	7	365	GTR	uce-5286
+2881	DNA	59	424	3	412	GTR	uce-3788
+2882	DNA	42	398	0	387	GTR	uce-211
+WARNING: No parsimony-informative sites in partition uce-211
+2883	DNA	45	514	5	500	GTR	uce-2485
+2884	DNA	52	446	4	425	GTR	uce-2293
+2885	DNA	52	418	3	406	GTR	uce-3455
+2886	DNA	44	418	2	410	GTR	uce-2887
+2887	DNA	42	501	3	493	GTR	uce-696
+2888	DNA	40	588	2	553	GTR	uce-1456
+2889	DNA	43	371	2	363	GTR	uce-6502
+2890	DNA	50	385	1	371	GTR	uce-144
+2891	DNA	52	339	1	329	GTR	uce-2024
+2892	DNA	39	417	2	408	GTR	uce-3874
+2893	DNA	47	406	2	393	GTR	uce-7656
+2894	DNA	43	457	0	452	GTR	uce-34
+WARNING: No parsimony-informative sites in partition uce-34
+2895	DNA	52	444	6	409	GTR	uce-1770
+2896	DNA	53	479	2	471	GTR	uce-1362
+2897	DNA	36	394	1	377	GTR	uce-3177
+2898	DNA	48	291	0	282	GTR	uce-4771
+WARNING: No parsimony-informative sites in partition uce-4771
+2899	DNA	47	373	6	353	GTR	uce-5202
+2900	DNA	44	365	0	354	GTR	uce-7035
+WARNING: No parsimony-informative sites in partition uce-7035
+2901	DNA	48	392	0	384	GTR	uce-6859
+WARNING: No parsimony-informative sites in partition uce-6859
+2902	DNA	45	446	0	440	GTR	uce-1888
+WARNING: No parsimony-informative sites in partition uce-1888
+2903	DNA	52	440	3	427	GTR	uce-6725
+2904	DNA	42	393	0	388	GTR	uce-2102
+WARNING: No parsimony-informative sites in partition uce-2102
+2905	DNA	40	375	2	365	GTR	uce-6315
+2906	DNA	47	508	4	494	GTR	uce-3084
+2907	DNA	46	517	1	507	GTR	uce-831
+2908	DNA	43	429	7	384	GTR	uce-4573
+2909	DNA	41	354	1	348	GTR	uce-2937
+2910	DNA	44	453	0	445	GTR	uce-865
+WARNING: No parsimony-informative sites in partition uce-865
+2911	DNA	50	530	0	519	GTR	uce-3505
+WARNING: No parsimony-informative sites in partition uce-3505
+2912	DNA	49	525	1	517	GTR	uce-598
+2913	DNA	42	540	6	523	GTR	uce-1285
+2914	DNA	37	287	1	279	GTR	uce-6904
+2915	DNA	46	408	0	402	GTR	uce-5565
+WARNING: No parsimony-informative sites in partition uce-5565
+2916	DNA	49	384	8	345	GTR	uce-450
+2917	DNA	45	501	1	491	GTR	uce-6805
+2918	DNA	53	818	1	800	GTR	uce-3352
+2919	DNA	45	377	5	364	GTR	uce-625
+2920	DNA	42	451	4	434	GTR	uce-3406
+2921	DNA	48	373	1	361	GTR	uce-6554
+2922	DNA	55	316	10	281	GTR	uce-2118
+2923	DNA	53	529	1	519	GTR	uce-276
+2924	DNA	48	302	0	297	GTR	uce-4960
+WARNING: No parsimony-informative sites in partition uce-4960
+2925	DNA	52	456	5	429	GTR	uce-1239
+2926	DNA	49	405	0	399	GTR	uce-2472
+WARNING: No parsimony-informative sites in partition uce-2472
+2927	DNA	49	486	0	479	GTR	uce-4068
+WARNING: No parsimony-informative sites in partition uce-4068
+2928	DNA	52	491	3	470	GTR	uce-3776
+2929	DNA	41	350	2	332	GTR	uce-4869
+2930	DNA	49	423	1	418	GTR	uce-1183
+2931	DNA	53	502	4	487	GTR	uce-773
+2932	DNA	45	496	0	483	GTR	uce-7972
+WARNING: No parsimony-informative sites in partition uce-7972
+2933	DNA	47	410	0	403	GTR	uce-1026
+WARNING: No parsimony-informative sites in partition uce-1026
+2934	DNA	47	430	4	412	GTR	uce-6396
+2935	DNA	50	388	2	381	GTR	uce-2135
+2936	DNA	42	441	5	402	GTR	uce-7685
+2937	DNA	37	427	1	397	GTR	uce-5972
+2938	DNA	47	356	3	343	GTR	uce-3443
+2939	DNA	48	383	1	368	GTR	uce-39
+2940	DNA	45	376	1	366	GTR	uce-208
+2941	DNA	47	368	1	357	GTR	uce-6229
+2942	DNA	46	309	2	295	GTR	uce-5801
+2943	DNA	52	358	5	343	GTR	uce-5657
+2944	DNA	45	438	0	425	GTR	uce-1450
+WARNING: No parsimony-informative sites in partition uce-1450
+2945	DNA	51	340	1	327	GTR	uce-897
+2946	DNA	51	413	0	407	GTR	uce-7383
+WARNING: No parsimony-informative sites in partition uce-7383
+2947	DNA	53	400	1	389	GTR	uce-5393
+2948	DNA	51	448	0	423	GTR	uce-2667
+WARNING: No parsimony-informative sites in partition uce-2667
+2949	DNA	43	401	0	397	GTR	uce-2283
+WARNING: No parsimony-informative sites in partition uce-2283
+2950	DNA	50	511	5	462	GTR	uce-965
+2951	DNA	55	395	2	389	GTR	uce-2736
+2952	DNA	42	459	0	454	GTR	uce-395
+WARNING: No parsimony-informative sites in partition uce-395
+2953	DNA	37	354	0	349	GTR	uce-4131
+WARNING: No parsimony-informative sites in partition uce-4131
+2954	DNA	42	310	0	304	GTR	uce-4867
+WARNING: No parsimony-informative sites in partition uce-4867
+2955	DNA	49	463	1	424	GTR	uce-7342
+2956	DNA	43	471	6	439	GTR	uce-5948
+2957	DNA	38	442	0	435	GTR	uce-1590
+WARNING: No parsimony-informative sites in partition uce-1590
+2958	DNA	46	362	4	347	GTR	uce-609
+2959	DNA	49	419	2	396	GTR	uce-6885
+2960	DNA	51	300	0	295	GTR	uce-980
+WARNING: No parsimony-informative sites in partition uce-980
+2961	DNA	49	400	5	368	GTR	uce-1613
+2962	DNA	50	287	0	279	GTR	uce-5933
+WARNING: No parsimony-informative sites in partition uce-5933
+2963	DNA	45	433	9	409	GTR	uce-845
+2964	DNA	45	667	1	661	GTR	uce-1376
+2965	DNA	41	328	0	327	GTR	uce-7426
+WARNING: No parsimony-informative sites in partition uce-7426
+2966	DNA	51	402	1	394	GTR	uce-2129
+2967	DNA	46	342	1	329	GTR	uce-2265
+2968	DNA	48	424	3	402	GTR	uce-861
+2969	DNA	48	461	12	422	GTR	uce-2795
+2970	DNA	46	485	0	477	GTR	uce-7462
+WARNING: No parsimony-informative sites in partition uce-7462
+2971	DNA	52	506	3	481	GTR	uce-1743
+2972	DNA	43	421	1	408	GTR	uce-6764
+2973	DNA	44	451	6	406	GTR	uce-6068
+2974	DNA	36	281	1	255	GTR	uce-7222
+2975	DNA	44	488	2	485	GTR	uce-1298
+2976	DNA	51	394	0	387	GTR	uce-2994
+WARNING: No parsimony-informative sites in partition uce-2994
+2977	DNA	37	435	1	429	GTR	uce-5664
+2978	DNA	48	413	2	399	GTR	uce-6410
+2979	DNA	52	391	0	385	GTR	uce-1890
+WARNING: No parsimony-informative sites in partition uce-1890
+2980	DNA	44	431	3	420	GTR	uce-2716
+2981	DNA	45	602	2	593	GTR	uce-351
+2982	DNA	47	294	5	276	GTR	uce-2995
+2983	DNA	51	390	1	385	GTR	uce-1191
+2984	DNA	48	544	3	534	GTR	uce-7806
+2985	DNA	55	395	2	383	GTR	uce-1618
+2986	DNA	53	441	0	434	GTR	uce-3318
+WARNING: No parsimony-informative sites in partition uce-3318
+2987	DNA	50	405	5	381	GTR	uce-2719
+2988	DNA	36	293	1	283	GTR	uce-3659
+2989	DNA	41	458	0	451	GTR	uce-6934
+WARNING: No parsimony-informative sites in partition uce-6934
+2990	DNA	40	372	1	362	GTR	uce-3360
+2991	DNA	50	496	1	470	GTR	uce-6474
+2992	DNA	46	402	3	391	GTR	uce-2040
+2993	DNA	47	314	0	307	GTR	uce-2606
+WARNING: No parsimony-informative sites in partition uce-2606
+2994	DNA	41	385	1	372	GTR	uce-2909
+2995	DNA	45	432	4	414	GTR	uce-5176
+2996	DNA	46	323	1	315	GTR	uce-5172
+2997	DNA	50	383	6	362	GTR	uce-6620
+2998	DNA	46	551	0	548	GTR	uce-202
+WARNING: No parsimony-informative sites in partition uce-202
+2999	DNA	47	384	3	376	GTR	uce-4818
+3000	DNA	43	408	1	400	GTR	uce-1814
+3001	DNA	48	347	2	333	GTR	uce-2762
+3002	DNA	47	550	4	516	GTR	uce-1563
+3003	DNA	47	371	2	354	GTR	uce-6756
+3004	DNA	45	515	0	502	GTR	uce-257
+WARNING: No parsimony-informative sites in partition uce-257
+3005	DNA	54	366	1	358	GTR	uce-632
+3006	DNA	46	416	0	412	GTR	uce-6137
+WARNING: No parsimony-informative sites in partition uce-6137
+3007	DNA	50	414	0	408	GTR	uce-3650
+WARNING: No parsimony-informative sites in partition uce-3650
+3008	DNA	46	491	16	460	GTR	uce-1005
+3009	DNA	47	378	1	372	GTR	uce-6831
+3010	DNA	51	469	3	435	GTR	uce-7082
+3011	DNA	44	413	3	399	GTR	uce-6161
+3012	DNA	49	337	1	326	GTR	uce-7168
+3013	DNA	52	332	1	327	GTR	uce-5902
+3014	DNA	46	359	1	352	GTR	uce-6255
+3015	DNA	46	408	2	393	GTR	uce-1204
+3016	DNA	50	464	0	457	GTR	uce-182
+WARNING: No parsimony-informative sites in partition uce-182
+3017	DNA	46	274	1	268	GTR	uce-1295
+3018	DNA	52	375	0	369	GTR	uce-7991
+WARNING: No parsimony-informative sites in partition uce-7991
+3019	DNA	48	514	5	493	GTR	uce-2223
+3020	DNA	49	355	3	338	GTR	uce-4001
+3021	DNA	44	300	1	293	GTR	uce-2908
+3022	DNA	50	363	1	351	GTR	uce-7444
+3023	DNA	48	310	3	298	GTR	uce-6562
+3024	DNA	43	297	1	292	GTR	uce-7325
+3025	DNA	51	342	1	328	GTR	uce-5589
+3026	DNA	43	290	6	278	GTR	uce-1782
+3027	DNA	48	389	8	366	GTR	uce-46
+3028	DNA	49	454	3	421	GTR	uce-2962
+3029	DNA	50	385	3	368	GTR	uce-2435
+3030	DNA	51	418	1	412	GTR	uce-3560
+3031	DNA	53	453	5	435	GTR	uce-2512
+3032	DNA	51	455	2	440	GTR	uce-1290
+3033	DNA	45	416	1	405	GTR	uce-2367
+3034	DNA	46	419	1	413	GTR	uce-6909
+3035	DNA	45	381	0	375	GTR	uce-143
+WARNING: No parsimony-informative sites in partition uce-143
+3036	DNA	48	454	1	452	GTR	uce-3154
+3037	DNA	49	454	0	449	GTR	uce-7629
+WARNING: No parsimony-informative sites in partition uce-7629
+3038	DNA	45	437	1	430	GTR	uce-5123
+3039	DNA	49	385	3	369	GTR	uce-940
+3040	DNA	47	332	1	323	GTR	uce-4522
+3041	DNA	45	476	9	443	GTR	uce-90
+3042	DNA	49	378	2	362	GTR	uce-7628
+3043	DNA	37	471	1	467	GTR	uce-227
+3044	DNA	47	342	0	334	GTR	uce-6278
+WARNING: No parsimony-informative sites in partition uce-6278
+3045	DNA	50	427	0	416	GTR	uce-753
+WARNING: No parsimony-informative sites in partition uce-753
+3046	DNA	51	345	1	325	GTR	uce-3585
+3047	DNA	37	419	0	406	GTR	uce-698
+WARNING: No parsimony-informative sites in partition uce-698
+3048	DNA	44	393	3	384	GTR	uce-7277
+3049	DNA	39	532	1	518	GTR	uce-591
+3050	DNA	45	404	2	395	GTR	uce-6995
+3051	DNA	41	347	7	331	GTR	uce-518
+3052	DNA	46	437	6	421	GTR	uce-4176
+3053	DNA	49	393	0	391	GTR	uce-6035
+WARNING: No parsimony-informative sites in partition uce-6035
+3054	DNA	51	328	0	324	GTR	uce-7210
+WARNING: No parsimony-informative sites in partition uce-7210
+3055	DNA	52	553	3	537	GTR	uce-6553
+3056	DNA	53	419	2	406	GTR	uce-5688
+3057	DNA	49	430	0	425	GTR	uce-3340
+WARNING: No parsimony-informative sites in partition uce-3340
+3058	DNA	49	421	6	398	GTR	uce-5542
+3059	DNA	47	406	0	402	GTR	uce-1209
+WARNING: No parsimony-informative sites in partition uce-1209
+3060	DNA	49	327	0	319	GTR	uce-7108
+WARNING: No parsimony-informative sites in partition uce-7108
+3061	DNA	50	457	6	416	GTR	uce-4183
+3062	DNA	46	411	1	400	GTR	uce-2903
+3063	DNA	48	418	2	404	GTR	uce-3604
+3064	DNA	42	397	4	385	GTR	uce-3282
+3065	DNA	42	428	4	407	GTR	uce-1466
+3066	DNA	46	334	1	324	GTR	uce-759
+3067	DNA	49	275	1	269	GTR	uce-4639
+3068	DNA	49	433	2	420	GTR	uce-4525
+3069	DNA	43	333	6	323	GTR	uce-2868
+3070	DNA	46	507	0	500	GTR	uce-691
+WARNING: No parsimony-informative sites in partition uce-691
+3071	DNA	43	454	0	415	GTR	uce-487
+WARNING: No parsimony-informative sites in partition uce-487
+3072	DNA	52	480	1	470	GTR	uce-761
+3073	DNA	44	618	3	606	GTR	uce-342
+3074	DNA	38	278	0	271	GTR	uce-346
+WARNING: No parsimony-informative sites in partition uce-346
+3075	DNA	40	274	1	263	GTR	uce-7732
+3076	DNA	47	434	2	422	GTR	uce-1841
+3077	DNA	54	509	1	502	GTR	uce-1210
+3078	DNA	44	463	1	454	GTR	uce-3297
+3079	DNA	53	349	1	342	GTR	uce-3032
+3080	DNA	39	359	0	354	GTR	uce-5847
+WARNING: No parsimony-informative sites in partition uce-5847
+3081	DNA	47	393	2	380	GTR	uce-7873
+3082	DNA	49	467	0	459	GTR	uce-1547
+WARNING: No parsimony-informative sites in partition uce-1547
+3083	DNA	43	407	2	398	GTR	uce-6532
+3084	DNA	46	306	2	289	GTR	uce-4999
+3085	DNA	54	451	1	448	GTR	uce-6762
+3086	DNA	49	409	3	397	GTR	uce-5873
+3087	DNA	50	404	3	395	GTR	uce-6423
+3088	DNA	47	485	1	479	GTR	uce-277
+3089	DNA	48	439	4	417	GTR	uce-4117
+3090	DNA	48	425	0	421	GTR	uce-2209
+WARNING: No parsimony-informative sites in partition uce-2209
+3091	DNA	44	414	2	388	GTR	uce-516
+3092	DNA	49	434	7	405	GTR	uce-2261
+3093	DNA	49	381	5	365	GTR	uce-6517
+3094	DNA	47	381	6	370	GTR	uce-3609
+3095	DNA	45	441	6	429	GTR	uce-1170
+3096	DNA	57	408	4	385	GTR	uce-5707
+3097	DNA	45	329	1	320	GTR	uce-3465
+3098	DNA	46	393	2	383	GTR	uce-5477
+3099	DNA	46	477	2	463	GTR	uce-6426
+3100	DNA	51	465	0	452	GTR	uce-2151
+WARNING: No parsimony-informative sites in partition uce-2151
+3101	DNA	51	338	0	326	GTR	uce-3549
+WARNING: No parsimony-informative sites in partition uce-3549
+3102	DNA	55	469	1	461	GTR	uce-699
+3103	DNA	44	342	2	333	GTR	uce-1825
+3104	DNA	53	439	0	433	GTR	uce-4559
+WARNING: No parsimony-informative sites in partition uce-4559
+3105	DNA	48	479	8	448	GTR	uce-7764
+3106	DNA	50	338	2	330	GTR	uce-2966
+3107	DNA	52	517	2	499	GTR	uce-322
+3108	DNA	47	352	6	337	GTR	uce-2578
+3109	DNA	40	343	2	330	GTR	uce-7772
+3110	DNA	47	351	8	328	GTR	uce-5854
+3111	DNA	44	446	3	432	GTR	uce-1892
+3112	DNA	47	356	5	338	GTR	uce-6523
+3113	DNA	50	456	9	392	GTR	uce-1774
+3114	DNA	41	428	3	412	GTR	uce-5991
+3115	DNA	51	348	1	338	GTR	uce-7429
+3116	DNA	38	333	2	320	GTR	uce-4606
+3117	DNA	44	475	0	464	GTR	uce-1897
+WARNING: No parsimony-informative sites in partition uce-1897
+3118	DNA	53	373	2	362	GTR	uce-3061
+3119	DNA	44	395	1	384	GTR	uce-5391
+3120	DNA	51	297	2	286	GTR	uce-5918
+3121	DNA	51	314	0	307	GTR	uce-6360
+WARNING: No parsimony-informative sites in partition uce-6360
+3122	DNA	49	377	1	361	GTR	uce-5064
+3123	DNA	38	554	0	543	GTR	uce-819
+WARNING: No parsimony-informative sites in partition uce-819
+3124	DNA	40	389	1	377	GTR	uce-6060
+3125	DNA	50	406	3	393	GTR	uce-1873
+3126	DNA	47	430	0	422	GTR	uce-4970
+WARNING: No parsimony-informative sites in partition uce-4970
+3127	DNA	44	563	6	543	GTR	uce-1683
+3128	DNA	50	387	7	362	GTR	uce-5500
+3129	DNA	42	325	3	313	GTR	uce-2351
+3130	DNA	48	420	0	409	GTR	uce-2980
+WARNING: No parsimony-informative sites in partition uce-2980
+3131	DNA	44	468	3	456	GTR	uce-700
+3132	DNA	48	417	3	403	GTR	uce-4248
+3133	DNA	48	424	2	411	GTR	uce-5319
+3134	DNA	57	449	7	427	GTR	uce-6520
+3135	DNA	40	317	1	289	GTR	uce-6264
+3136	DNA	37	392	0	388	GTR	uce-4670
+WARNING: No parsimony-informative sites in partition uce-4670
+3137	DNA	43	404	2	390	GTR	uce-6298
+3138	DNA	53	490	1	477	GTR	uce-2378
+3139	DNA	41	391	0	385	GTR	uce-7364
+WARNING: No parsimony-informative sites in partition uce-7364
+3140	DNA	51	383	1	371	GTR	uce-3757
+3141	DNA	39	313	1	309	GTR	uce-1705
+3142	DNA	51	410	3	385	GTR	uce-5418
+3143	DNA	48	351	9	301	GTR	uce-6263
+3144	DNA	48	285	2	273	GTR	uce-4604
+3145	DNA	52	455	1	445	GTR	uce-7981
+3146	DNA	39	406	2	370	GTR	uce-1174
+3147	DNA	49	372	1	360	GTR	uce-7242
+3148	DNA	51	380	3	370	GTR	uce-4051
+3149	DNA	52	406	0	390	GTR	uce-4676
+WARNING: No parsimony-informative sites in partition uce-4676
+3150	DNA	53	527	1	508	GTR	uce-1904
+3151	DNA	43	438	5	412	GTR	uce-6746
+3152	DNA	46	329	0	326	GTR	uce-5752
+WARNING: No parsimony-informative sites in partition uce-5752
+3153	DNA	46	394	1	385	GTR	uce-6796
+3154	DNA	42	400	1	392	GTR	uce-317
+3155	DNA	47	358	0	353	GTR	uce-2033
+WARNING: No parsimony-informative sites in partition uce-2033
+3156	DNA	38	277	16	250	GTR	uce-3992
+3157	DNA	45	470	2	461	GTR	uce-6373
+3158	DNA	50	376	2	362	GTR	uce-7665
+3159	DNA	49	361	6	350	GTR	uce-254
+3160	DNA	44	419	4	402	GTR	uce-711
+3161	DNA	52	437	5	417	GTR	uce-7946
+3162	DNA	43	323	1	322	GTR	uce-6268
+3163	DNA	48	350	0	343	GTR	uce-3740
+WARNING: No parsimony-informative sites in partition uce-3740
+3164	DNA	48	481	5	471	GTR	uce-3569
+3165	DNA	47	388	5	362	GTR	uce-4227
+3166	DNA	43	673	1	664	GTR	uce-191
+3167	DNA	48	379	4	364	GTR	uce-3083
+3168	DNA	43	459	2	449	GTR	uce-4211
+3169	DNA	52	462	3	447	GTR	uce-1484
+3170	DNA	44	505	0	499	GTR	uce-2149
+WARNING: No parsimony-informative sites in partition uce-2149
+3171	DNA	46	516	4	490	GTR	uce-6079
+3172	DNA	45	410	5	388	GTR	uce-5789
+3173	DNA	46	365	2	350	GTR	uce-2136
+3174	DNA	51	423	2	408	GTR	uce-3555
+3175	DNA	44	365	4	351	GTR	uce-3897
+3176	DNA	38	432	1	427	GTR	uce-4678
+3177	DNA	57	394	0	378	GTR	uce-2196
+WARNING: No parsimony-informative sites in partition uce-2196
+3178	DNA	51	439	4	411	GTR	uce-2474
+3179	DNA	40	382	1	371	GTR	uce-5214
+3180	DNA	53	318	0	317	GTR	uce-2678
+WARNING: No parsimony-informative sites in partition uce-2678
+3181	DNA	56	380	0	368	GTR	uce-7030
+WARNING: No parsimony-informative sites in partition uce-7030
+3182	DNA	52	381	0	375	GTR	uce-1088
+WARNING: No parsimony-informative sites in partition uce-1088
+3183	DNA	47	449	1	432	GTR	uce-53
+3184	DNA	50	458	1	453	GTR	uce-260
+3185	DNA	42	302	1	297	GTR	uce-4923
+3186	DNA	50	479	9	439	GTR	uce-417
+3187	DNA	45	385	3	371	GTR	uce-2416
+3188	DNA	46	387	0	379	GTR	uce-5031
+WARNING: No parsimony-informative sites in partition uce-5031
+3189	DNA	49	368	3	350	GTR	uce-2666
+3190	DNA	51	426	3	403	GTR	uce-893
+3191	DNA	40	370	5	345	GTR	uce-6435
+3192	DNA	48	488	3	464	GTR	uce-7872
+3193	DNA	48	397	3	381	GTR	uce-2210
+3194	DNA	49	462	1	449	GTR	uce-6211
+3195	DNA	53	396	1	389	GTR	uce-778
+3196	DNA	45	294	0	287	GTR	uce-3850
+WARNING: No parsimony-informative sites in partition uce-3850
+3197	DNA	46	459	1	435	GTR	uce-7987
+3198	DNA	49	529	0	519	GTR	uce-255
+WARNING: No parsimony-informative sites in partition uce-255
+3199	DNA	53	540	8	487	GTR	uce-6366
+3200	DNA	48	398	1	392	GTR	uce-2745
+3201	DNA	46	403	3	377	GTR	uce-4967
+3202	DNA	42	298	1	284	GTR	uce-7747
+3203	DNA	50	369	2	351	GTR	uce-7599
+3204	DNA	51	396	2	378	GTR	uce-7752
+3205	DNA	48	449	6	413	GTR	uce-5135
+3206	DNA	47	384	2	375	GTR	uce-3501
+3207	DNA	52	303	1	292	GTR	uce-5952
+3208	DNA	37	426	1	417	GTR	uce-3909
+3209	DNA	50	408	8	370	GTR	uce-5777
+3210	DNA	46	396	1	390	GTR	uce-2068
+3211	DNA	46	363	3	356	GTR	uce-1530
+3212	DNA	46	433	2	419	GTR	uce-1909
+3213	DNA	51	433	2	415	GTR	uce-3429
+3214	DNA	49	443	0	437	GTR	uce-2998
+WARNING: No parsimony-informative sites in partition uce-2998
+3215	DNA	49	403	5	378	GTR	uce-6143
+3216	DNA	51	388	2	378	GTR	uce-7473
+3217	DNA	47	499	5	477	GTR	uce-971
+3218	DNA	46	355	1	346	GTR	uce-2847
+3219	DNA	42	451	2	441	GTR	uce-2385
+3220	DNA	48	356	1	348	GTR	uce-377
+3221	DNA	39	456	3	439	GTR	uce-7703
+3222	DNA	43	389	1	381	GTR	uce-1143
+3223	DNA	45	361	0	352	GTR	uce-3463
+WARNING: No parsimony-informative sites in partition uce-3463
+3224	DNA	50	396	3	356	GTR	uce-1938
+3225	DNA	46	494	4	459	GTR	uce-7527
+3226	DNA	51	493	0	477	GTR	uce-2516
+WARNING: No parsimony-informative sites in partition uce-2516
+3227	DNA	43	387	1	377	GTR	uce-2564
+3228	DNA	41	398	5	384	GTR	uce-4515
+3229	DNA	58	477	1	466	GTR	uce-1533
+3230	DNA	50	416	2	400	GTR	uce-3141
+3231	DNA	47	382	3	371	GTR	uce-1200
+3232	DNA	40	556	2	541	GTR	uce-432
+3233	DNA	44	343	8	314	GTR	uce-4564
+3234	DNA	45	399	2	363	GTR	uce-7465
+3235	DNA	55	285	3	267	GTR	uce-7230
+3236	DNA	47	507	5	457	GTR	uce-7763
+3237	DNA	51	399	4	393	GTR	uce-2334
+3238	DNA	39	296	0	287	GTR	uce-2579
+WARNING: No parsimony-informative sites in partition uce-2579
+3239	DNA	46	392	2	384	GTR	uce-3432
+3240	DNA	51	363	1	356	GTR	uce-3938
+3241	DNA	41	320	0	312	GTR	uce-4757
+WARNING: No parsimony-informative sites in partition uce-4757
+3242	DNA	57	358	1	346	GTR	uce-3964
+3243	DNA	48	427	1	408	GTR	uce-3010
+3244	DNA	42	465	6	431	GTR	uce-4507
+3245	DNA	54	391	1	382	GTR	uce-2005
+3246	DNA	47	447	2	431	GTR	uce-1360
+3247	DNA	36	402	2	393	GTR	uce-2165
+3248	DNA	48	412	2	395	GTR	uce-2471
+3249	DNA	56	391	2	383	GTR	uce-6626
+3250	DNA	50	375	5	328	GTR	uce-5394
+3251	DNA	47	441	1	430	GTR	uce-2879
+3252	DNA	42	578	0	533	GTR	uce-1094
+WARNING: No parsimony-informative sites in partition uce-1094
+3253	DNA	54	394	5	376	GTR	uce-7296
+3254	DNA	47	464	3	448	GTR	uce-1983
+3255	DNA	49	405	1	400	GTR	uce-3946
+3256	DNA	46	357	1	347	GTR	uce-6717
+3257	DNA	49	468	2	450	GTR	uce-4509
+3258	DNA	52	360	0	352	GTR	uce-3156
+WARNING: No parsimony-informative sites in partition uce-3156
+3259	DNA	45	405	3	390	GTR	uce-4957
+3260	DNA	51	361	3	349	GTR	uce-3444
+3261	DNA	46	335	3	323	GTR	uce-5871
+3262	DNA	38	361	0	353	GTR	uce-1438
+WARNING: No parsimony-informative sites in partition uce-1438
+3263	DNA	51	462	3	410	GTR	uce-1381
+3264	DNA	40	501	1	493	GTR	uce-1205
+3265	DNA	47	410	3	394	GTR	uce-6296
+3266	DNA	36	324	0	319	GTR	uce-3116
+WARNING: No parsimony-informative sites in partition uce-3116
+3267	DNA	42	373	2	367	GTR	uce-5853
+3268	DNA	44	396	4	354	GTR	uce-3070
+3269	DNA	46	381	2	366	GTR	uce-5559
+3270	DNA	46	494	1	449	GTR	uce-2902
+3271	DNA	49	398	1	391	GTR	uce-6947
+3272	DNA	52	481	1	470	GTR	uce-6194
+3273	DNA	51	467	2	454	GTR	uce-5235
+3274	DNA	51	423	1	414	GTR	uce-762
+3275	DNA	46	380	0	375	GTR	uce-642
+WARNING: No parsimony-informative sites in partition uce-642
+3276	DNA	46	379	2	366	GTR	uce-7288
+3277	DNA	43	293	1	282	GTR	uce-3870
+3278	DNA	53	421	4	407	GTR	uce-5496
+3279	DNA	49	540	0	530	GTR	uce-1314
+WARNING: No parsimony-informative sites in partition uce-1314
+3280	DNA	50	447	0	433	GTR	uce-551
+WARNING: No parsimony-informative sites in partition uce-551
+3281	DNA	50	425	2	411	GTR	uce-5192
+3282	DNA	54	450	1	436	GTR	uce-1622
+3283	DNA	44	438	0	431	GTR	uce-2452
+WARNING: No parsimony-informative sites in partition uce-2452
+3284	DNA	47	353	2	341	GTR	uce-7245
+3285	DNA	56	396	15	350	GTR	uce-3973
+3286	DNA	49	386	1	373	GTR	uce-2451
+3287	DNA	39	271	2	266	GTR	uce-7157
+3288	DNA	49	432	4	423	GTR	uce-5297
+3289	DNA	40	535	11	490	GTR	uce-3777
+3290	DNA	42	297	2	286	GTR	uce-5690
+3291	DNA	48	432	3	421	GTR	uce-1454
+3292	DNA	40	344	0	337	GTR	uce-3767
+WARNING: No parsimony-informative sites in partition uce-3767
+3293	DNA	48	399	1	392	GTR	uce-99
+3294	DNA	45	440	0	434	GTR	uce-4437
+WARNING: No parsimony-informative sites in partition uce-4437
+3295	DNA	49	425	4	386	GTR	uce-4180
+3296	DNA	50	512	8	487	GTR	uce-1915
+3297	DNA	47	452	1	424	GTR	uce-5817
+3298	DNA	44	534	0	510	GTR	uce-7530
+WARNING: No parsimony-informative sites in partition uce-7530
+3299	DNA	42	449	2	442	GTR	uce-7534
+3300	DNA	47	438	0	408	GTR	uce-649
+WARNING: No parsimony-informative sites in partition uce-649
+3301	DNA	48	411	2	400	GTR	uce-4234
+3302	DNA	45	401	5	375	GTR	uce-2448
+3303	DNA	52	459	5	440	GTR	uce-7016
+3304	DNA	48	358	4	346	GTR	uce-4080
+3305	DNA	56	464	2	433	GTR	uce-4033
+3306	DNA	41	363	3	355	GTR	uce-4546
+3307	DNA	40	455	0	450	GTR	uce-2057
+WARNING: No parsimony-informative sites in partition uce-2057
+3308	DNA	44	475	2	463	GTR	uce-5867
+3309	DNA	53	448	2	432	GTR	uce-7888
+3310	DNA	43	294	4	279	GTR	uce-362
+3311	DNA	49	412	1	398	GTR	uce-3616
+3312	DNA	40	438	1	428	GTR	uce-29
+3313	DNA	40	297	3	287	GTR	uce-8035
+3314	DNA	45	400	2	379	GTR	uce-7554
+3315	DNA	50	334	2	323	GTR	uce-3640
+3316	DNA	46	458	3	447	GTR	uce-2369
+3317	DNA	48	512	5	483	GTR	uce-1898
+3318	DNA	48	551	0	542	GTR	uce-725
+WARNING: No parsimony-informative sites in partition uce-725
+3319	DNA	39	385	18	346	GTR	uce-2844
+3320	DNA	48	436	2	390	GTR	uce-1860
+3321	DNA	40	261	1	256	GTR	uce-1435
+3322	DNA	48	464	9	440	GTR	uce-6221
+3323	DNA	44	340	0	331	GTR	uce-7566
+WARNING: No parsimony-informative sites in partition uce-7566
+3324	DNA	44	505	5	467	GTR	uce-6580
+3325	DNA	47	302	1	295	GTR	uce-7713
+3326	DNA	48	362	3	355	GTR	uce-367
+3327	DNA	46	448	1	432	GTR	uce-7456
+3328	DNA	50	299	1	285	GTR	uce-7055
+3329	DNA	56	445	1	435	GTR	uce-6944
+3330	DNA	46	326	2	309	GTR	uce-4599
+3331	DNA	45	394	9	359	GTR	uce-8032
+3332	DNA	46	531	2	519	GTR	uce-2028
+3333	DNA	46	529	1	523	GTR	uce-1813
+3334	DNA	50	418	4	404	GTR	uce-1349
+3335	DNA	47	395	1	391	GTR	uce-166
+3336	DNA	49	430	2	419	GTR	uce-4259
+3337	DNA	41	327	0	326	GTR	uce-989
+WARNING: No parsimony-informative sites in partition uce-989
+3338	DNA	46	363	5	349	GTR	uce-4210
+3339	DNA	46	439	1	428	GTR	uce-4638
+3340	DNA	47	480	1	472	GTR	uce-3670
+3341	DNA	45	452	0	446	GTR	uce-535
+WARNING: No parsimony-informative sites in partition uce-535
+3342	DNA	44	343	2	330	GTR	uce-6267
+3343	DNA	44	313	2	295	GTR	uce-4534
+3344	DNA	43	411	1	407	GTR	uce-4528
+3345	DNA	52	396	0	381	GTR	uce-4154
+WARNING: No parsimony-informative sites in partition uce-4154
+3346	DNA	52	478	2	469	GTR	uce-1253
+3347	DNA	47	374	3	365	GTR	uce-5173
+3348	DNA	47	324	0	303	GTR	uce-7381
+WARNING: No parsimony-informative sites in partition uce-7381
+3349	DNA	49	437	3	422	GTR	uce-3890
+3350	DNA	51	459	3	440	GTR	uce-186
+3351	DNA	50	317	11	283	GTR	uce-3062
+3352	DNA	47	388	1	379	GTR	uce-385
+3353	DNA	36	380	2	372	GTR	uce-3658
+3354	DNA	47	344	1	324	GTR	uce-3235
+3355	DNA	49	426	2	398	GTR	uce-5745
+3356	DNA	48	411	2	403	GTR	uce-6390
+3357	DNA	43	391	5	373	GTR	uce-4377
+3358	DNA	46	513	1	501	GTR	uce-7011
+3359	DNA	47	412	8	365	GTR	uce-5253
+3360	DNA	51	416	2	408	GTR	uce-1383
+3361	DNA	47	409	2	405	GTR	uce-4554
+3362	DNA	42	355	3	344	GTR	uce-1836
+3363	DNA	47	510	27	433	GTR	uce-7963
+3364	DNA	47	473	2	465	GTR	uce-7755
+3365	DNA	48	346	1	341	GTR	uce-7859
+3366	DNA	46	365	0	358	GTR	uce-1162
+WARNING: No parsimony-informative sites in partition uce-1162
+3367	DNA	47	512	0	471	GTR	uce-4023
+WARNING: No parsimony-informative sites in partition uce-4023
+3368	DNA	47	446	1	438	GTR	uce-219
+3369	DNA	40	451	4	436	GTR	uce-146
+3370	DNA	47	354	1	348	GTR	uce-4215
+3371	DNA	44	472	1	460	GTR	uce-3759
+3372	DNA	49	446	0	439	GTR	uce-813
+WARNING: No parsimony-informative sites in partition uce-813
+3373	DNA	50	465	7	447	GTR	uce-6230
+3374	DNA	49	470	0	458	GTR	uce-6127
+WARNING: No parsimony-informative sites in partition uce-6127
+3375	DNA	49	455	2	446	GTR	uce-2082
+3376	DNA	51	486	1	478	GTR	uce-542
+3377	DNA	47	371	1	363	GTR	uce-2774
+3378	DNA	52	376	2	363	GTR	uce-6223
+3379	DNA	52	355	5	328	GTR	uce-5600
+3380	DNA	45	408	3	394	GTR	uce-6574
+3381	DNA	41	421	3	400	GTR	uce-3918
+3382	DNA	42	507	5	494	GTR	uce-2114
+3383	DNA	45	467	5	446	GTR	uce-2901
+3384	DNA	41	378	7	364	GTR	uce-5553
+3385	DNA	48	426	2	416	GTR	uce-7669
+3386	DNA	54	407	5	386	GTR	uce-6219
+3387	DNA	47	388	2	373	GTR	uce-4883
+3388	DNA	54	445	1	439	GTR	uce-1600
+3389	DNA	43	410	2	401	GTR	uce-1161
+3390	DNA	47	412	2	396	GTR	uce-5901
+3391	DNA	47	405	4	393	GTR	uce-7757
+3392	DNA	38	312	2	302	GTR	uce-4683
+3393	DNA	46	366	4	352	GTR	uce-6158
+3394	DNA	46	441	0	430	GTR	uce-5689
+WARNING: No parsimony-informative sites in partition uce-5689
+3395	DNA	52	385	1	373	GTR	uce-629
+3396	DNA	45	382	6	363	GTR	uce-7503
+3397	DNA	46	260	3	248	GTR	uce-3434
+3398	DNA	47	425	2	417	GTR	uce-6241
+3399	DNA	49	383	5	371	GTR	uce-3704
+3400	DNA	41	393	2	380	GTR	uce-6769
+3401	DNA	54	454	0	448	GTR	uce-6196
+WARNING: No parsimony-informative sites in partition uce-6196
+3402	DNA	49	485	2	469	GTR	uce-5322
+3403	DNA	42	450	3	444	GTR	uce-6362
+3404	DNA	45	365	2	355	GTR	uce-2544
+3405	DNA	45	556	1	547	GTR	uce-3159
+3406	DNA	44	379	3	365	GTR	uce-7163
+3407	DNA	44	368	4	350	GTR	uce-4585
+3408	DNA	41	500	0	492	GTR	uce-7118
+WARNING: No parsimony-informative sites in partition uce-7118
+3409	DNA	42	369	4	349	GTR	uce-4950
+3410	DNA	50	394	4	371	GTR	uce-6157
+3411	DNA	50	425	3	406	GTR	uce-7276
+3412	DNA	45	471	1	442	GTR	uce-5167
+3413	DNA	41	403	1	392	GTR	uce-198
+3414	DNA	42	476	3	471	GTR	uce-3987
+3415	DNA	48	441	7	390	GTR	uce-6530
+3416	DNA	48	380	0	378	GTR	uce-3607
+WARNING: No parsimony-informative sites in partition uce-3607
+3417	DNA	51	355	4	331	GTR	uce-7769
+3418	DNA	50	442	2	434	GTR	uce-3520
+3419	DNA	47	457	0	443	GTR	uce-1236
+WARNING: No parsimony-informative sites in partition uce-1236
+3420	DNA	37	285	7	277	GTR	uce-7866
+3421	DNA	44	459	0	451	GTR	uce-7676
+WARNING: No parsimony-informative sites in partition uce-7676
+3422	DNA	47	453	5	439	GTR	uce-2090
+3423	DNA	53	449	2	437	GTR	uce-3054
+3424	DNA	56	414	3	404	GTR	uce-197
+3425	DNA	46	353	7	327	GTR	uce-3817
+3426	DNA	47	454	0	449	GTR	uce-4189
+WARNING: No parsimony-informative sites in partition uce-4189
+3427	DNA	44	422	1	411	GTR	uce-2992
+3428	DNA	49	376	4	363	GTR	uce-3813
+3429	DNA	46	425	5	404	GTR	uce-4278
+3430	DNA	51	529	3	491	GTR	uce-2404
+3431	DNA	48	311	0	306	GTR	uce-1671
+WARNING: No parsimony-informative sites in partition uce-1671
+3432	DNA	49	463	2	448	GTR	uce-3278
+3433	DNA	57	370	5	351	GTR	uce-6601
+3434	DNA	46	335	0	331	GTR	uce-4558
+WARNING: No parsimony-informative sites in partition uce-4558
+3435	DNA	46	373	1	365	GTR	uce-2251
+3436	DNA	47	289	0	288	GTR	uce-2021
+WARNING: No parsimony-informative sites in partition uce-2021
+3437	DNA	56	405	0	399	GTR	uce-1128
+WARNING: No parsimony-informative sites in partition uce-1128
+3438	DNA	58	342	0	336	GTR	uce-2096
+WARNING: No parsimony-informative sites in partition uce-2096
+3439	DNA	39	426	0	422	GTR	uce-350
+WARNING: No parsimony-informative sites in partition uce-350
+3440	DNA	54	294	1	286	GTR	uce-1219
+3441	DNA	47	456	3	444	GTR	uce-4662
+3442	DNA	39	469	4	429	GTR	uce-5143
+3443	DNA	53	451	1	436	GTR	uce-4593
+3444	DNA	43	403	2	394	GTR	uce-869
+3445	DNA	44	390	0	385	GTR	uce-2423
+WARNING: No parsimony-informative sites in partition uce-2423
+3446	DNA	44	482	0	478	GTR	uce-7999
+WARNING: No parsimony-informative sites in partition uce-7999
+3447	DNA	45	411	5	382	GTR	uce-8012
+3448	DNA	37	327	0	319	GTR	uce-4101
+WARNING: No parsimony-informative sites in partition uce-4101
+3449	DNA	48	450	5	439	GTR	uce-3244
+3450	DNA	56	380	0	371	GTR	uce-3696
+WARNING: No parsimony-informative sites in partition uce-3696
+3451	DNA	54	532	1	522	GTR	uce-3096
+3452	DNA	42	290	4	266	GTR	uce-7640
+3453	DNA	53	389	5	366	GTR	uce-4853
+3454	DNA	51	458	2	445	GTR	uce-3049
+3455	DNA	49	315	0	304	GTR	uce-6812
+WARNING: No parsimony-informative sites in partition uce-6812
+3456	DNA	45	345	0	337	GTR	uce-1706
+WARNING: No parsimony-informative sites in partition uce-1706
+3457	DNA	54	381	0	373	GTR	uce-4518
+WARNING: No parsimony-informative sites in partition uce-4518
+3458	DNA	47	383	3	369	GTR	uce-3550
+3459	DNA	48	398	1	391	GTR	uce-718
+3460	DNA	44	339	5	322	GTR	uce-4431
+3461	DNA	36	277	0	272	GTR	uce-1031
+WARNING: No parsimony-informative sites in partition uce-1031
+3462	DNA	48	453	0	435	GTR	uce-2538
+WARNING: No parsimony-informative sites in partition uce-2538
+3463	DNA	36	470	0	454	GTR	uce-1252
+WARNING: No parsimony-informative sites in partition uce-1252
+3464	DNA	38	336	1	327	GTR	uce-3755
+3465	DNA	45	393	2	380	GTR	uce-5083
+3466	DNA	45	501	6	484	GTR	uce-7774
+3467	DNA	46	387	3	336	GTR	uce-4200
+3468	DNA	51	464	2	443	GTR	uce-1929
+3469	DNA	52	470	8	447	GTR	uce-7077
+3470	DNA	50	463	1	455	GTR	uce-908
+3471	DNA	49	369	2	357	GTR	uce-6912
+3472	DNA	39	562	2	507	GTR	uce-7074
+3473	DNA	49	489	2	445	GTR	uce-3046
+3474	DNA	49	334	14	289	GTR	uce-5409
+3475	DNA	42	422	1	408	GTR	uce-5396
+3476	DNA	53	418	4	404	GTR	uce-5609
+3477	DNA	42	437	1	430	GTR	uce-3926
+3478	DNA	42	261	2	257	GTR	uce-2243
+3479	DNA	48	399	1	391	GTR	uce-4482
+3480	DNA	45	340	0	331	GTR	uce-1251
+WARNING: No parsimony-informative sites in partition uce-1251
+3481	DNA	43	308	8	279	GTR	uce-4690
+3482	DNA	48	417	0	409	GTR	uce-7553
+WARNING: No parsimony-informative sites in partition uce-7553
+3483	DNA	50	448	0	429	GTR	uce-4680
+WARNING: No parsimony-informative sites in partition uce-4680
+3484	DNA	49	403	2	394	GTR	uce-4201
+3485	DNA	49	423	2	403	GTR	uce-740
+3486	DNA	46	786	2	777	GTR	uce-527
+3487	DNA	51	379	1	375	GTR	uce-3018
+3488	DNA	41	304	0	300	GTR	uce-5483
+WARNING: No parsimony-informative sites in partition uce-5483
+3489	DNA	52	323	2	313	GTR	uce-2124
+3490	DNA	47	421	1	411	GTR	uce-1059
+3491	DNA	46	437	4	420	GTR	uce-6471
+3492	DNA	48	467	1	460	GTR	uce-4673
+3493	DNA	51	384	0	376	GTR	uce-7898
+WARNING: No parsimony-informative sites in partition uce-7898
+3494	DNA	44	346	0	339	GTR	uce-8006
+WARNING: No parsimony-informative sites in partition uce-8006
+3495	DNA	43	391	0	383	GTR	uce-7409
+WARNING: No parsimony-informative sites in partition uce-7409
+3496	DNA	47	348	0	333	GTR	uce-6923
+WARNING: No parsimony-informative sites in partition uce-6923
+3497	DNA	51	427	2	418	GTR	uce-6716
+3498	DNA	39	352	3	341	GTR	uce-6902
+3499	DNA	39	411	2	383	GTR	uce-6005
+3500	DNA	47	504	1	496	GTR	uce-5755
+3501	DNA	40	341	7	316	GTR	uce-2825
+3502	DNA	50	350	0	332	GTR	uce-2558
+WARNING: No parsimony-informative sites in partition uce-2558
+3503	DNA	50	408	8	340	GTR	uce-2780
+3504	DNA	40	295	8	267	GTR	uce-7474
+3505	DNA	42	433	4	413	GTR	uce-3806
+3506	DNA	53	452	7	430	GTR	uce-6844
+3507	DNA	45	445	1	438	GTR	uce-6931
+3508	DNA	43	485	1	477	GTR	uce-1643
+3509	DNA	47	325	0	314	GTR	uce-6519
+WARNING: No parsimony-informative sites in partition uce-6519
+3510	DNA	52	405	1	393	GTR	uce-5555
+3511	DNA	51	314	1	309	GTR	uce-1483
+3512	DNA	42	354	0	344	GTR	uce-923
+WARNING: No parsimony-informative sites in partition uce-923
+3513	DNA	49	380	0	374	GTR	uce-7295
+WARNING: No parsimony-informative sites in partition uce-7295
+3514	DNA	36	294	4	278	GTR	uce-3744
+3515	DNA	50	433	3	422	GTR	uce-5008
+3516	DNA	45	346	0	341	GTR	uce-2175
+WARNING: No parsimony-informative sites in partition uce-2175
+3517	DNA	47	413	1	404	GTR	uce-918
+3518	DNA	50	537	0	524	GTR	uce-1499
+WARNING: No parsimony-informative sites in partition uce-1499
+3519	DNA	39	455	5	444	GTR	uce-7824
+3520	DNA	46	389	3	375	GTR	uce-5344
+3521	DNA	50	465	0	460	GTR	uce-7361
+WARNING: No parsimony-informative sites in partition uce-7361
+3522	DNA	45	356	1	344	GTR	uce-3115
+3523	DNA	45	405	0	400	GTR	uce-6335
+WARNING: No parsimony-informative sites in partition uce-6335
+3524	DNA	45	324	0	312	GTR	uce-5788
+WARNING: No parsimony-informative sites in partition uce-5788
+3525	DNA	37	249	0	244	GTR	uce-3741
+WARNING: No parsimony-informative sites in partition uce-3741
+3526	DNA	44	280	2	272	GTR	uce-5607
+3527	DNA	38	456	0	445	GTR	uce-1741
+WARNING: No parsimony-informative sites in partition uce-1741
+3528	DNA	48	368	1	359	GTR	uce-2815
+3529	DNA	48	370	1	366	GTR	uce-3742
+3530	DNA	50	491	0	484	GTR	uce-298
+WARNING: No parsimony-informative sites in partition uce-298
+3531	DNA	49	348	0	339	GTR	uce-2670
+WARNING: No parsimony-informative sites in partition uce-2670
+3532	DNA	43	446	7	404	GTR	uce-5905
+3533	DNA	55	458	1	449	GTR	uce-767
+3534	DNA	44	428	0	414	GTR	uce-80
+WARNING: No parsimony-informative sites in partition uce-80
+3535	DNA	57	424	3	410	GTR	uce-4265
+3536	DNA	44	419	2	413	GTR	uce-5456
+3537	DNA	50	435	7	420	GTR	uce-6774
+3538	DNA	51	467	0	451	GTR	uce-239
+WARNING: No parsimony-informative sites in partition uce-239
+3539	DNA	45	319	4	308	GTR	uce-5953
+3540	DNA	37	670	1	644	GTR	uce-1719
+3541	DNA	40	317	1	310	GTR	uce-4823
+3542	DNA	50	327	0	319	GTR	uce-5133
+WARNING: No parsimony-informative sites in partition uce-5133
+3543	DNA	52	360	1	354	GTR	uce-4827
+3544	DNA	50	449	1	435	GTR	uce-6163
+3545	DNA	52	450	2	440	GTR	uce-938
+3546	DNA	47	423	2	416	GTR	uce-510
+3547	DNA	45	359	2	344	GTR	uce-5255
+3548	DNA	52	329	0	326	GTR	uce-2267
+WARNING: No parsimony-informative sites in partition uce-2267
+3549	DNA	40	441	1	427	GTR	uce-3900
+3550	DNA	47	376	1	366	GTR	uce-1056
+3551	DNA	47	382	1	373	GTR	uce-4049
+3552	DNA	38	346	4	318	GTR	uce-7885
+3553	DNA	36	376	4	356	GTR	uce-7392
+3554	DNA	48	329	3	314	GTR	uce-2982
+3555	DNA	44	399	0	394	GTR	uce-730
+WARNING: No parsimony-informative sites in partition uce-730
+3556	DNA	43	473	4	460	GTR	uce-2306
+3557	DNA	47	290	1	285	GTR	uce-3591
+3558	DNA	53	342	8	311	GTR	uce-3503
+3559	DNA	41	386	1	377	GTR	uce-4181
+3560	DNA	41	314	1	309	GTR	uce-6140
+3561	DNA	44	452	3	433	GTR	uce-2920
+3562	DNA	47	413	3	399	GTR	uce-6
+3563	DNA	48	483	3	452	GTR	uce-7559
+3564	DNA	44	392	2	379	GTR	uce-3606
+3565	DNA	55	3614	5	3595	GTR	uce-4726
+3566	DNA	50	445	2	433	GTR	uce-3978
+3567	DNA	53	332	0	328	GTR	uce-7319
+WARNING: No parsimony-informative sites in partition uce-7319
+3568	DNA	46	364	1	352	GTR	uce-5808
+3569	DNA	36	322	8	302	GTR	uce-2801
+3570	DNA	52	406	3	392	GTR	uce-1034
+3571	DNA	45	372	6	356	GTR	uce-4813
+3572	DNA	44	490	2	478	GTR	uce-1980
+3573	DNA	43	454	0	451	GTR	uce-5476
+WARNING: No parsimony-informative sites in partition uce-5476
+3574	DNA	46	377	2	367	GTR	uce-7649
+3575	DNA	44	439	0	433	GTR	uce-6592
+WARNING: No parsimony-informative sites in partition uce-6592
+3576	DNA	46	352	0	346	GTR	uce-1649
+WARNING: No parsimony-informative sites in partition uce-1649
+3577	DNA	46	397	1	394	GTR	uce-3057
+3578	DNA	47	524	1	510	GTR	uce-1928
+3579	DNA	53	428	4	401	GTR	uce-5479
+3580	DNA	43	354	0	348	GTR	uce-1081
+WARNING: No parsimony-informative sites in partition uce-1081
+3581	DNA	52	455	9	421	GTR	uce-4516
+3582	DNA	50	373	2	361	GTR	uce-1018
+3583	DNA	44	383	1	376	GTR	uce-6726
+3584	DNA	44	474	3	457	GTR	uce-5144
+3585	DNA	50	369	1	360	GTR	uce-2936
+3586	DNA	48	587	1	575	GTR	uce-8017
+3587	DNA	36	444	2	414	GTR	uce-4840
+3588	DNA	51	458	1	443	GTR	uce-3312
+3589	DNA	44	388	1	376	GTR	uce-1917
+3590	DNA	52	361	0	353	GTR	uce-3140
+WARNING: No parsimony-informative sites in partition uce-3140
+3591	DNA	49	423	1	415	GTR	uce-1488
+3592	DNA	56	441	5	418	GTR	uce-2713
+3593	DNA	45	431	5	385	GTR	uce-2160
+3594	DNA	52	310	1	299	GTR	uce-5402
+3595	DNA	50	387	0	383	GTR	uce-4417
+WARNING: No parsimony-informative sites in partition uce-4417
+3596	DNA	51	438	2	434	GTR	uce-3622
+3597	DNA	40	439	10	406	GTR	uce-6659
+3598	DNA	50	330	1	317	GTR	uce-3422
+3599	DNA	44	433	1	415	GTR	uce-5564
+3600	DNA	47	438	1	435	GTR	uce-4751
+3601	DNA	53	441	0	425	GTR	uce-178
+WARNING: No parsimony-informative sites in partition uce-178
+3602	DNA	52	440	0	436	GTR	uce-4416
+WARNING: No parsimony-informative sites in partition uce-4416
+3603	DNA	50	444	2	425	GTR	uce-4036
+3604	DNA	53	399	0	392	GTR	uce-1877
+WARNING: No parsimony-informative sites in partition uce-1877
+3605	DNA	49	431	1	417	GTR	uce-6135
+3606	DNA	50	395	2	382	GTR	uce-2574
+3607	DNA	53	316	1	303	GTR	uce-4450
+3608	DNA	40	600	0	580	GTR	uce-5584
+WARNING: No parsimony-informative sites in partition uce-5584
+3609	DNA	45	385	2	368	GTR	uce-2465
+3610	DNA	47	407	0	400	GTR	uce-1753
+WARNING: No parsimony-informative sites in partition uce-1753
+3611	DNA	43	430	4	390	GTR	uce-7234
+3612	DNA	53	390	0	389	GTR	uce-23
+WARNING: No parsimony-informative sites in partition uce-23
+3613	DNA	56	403	3	359	GTR	uce-97
+3614	DNA	49	494	1	489	GTR	uce-833
+3615	DNA	48	403	3	387	GTR	uce-1061
+3616	DNA	51	528	0	505	GTR	uce-5379
+WARNING: No parsimony-informative sites in partition uce-5379
+3617	DNA	48	429	1	409	GTR	uce-5903
+3618	DNA	51	488	1	471	GTR	uce-3441
+3619	DNA	51	488	0	477	GTR	uce-2302
+WARNING: No parsimony-informative sites in partition uce-2302
+3620	DNA	53	426	6	405	GTR	uce-3284
+3621	DNA	52	381	2	366	GTR	uce-5411
+3622	DNA	46	354	1	349	GTR	uce-4841
+3623	DNA	55	378	2	364	GTR	uce-6154
+3624	DNA	46	373	0	363	GTR	uce-624
+WARNING: No parsimony-informative sites in partition uce-624
+3625	DNA	53	346	1	337	GTR	uce-5719
+3626	DNA	42	310	1	299	GTR	uce-3915
+3627	DNA	45	327	4	308	GTR	uce-3126
+3628	DNA	40	460	0	455	GTR	uce-422
+WARNING: No parsimony-informative sites in partition uce-422
+3629	DNA	45	480	12	453	GTR	uce-4020
+3630	DNA	38	371	3	335	GTR	uce-4538
+3631	DNA	48	469	4	453	GTR	uce-6887
+3632	DNA	44	446	0	440	GTR	uce-3580
+WARNING: No parsimony-informative sites in partition uce-3580
+3633	DNA	48	430	2	424	GTR	uce-6117
+3634	DNA	42	445	0	440	GTR	uce-3676
+WARNING: No parsimony-informative sites in partition uce-3676
+3635	DNA	47	452	1	444	GTR	uce-748
+3636	DNA	46	447	0	445	GTR	uce-616
+WARNING: No parsimony-informative sites in partition uce-616
+3637	DNA	53	420	0	411	GTR	uce-2658
+WARNING: No parsimony-informative sites in partition uce-2658
+3638	DNA	41	305	5	294	GTR	uce-4294
+3639	DNA	39	318	5	302	GTR	uce-6334
+3640	DNA	48	449	2	437	GTR	uce-5998
+3641	DNA	49	496	0	487	GTR	uce-3008
+WARNING: No parsimony-informative sites in partition uce-3008
+3642	DNA	51	401	3	386	GTR	uce-4013
+Degree of missing data: 0.346
+Info: multi-threading strategy over partitions
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.798 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 878048)...
+
+NOTE: 1858 MB RAM (1 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2511884.174
+Current log-likelihood at step 1: -2483668.473
+Current log-likelihood at step 2: -2482535.863
+Current log-likelihood at step 3: -2482299.244
+Current log-likelihood at step 4: -2482196.049
+Current log-likelihood at step 5: -2482133.414
+Current log-likelihood at step 6: -2482088.685
+Current log-likelihood at step 7: -2482051.781
+Current log-likelihood at step 8: -2482026.907
+Current log-likelihood at step 9: -2482006.887
+Current log-likelihood at step 10: -2481991.984
+Current log-likelihood at step 11: -2481978.469
+Current log-likelihood at step 12: -2481967.089
+Current log-likelihood at step 13: -2481956.328
+Current log-likelihood at step 14: -2481945.995
+Current log-likelihood at step 15: -2481936.034
+Current log-likelihood at step 16: -2481929.055
+Current log-likelihood at step 17: -2481920.172
+Current log-likelihood at step 18: -2481913.169
+Current log-likelihood at step 19: -2481907.993
+Current log-likelihood at step 20: -2481901.693
+Current log-likelihood at step 21: -2481895.900
+Current log-likelihood at step 22: -2481891.724
+Current log-likelihood at step 23: -2481886.475
+Current log-likelihood at step 24: -2481879.968
+Current log-likelihood at step 25: -2481875.541
+Current log-likelihood at step 26: -2481871.364
+Current log-likelihood at step 27: -2481868.080
+Current log-likelihood at step 28: -2481863.670
+Current log-likelihood at step 29: -2481860.907
+Current log-likelihood at step 30: -2481857.399
+Current log-likelihood at step 31: -2481855.115
+Current log-likelihood at step 32: -2481852.081
+Current log-likelihood at step 33: -2481849.775
+Current log-likelihood at step 34: -2481847.300
+Current log-likelihood at step 35: -2481844.387
+Current log-likelihood at step 36: -2481841.230
+Current log-likelihood at step 37: -2481839.290
+Current log-likelihood at step 38: -2481837.433
+Current log-likelihood at step 39: -2481835.625
+Current log-likelihood at step 40: -2481834.004
+Current log-likelihood at step 41: -2481832.891
+Current log-likelihood at step 42: -2481831.460
+Current log-likelihood at step 43: -2481830.069
+Current log-likelihood at step 44: -2481828.817
+Current log-likelihood at step 45: -2481826.642
+Current log-likelihood at step 46: -2481824.898
+Current log-likelihood at step 47: -2481823.649
+Current log-likelihood at step 48: -2481822.878
+Current log-likelihood at step 49: -2481822.277
+Current log-likelihood at step 50: -2481821.780
+Current log-likelihood at step 51: -2481821.323
+Current log-likelihood at step 52: -2481819.880
+Current log-likelihood at step 53: -2481818.948
+Current log-likelihood at step 54: -2481818.048
+Current log-likelihood at step 55: -2481817.438
+Current log-likelihood at step 56: -2481817.180
+Current log-likelihood at step 57: -2481816.704
+Current log-likelihood at step 58: -2481816.574
+Current log-likelihood at step 59: -2481816.276
+Current log-likelihood at step 60: -2481815.894
+Current log-likelihood at step 61: -2481815.827
+Parameters optimization took 60 rounds (769.690 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.027530 sec (of wall-clock time) 0.027397 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.000498 sec (of wall-clock time) 0.000509 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2595765.110
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 363.671 second
+Computing log-likelihood of 98 initial trees ... 1555.728 seconds
+Current best score: -2481815.827
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2481815.827
+Current log-likelihood at step 1: -2481815.670
+Current log-likelihood at step 2: -2481815.485
+Current log-likelihood at step 3: -2481815.348
+Current log-likelihood at step 4: -2481815.261
+Parameters optimization took 3 rounds (50.052 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -2481815.261
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2481730.916
+Current log-likelihood at step 1: -2481718.643
+Current log-likelihood at step 2: -2481717.757
+Current log-likelihood at step 3: -2481717.407
+Current log-likelihood at step 4: -2481717.174
+Current log-likelihood at step 5: -2481716.965
+Current log-likelihood at step 6: -2481716.834
+Current log-likelihood at step 7: -2481716.549
+Current log-likelihood at step 8: -2481716.182
+Current log-likelihood at step 9: -2481716.145
+Parameters optimization took 8 rounds (101.015 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 2: -2481716.145
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2481708.573
+Current log-likelihood at step 1: -2481702.658
+Current log-likelihood at step 2: -2481702.164
+Current log-likelihood at step 3: -2481701.968
+Current log-likelihood at step 4: -2481701.874
+Parameters optimization took 3 rounds (47.692 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 4: -2481701.874
+Iteration 10 / LogL: -2481719.356 / Time: 1h:6m:52s
+Iteration 20 / LogL: -2481724.696 / Time: 1h:23m:54s
+Finish initializing candidate tree set (16)
+Current best tree score: -2481701.874 / CPU time: 4132.078
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -2481714.689 / Time: 1h:54m:39s (4h:52m:27s left)
+Iteration 40 / LogL: -2481733.243 / Time: 2h:21m:19s (3h:51m:51s left)
+Iteration 50 / LogL: -2481711.777 / Time: 2h:47m:37s (3h:4m:40s left)
+Iteration 60 / LogL: -2481709.926 / Time: 3h:14m:54s (2h:25m:19s left)
+UPDATE BEST LOG-LIKELIHOOD: -2481701.864
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2481701.828
+Current log-likelihood at step 1: -2481701.779
+Parameters optimization took 0 rounds (9.618 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+UPDATE BEST LOG-LIKELIHOOD: -2481701.779
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -2481701.754
+Current log-likelihood at step 1: -2481701.708
+Parameters optimization took 0 rounds (9.832 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+UPDATE BEST LOG-LIKELIHOOD: -2481701.708
+Iteration 70 / LogL: -2481750.419 / Time: 3h:44m:41s (1h:50m:41s left)
+Iteration 80 / LogL: -2481709.328 / Time: 4h:12m:49s (1h:16m:47s left)
+Iteration 90 / LogL: -2481701.792 / Time: 4h:40m:23s (0h:44m:5s left)
+Iteration 100 / LogL: -2481734.062 / Time: 5h:8m:25s (0h:12m:27s left)
+Refining ufboot trees with NNI 5 branches...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 999 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 105 ITERATIONS / Time: 29h:36m:44s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -2481701.708
+Current log-likelihood at step 1: -2481701.686
+Current log-likelihood at step 2: -2481701.667
+Current log-likelihood at step 3: -2481701.653
+Current log-likelihood at step 4: -2481701.640
+Current log-likelihood at step 5: -2481701.629
+Current log-likelihood at step 6: -2481701.619
+Current log-likelihood at step 7: -2481701.609
+Current log-likelihood at step 8: -2481701.601
+Parameters optimization took 7 rounds (97.433 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Partition information was printed to output.best_model.nex
+BEST SCORE FOUND : -2481701.601
+Creating bootstrap support values...
+Split supports printed to NEXUS file output.splits.nex
+Total tree length: 0.081
+
+Total number of iterations: 105
+CPU time used for tree search: 104439.872 sec (29h:0m:39s)
+Wall-clock time used for tree search: 105701.443 sec (29h:21m:41s)
+Total CPU time used: 105431.395 sec (29h:17m:11s)
+Total wall-clock time used: 106704.065 sec (29h:38m:24s)
+UFBoot trees printed to output.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file output.splits.nex...
+72 taxa and 578 splits.
+Consensus tree written to output.contree
+Reading input trees file output.contree
+Log-likelihood of consensus tree: -2481724.184
+
+Analysis results written to: 
+  IQ-TREE report:                output.iqtree
+  Maximum-likelihood tree:       output.treefile
+  Likelihood distances:          output.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          output.splits.nex
+  Consensus tree:                output.contree
+  UFBoot trees:                  output.ufboot
+  Screen log file:               output.log
+
+Date and Time: Thu Mar 18 12:52:37 2021
