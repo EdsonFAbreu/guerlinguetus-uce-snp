@@ -1,0 +1,25 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 4
+#$ -q mThC.q
+#$ -l mres=24G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N jobB_mapping_reads
+#$ -o jobB_mapping_reads.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/phyluce/1.6.7
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+phyluce_snp_bwa_multiple_align --config phasing.conf \
+--output multialign-bams \
+--log-path log \
+--mem
+#
+echo = `date` job $JOB_NAME done

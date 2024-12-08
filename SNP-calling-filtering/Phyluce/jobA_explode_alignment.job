@@ -1,0 +1,26 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 2
+#$ -q sThC.q
+#$ -l mres=12G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N job_explode_alignment
+#$ -o job_explode_alignment.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/phyluce/1.5_tg
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+phyluce_align_explode_alignments \
+--alignments mafft-nexus-edge-trimmed \
+--input-format nexus \
+--output mafft-nexus-edge-trimmed-exploded \
+--by-taxon
+#
+echo = `date` job $JOB_NAME done
