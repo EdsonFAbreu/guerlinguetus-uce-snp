@@ -1,0 +1,91 @@
+# /bin/sh 
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 4
+#$ -q mThC.q
+#$ -l mres=24G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N gatk-B-CombineGVCFs
+#$ -o gatk-B-CombineGVCFs.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/gatk/4.1.3.0
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+rungatk CombineGVCFs \
+-R reference.fasta \
+-V AMNH135435GaeVE.g.vcf.gz \
+-V ANRA10GbrBR.g.vcf.gz \
+-V ANRA12GbrBR.g.vcf.gz \
+-V BM10678GaeBR.g.vcf.gz \
+-V BM17058GaeBR.g.vcf.gz \
+-V BML1493IndetBR.g.vcf.gz \
+-V CMARF1568GbrBR.g.vcf.gz \
+-V CMARF1569GbrBR.g.vcf.gz \
+-V CN029GaeBR.g.vcf.gz \
+-V CN048GaeBR.g.vcf.gz \
+-V CN158GaeBR.g.vcf.gz \
+-V CN160GaeBR.g.vcf.gz \
+-V CN175GaeBR.g.vcf.gz \
+-V CN201GaeBR.g.vcf.gz \
+-V CN230SpuBR.g.vcf.gz \
+-V CN241GaeBR.g.vcf.gz \
+-V CN269GaeBR.g.vcf.gz \
+-V CN270GaeBR.g.vcf.gz \
+-V CN294GaeBR.g.vcf.gz \
+-V DICO001NpuBR.g.vcf.gz \
+-V DTM277GbrBR.g.vcf.gz \
+-V DTM41GbrBR.g.vcf.gz \
+-V EFA41GbrBR.g.vcf.gz \
+-V ENM13GaeBR.g.vcf.gz \
+-V FMNH141601GbrBR.g.vcf.gz \
+-V FZB3514GbrBR.g.vcf.gz \
+-V GTG54GbrBR.g.vcf.gz \
+-V GTG55GbrBR.g.vcf.gz \
+-V IEPA3704GaeBR.g.vcf.gz \
+-V IEPA4384GaeBR.g.vcf.gz \
+-V ISEMT1758GaeFG.g.vcf.gz \
+-V ISEMT5176GaeFG.g.vcf.gz \
+-V ISEMT6101GaeFG.g.vcf.gz \
+-V JMIJ35GaeBR.g.vcf.gz \
+-V LMUSP301GbrBR.g.vcf.gz \
+-V MCN866GbrBR.g.vcf.gz \
+-V MCNM1388GbrBR.g.vcf.gz \
+-V MCNM2944GbrBr.g.vcf.gz \
+-V MCNU3683GbrBR.g.vcf.gz \
+-V MNMN56819GaeBR.g.vcf.gz \
+-V MPEG45441GaeBR.g.vcf.gz \
+-V MTR0192GbrBR.g.vcf.gz \
+-V MTR0444GbrBR.g.vcf.gz \
+-V MTR1128GbrBR.g.vcf.gz \
+-V MTR1785GbrBR.g.vcf.gz \
+-V MTR1821GbrBR.g.vcf.gz \
+-V MVZ182070GbrBR.g.vcf.gz \
+-V MVZ182071GbrBR.g.vcf.gz \
+-V MVZ192702GbrBR.g.vcf.gz \
+-V MVZ200389GbrBR.g.vcf.gz \
+-V PECC03GbrBR.g.vcf.gz \
+-V PECC26GbrBR.g.vcf.gz \
+-V RETA15IndetBR.g.vcf.gz \
+-V UFES1063GbrBR.g.vcf.gz \
+-V UFES119GbrBR.g.vcf.gz \
+-V UFES14GbrBR.g.vcf.gz \
+-V UFES223GbrBR.g.vcf.gz \
+-V UFES3776GbrBR.g.vcf.gz \
+-V UFES3817GbrBR.g.vcf.gz \
+-V UFES4256GaeBR.g.vcf.gz \
+-V UFES614GbrBR.g.vcf.gz \
+-V UFES85GbrBR.g.vcf.gz \
+-V UFSC2930GbrBR.g.vcf.gz \
+-V UFSC4047GbrBR.g.vcf.gz \
+-V USNM549526GaeBR.g.vcf.gz \
+-V USNM560645GaeVE.g.vcf.gz \
+-V USNM599925GaeGU.g.vcf.gz \
+-O guerlinguetus-all-gatk-combine.g.vcf.gz
+#
+echo = `date` job $JOB_NAME done

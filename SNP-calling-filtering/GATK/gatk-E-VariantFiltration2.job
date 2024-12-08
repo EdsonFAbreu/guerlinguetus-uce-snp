@@ -1,0 +1,27 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 4
+#$ -q mThC.q
+#$ -l mres=24G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N gatk-E-VariantFiltration2
+#$ -o gatk-E-VariantFiltration2.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/gatk/4.1.3.0
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+rungatk VariantFiltration \
+-R reference.fasta \
+-V guerlinguetus-all-gatk-select-variants.g.vcf.gz \
+-O guerlinguetus-all-gatk-filter-variants2.g.vcf.gz \
+--filter-expression "QD < 2.0 || FS > 60.0 || MQ < 40.0 || HaplotypeScore > 13.0 || MappingQualityRankSum < -12.5 || ReadPosRankSum < -8.0" \
+--filter-name "my_snp_filter"
+#
+echo = `date` job $JOB_NAME done

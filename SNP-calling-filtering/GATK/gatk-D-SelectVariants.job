@@ -1,0 +1,26 @@
+# /bin/sh 
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 4
+#$ -q mThC.q
+#$ -l mres=24G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N gatk-D-SelectVariants
+#$ -o gatk-D-SelectVariants.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/gatk/4.1.3.0
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+rungatk SelectVariants \
+-R reference.fasta \
+-V guerlinguetus-all-gatk-genotype.g.vcf.gz \
+--select-type-to-include SNP \
+-O guerlinguetus-all-gatk-select-variants.g.vcf.gz
+#
+echo = `date` job $JOB_NAME done
