@@ -1,0 +1,22 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 4
+#$ -q mThC.q
+#$ -l mres=24G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N vcf-filter
+#$ -o vcf-filter.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/vcftools/0.1.16
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+vcftools --gzvcf guerlinguetus-all-gatk-filter-variants2.g.vcf.gz --remove-filtered-all --maf 0.05 --minDP 2 --recode --out guerlinguetus-all-spns.vcf
+#
+echo = `date` job $JOB_NAME done

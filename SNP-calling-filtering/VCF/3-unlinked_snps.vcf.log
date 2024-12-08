@@ -1,0 +1,14 @@
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf excluded_snps.vcf
+	--thin 2000
+	--out unlinked_snps.vcf
+	--recode
+
+After filtering, kept 67 out of 67 Individuals
+Outputting VCF file...
+After filtering, kept 1843 out of a possible 4566 Sites
+Run Time = 0.00 seconds

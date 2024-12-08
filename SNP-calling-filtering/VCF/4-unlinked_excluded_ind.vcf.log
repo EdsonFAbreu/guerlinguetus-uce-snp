@@ -1,0 +1,15 @@
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf unlinked_excluded_ind.vcf
+	--out unlinked_excluded_ind.vcf
+	--recode
+	--remove-indv UFSC4047GbrBR
+
+Excluding individuals in 'exclude' list
+After filtering, kept 64 out of 65 Individuals
+Outputting VCF file...
+After filtering, kept 1843 out of a possible 1843 Sites
+Run Time = 1.00 seconds

@@ -1,0 +1,13 @@
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf unlinked_snps.vcf
+	--missing-indv
+	--out sub-missind
+
+After filtering, kept 67 out of 67 Individuals
+Outputting Individual Missingness
+After filtering, kept 1843 out of a possible 1843 Sites
+Run Time = 0.00 seconds

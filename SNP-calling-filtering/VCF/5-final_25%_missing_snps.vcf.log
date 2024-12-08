@@ -1,0 +1,14 @@
+
+VCFtools - v0.1.13
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf unlinked_excluded_ind.vcf
+	--max-missing 0.75
+	--out final_25%_missing_snps.vcf
+	--recode
+
+After filtering, kept 64 out of 64 Individuals
+Outputting VCF file...
+After filtering, kept 1169 out of a possible 1843 Sites
+Run Time = 1.00 seconds
