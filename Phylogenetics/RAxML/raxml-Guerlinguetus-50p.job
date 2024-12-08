@@ -1,0 +1,22 @@
+# /bin/sh
+# ----------------Parameters---------------------- #
+#$ -S /bin/sh
+#$ -pe mthread 32
+#$ -q uThC.q -l lopri
+#$ -l mres=192G,h_data=6G,h_vmem=6G
+#$ -cwd
+#$ -j y
+#$ -N raxml-Guerlinguetus-50p
+#$ -o raxml-Guerlinguetus.log
+#
+# ----------------Modules------------------------- #
+module load bioinformatics/raxml
+#
+# ----------------Your Commands------------------- #
+#
+echo + `date` job $JOB_NAME started in $QUEUE with jobID=$JOB_ID on $HOSTNAME
+echo + NSLOTS = $NSLOTS
+#
+raxmlHPC-PTHREADS-SSE3 -T $NSLOTS -f a -x 12345 -p 12345 -# 100 -m GTRGAMMA -s mafft-nexus-edge-trimmed-clean-50p.phy -n raxml-Guerlinguetus-50p
+#
+echo = `date` job $JOB_NAME done
