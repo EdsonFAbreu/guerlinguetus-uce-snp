@@ -1,0 +1,70 @@
+Guide tree with posterior probability for presence of nodes:
+
+SVD
+theta1-tau1
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta1-tau2
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau1
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau2
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, (aestuansC1, (aestuansC2, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+
+SNAPP
+theta1-tau1
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta1-tau2
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau1
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau2
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+(((((aestuansA, aestuansB)#1.000000, aestuansC1)#1.000000, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+
+BPP
+theta1-tau1
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta1-tau2
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau1
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+theta2-tau2
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+((aestuansA, (aestuansB, ((aestuansC1, aestuansC2)#1.000000, (brasiliensisA, brasiliensisB)#1.000000)#1.000000)#1.000000)#1.000000, variegatoides)#1.000000;;
+
+
+
+
