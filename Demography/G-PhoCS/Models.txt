@@ -1,0 +1,40 @@
+##Pior1
+mig-rate-alpha 0.002
+mig-rate-beta 0.001
+tau-theta-alpha 1
+tau-theta-beta	20
+
+##Pior2
+mig-rate-alpha 0.002
+mig-rate-beta 0.001
+tau-theta-alpha 1
+tau-theta-beta	2000
+
+##Pior3
+mig-rate-alpha 0.002
+mig-rate-beta 0.00001
+tau-theta-alpha 1
+tau-theta-beta	2000
+
+##Pior4
+mig-rate-alpha 0.002
+mig-rate-beta 0.00001
+tau-theta-alpha 1
+tau-theta-beta	20
+
+
+##Test 1
+No migration bands
+
+##Test 2 (TreeMix)
+Tepuis --> Atlantic Forest
+Madeira-Tapajos --> Eastern Amazonia
+
+##Test 3 (TreeMix + fbranch)
+Tepuis --> Atlantic Forest
+Madeira-Tapajos --> Eastern Amazonia
+Xingu-Tocantins <--> Eastern Amazonia
+
+##Test 4 (most parsimonious)
+Madeira-Tapajos --> Eastern Amazonia
+Xingu-Tocantins <--> Eastern Amazonia
